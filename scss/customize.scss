@@ -1,0 +1,162 @@
+html, body { @include size(100% 100%);  }
+body { 
+	@include size($w-container_v $h-container_v); 
+	margin: 0 auto; 
+}
+main { position: relative; overflow: hidden;  }
+
+
+body.intro {
+	$gap: 2px;
+	$gap_c: $gap/2;
+	$w-banner-top10: 37.8%;
+	$w-figure-2: 40%;
+	$w-figure-3: 60%;
+	$w-figure-4: 50%;
+	$w-figure-5: 50%;
+	$w-figure-6: 31%;
+	$w-figure-7: 31%;
+	$w-figure-8: $w-figure-3;
+	$w-figure-9: $w-figure-2;
+	$w-figure-10: $w-figure-4;
+	$w-figure-11: $w-figure-4;
+
+	$h-figure-2: 17%;
+	$h-figure-3: $h-figure-2;
+	$h-figure-4: $h-figure-2;
+	$h-figure-5: $h-figure-2;
+	$h-figure-6: 31.9%;
+	$h-figure-7: $h-figure-6;
+	$h-figure-8: $h-figure-2;
+	$h-figure-9: $h-figure-2;
+	$h-figure-10: $h-figure-2;
+	$h-figure-11: $h-figure-2;
+
+	//Landscape Variable
+	$w-banner-top10-l: 22.65%;
+
+	$w-figure-2-l: 23.05%;
+	$w-figure-3-l: 20%;
+	$w-figure-4-l: 39.8%;
+	$w-figure-5-l: 16.75%;
+	$w-figure-6-l: 18.75%;
+	$w-figure-7-l: 18.95%;
+	$w-figure-8-l: 31.2%;
+	$w-figure-9-l: 19.85%;
+	$w-figure-10-l: 29.15%;
+	$w-figure-11-l: $w-figure-10-l;
+	
+
+	$h-banner-top10-l: 51.7%;
+	$h-figure-2-l: 29.9%;
+	$h-figure-3-l: 40.85%; 
+	$h-figure-4-l: 29.5%;
+	$h-figure-5-l: $h-figure-2-l;
+	$h-figure-6-l: $h-banner-top10-l;
+	$h-figure-7-l: $h-banner-top10-l;
+	$h-figure-8-l: 48.5%;
+	$h-figure-9-l: $h-figure-3-l;
+	$h-figure-10-l: 24.3%;
+	$h-figure-11-l: $h-figure-10-l; 
+
+	//end 
+	main { @include size(100% 100%);
+		>figure { position: absolute; background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet;  background-position: center center;}
+		figcaption { color: #fff; padding: 30px 20px 5%; bottom: 0; left: 0; right: 0; position: absolute; font-size: em(12); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; @include background-image(linear-gradient(bottom, rgba(0,0,0,.96) 0%, rgba(0,0,0,.03) 100%));
+			@include media($landscape) { 
+				padding: 30px 20px 10px;
+			}
+		}  
+		#banner-top10 { 
+			@include retina-image('../img/intro/banner-intro', 100% 100%); background-size: 100% 100%;
+			font-family: 'PSLxThaiCommon'; color: rgba(76, 60, 33, 1);  text-align: center;
+			position: absolute; z-index: 2;
+			@include calc(width, "#{$w-banner-top10}"); height: $h-figure-6; left: 50%; top: 50%; @include transform(translate(-50%, -50%)); margin-left: 1px;
+			@include media($landscape) { 
+				left: 0; top: 0; @include transform(translate(0, 0)); margin-left: 0;
+				@include calc(width, "#{$w-banner-top10-l} - #{$gap}");
+				@include calc(height, "#{$h-banner-top10-l} - #{$gap}");
+			}  
+		} 
+		
+		>figure:nth-child(2) { @include calc(width, "#{$w-figure-2} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-2-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-2-l} - #{$gap}");
+				left: auto; right: $w-figure-5-l;
+			}
+		}
+		>figure:nth-child(3) { @include calc(width, "#{$w-figure-3} - #{$gap_c}"); @include calc(height, "#{$h-figure-3} - #{$gap}"); right:0;
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-3-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-3-l} - #{$gap}");
+				right:0; bottom: 0;
+			}
+		}
+		
+		>figure:nth-child(4) { @include calc(width, "#{$w-figure-4} - #{$gap_c}"); @include calc(height, "#{$h-figure-4} - #{$gap}"); 
+			top: $h-figure-2;
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-4-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-4-l} - #{$gap}");
+				right: 0; top: $h-figure-5-l;
+			}
+		}
+		>figure:nth-child(5) { @extend figure:nth-child(4); @include calc(width, "#{$w-figure-5} - #{$gap_c}"); @include calc(height, "#{$h-figure-5} - #{$gap}"); right: 0; left: auto;
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-5-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-5-l} - #{$gap}");
+				 top: 0;
+			}
+		}
+		
+		>figure:nth-child(6) { @include calc(width, "#{$w-figure-6} - #{$gap_c}"); height: $h-figure-6; 
+			top: 50%; @include transform(translateY(-50%));
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-6-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-6-l} - #{$gap}");
+				left:$w-banner-top10-l; top: 0; @include transform(translateY(0%));
+			}
+		}
+		>figure:nth-child(7) { @extend figure:nth-child(6); @include calc(width, "#{$w-figure-7} - #{$gap}"); height: $h-figure-7; right: 0; 
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-7-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-7-l} - #{$gap}");
+				left: $w-banner-top10-l + $w-figure-6-l; top: 0; @include transform(translateY(0%));
+			}
+		}
+
+
+		>figure:nth-child(8) { @include calc(width, "#{$w-figure-8} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
+			bottom: $h-figure-10;
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-8-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-8-l} - #{$gap}");
+				left: $w-figure-10-l; bottom: 0;
+			}
+		}
+		>figure:nth-child(9) { @extend figure:nth-child(8); @include calc(width, "#{$w-figure-9} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); right: 0; 
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-9-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-9-l} - #{$gap}");
+				left: auto; right: $w-figure-3-l; bottom: 0; z-index: 2;
+			}
+		}
+
+
+		>figure:nth-child(10) { @include calc(width, "#{$w-figure-10} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
+			bottom: 0;
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-10-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-10-l} - #{$gap}");
+			}
+		}
+		>figure:nth-child(11) { @extend figure:nth-child(10); @include calc(width, "#{$w-figure-11} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); right: 0; 
+			@include media($landscape) { 
+				@include calc(width, "#{$w-figure-11-l} - #{$gap}");
+				@include calc(height, "#{$h-figure-11-l} - #{$gap}");
+				left: 0; bottom: $h-figure-10-l;
+			}
+		}
+	}
+}

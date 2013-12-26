@@ -1,0 +1,451 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"ThaiS",
+				"ThaiSans"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"c_",
+				"c_darkBlue"
+			],
+			[
+				"c_bl",
+				"c_lightBlue"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"c_red",
+				"c_red2"
+			],
+			[
+				"c_gr",
+				"c_gray2"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"tex-",
+				"text-align"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"merge ",
+				"Emmet: Merge Lines"
+			],
+			[
+				"commen",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"merg",
+				"Emmet: Merge Lines"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 358.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"install Emmet",
+			"install emmet",
+			"emmet",
+			"emmt",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/my-sites.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/SimplePie/Cache/MySQL.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/_modules/mysql/mysql.php",
+		"/Users/mp3wizard/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/theme-compat/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/TheProfessional/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentyfourteen/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentythirteen/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentytwelve/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/_modules/footer.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/css/font.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/template/_tp_head.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/font/u-project.svg",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktd_uproject.sql",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/about/_tp_detail.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/template/votes/_tp_result.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/pl/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/admin-header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/custom-header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/menu-header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/js/custom-header.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/template/_tp_header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/lt/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/fi/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/es-mx/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/es/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/en/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdteam/ckfinder/help/cs/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/pl/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/lt/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/fi/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/es-mx/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/es/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/en/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/help/cs/files/header.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentytwelve/header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentythirteen/header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentyfourteen/header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/TheProfessional/header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/theme-compat/header.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/_modules/sixhead_template/SiXhEaD.Benchmark.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/js/heartbeat.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/Help.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/humans.txt",
+		"/Users/mp3wizard/Sites/redbull/HTML/less/normalize.less",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/woocommerce/templates/emails/customer-new-account.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/less/bootstrap/navbar.less",
+		"/Users/mp3wizard/Sites/redbull/HTML/forget.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentyfourteen/style.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/TheProfessional/style.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckeditor/styles.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/SendTopic.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Settings.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Themes/default/fonts/sound/y.english.wav",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-config.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/css/main.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-config-sample.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-activate.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/css/wp-pointer.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/wp-smushit/languages/wp_smushit-default.mo",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/wp-super-cache/languages/wp-super-cache-zh_CN.mo",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/woocommerce/admin/post-types/shop_coupon.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/frontend_builder/functions/menu_controls.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/TheProfessional/epanel/shortcodes/js/et_shortcodes_frontend.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/plugins/frontend_builder/functions/font_list.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/install_2-0_mysql.sql",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources-back/Subs-Db-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/Subs-Db-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources-back/DbSearch-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources-back/DbPackages-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources-back/DbExtra-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/DbSearch-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/DbPackages-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/Sources/DbExtra-mysql.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/js/plugins.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/_modules/phpmailer/language/phpmailer.lang-ro.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/profile.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/css/main-ie8.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/member/member_add.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/about/_tp_del.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/about/_tp_edit.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/forum/install--.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/ckfinder/lang/zh-tw.js",
+		"/Users/mp3wizard/Sites/redbull/HTML/votes/result-test.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/votes/vote.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/_modules/kgpager/test.php",
+		"/Users/mp3wizard/Sites/redbull/HTML/template/_tp_register.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/_tp_login.html",
+		"/Users/mp3wizard/Sites/redbull/HTML/ktdadmin/_tp_profile_edit.html",
+		"/Users/mp3wizard/Library/Caches/Cleanup At Startup/Transmit/748F6549-EC1A-4C76-ADDC-12EB68CAE7D5/main.css",
+		"/Users/mp3wizard/Sites/redbull/HTML/template/votes/_tp_main.html",
+		"/Users/mp3wizard/Library/Application Support/Sublime Text 3/Packages/SearchInProject/README.md",
+		"/Users/mp3wizard/Library/Caches/Cleanup At Startup/Transmit/6AF662A0-0BD5-4ABD-8922-747503B9C2E4/main.css",
+		"/Users/mp3wizard/Sites/green/_include/css/custom.css",
+		"/Users/mp3wizard/Sites/green/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"project",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'Quark-Light",
+			"#copyright",
+			"-webkit-text",
+			"-webkit",
+			"render",
+			"'../font/",
+			".header",
+			"nav",
+			":before",
+			"../font/ThaiSansNeue",
+			"95px",
+			"HEAD",
+			"head\n",
+			"head",
+			"@red",
+			"result",
+			"_tp_",
+			"#gallery",
+			"nth-child(5)",
+			"โหวตให้คะแนน",
+			"btnVote",
+			"\"btnVote\"",
+			"btnVote",
+			"height",
+			"btnVote",
+			"div:first-child",
+			"#main.vote .list figcaption > div:first-child",
+			"emmet"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'font/Quark-Light",
+			"'font/",
+			"#header",
+			"font/ThaiSansNeue"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "wp8.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"mys",
+				"_modules/mysql/mysql.php"
+			],
+			[
+				"footer",
+				"blog-test/wp-content/themes/TheProfessional/footer.php"
+			],
+			[
+				"u-project.css",
+				"blog-test/wp-content/themes/TheProfessional/u-project.css"
+			],
+			[
+				"main.cs",
+				"css/main.css"
+			],
+			[
+				"font",
+				"css/font.css"
+			],
+			[
+				"style.css",
+				"blog-test/wp-content/themes/TheProfessional/style.css"
+			],
+			[
+				"wp-config",
+				"blog-test/wp-config.php"
+			],
+			[
+				"main",
+				"css/main.css"
+			],
+			[
+				"main.css",
+				"css/main.css"
+			],
+			[
+				"_tp_deat",
+				"ktdadmin/about/_tp_detail.html"
+			],
+			[
+				"_tp_resul",
+				"template/votes/_tp_result.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/the_salads/the_salads.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"btnVote",
+				"btnVote"
+			],
+			[
+				"class",
+				"CLASS"
+			],
+			[
+				"btnV",
+				"btnVote"
+			]
+		],
+		"width": 433.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
