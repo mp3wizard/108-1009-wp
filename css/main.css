@@ -461,14 +461,14 @@ body.intro main {
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
         margin-left: 0;
-        width: -moz-calc(22.65% - 2px);
-        width: -o-calc(22.65% - 2px);
-        width: -webkit-calc(22.65% - 2px);
-        width: calc(22.65% - 2px);
-        height: -moz-calc(51.7% - 2px);
-        height: -o-calc(51.7% - 2px);
-        height: -webkit-calc(51.7% - 2px);
-        height: calc(51.7% - 2px); } }
+        width: -moz-calc(22% - 2px);
+        width: -o-calc(22% - 2px);
+        width: -webkit-calc(22% - 2px);
+        width: calc(22% - 2px);
+        height: -moz-calc(50% - 2px);
+        height: -o-calc(50% - 2px);
+        height: -webkit-calc(50% - 2px);
+        height: calc(50% - 2px); } }
   body.intro main > figure:nth-child(2) {
     width: -moz-calc(40% - 1px);
     width: -o-calc(40% - 1px);
@@ -480,16 +480,17 @@ body.intro main {
     height: calc(17% - 2px); }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(2) {
-        width: -moz-calc(23.05% - 2px);
-        width: -o-calc(23.05% - 2px);
-        width: -webkit-calc(23.05% - 2px);
-        width: calc(23.05% - 2px);
-        height: -moz-calc(29.9% - 2px);
-        height: -o-calc(29.9% - 2px);
-        height: -webkit-calc(29.9% - 2px);
-        height: calc(29.9% - 2px);
+        width: -moz-calc(22% - 2px);
+        width: -o-calc(22% - 2px);
+        width: -webkit-calc(22% - 2px);
+        width: calc(22% - 2px);
+        height: -moz-calc(30% );
+        height: -o-calc(30% );
+        height: -webkit-calc(30% );
+        height: calc(30% );
         left: auto;
-        right: 16.75%; } }
+        right: 16%;
+        margin-right: 2px; } }
   body.intro main > figure:nth-child(3) {
     width: -moz-calc(60% - 1px);
     width: -o-calc(60% - 1px);
@@ -502,14 +503,14 @@ body.intro main {
     right: 0; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(3) {
-        width: -moz-calc(20% - 2px);
-        width: -o-calc(20% - 2px);
-        width: -webkit-calc(20% - 2px);
-        width: calc(20% - 2px);
-        height: -moz-calc(40.85% - 2px);
-        height: -o-calc(40.85% - 2px);
-        height: -webkit-calc(40.85% - 2px);
-        height: calc(40.85% - 2px);
+        width: -moz-calc(19% - 2px);
+        width: -o-calc(19% - 2px);
+        width: -webkit-calc(19% - 2px);
+        width: calc(19% - 2px);
+        height: -moz-calc(40% - 2px);
+        height: -o-calc(40% - 2px);
+        height: -webkit-calc(40% - 2px);
+        height: calc(40% - 2px);
         right: 0;
         bottom: 0; } }
   body.intro main > figure:nth-child(4), body.intro main > figure:nth-child(5) {
@@ -524,16 +525,17 @@ body.intro main {
     top: 17%; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(4), body.intro main > figure:nth-child(5) {
-        width: -moz-calc(39.8% - 2px);
-        width: -o-calc(39.8% - 2px);
-        width: -webkit-calc(39.8% - 2px);
-        width: calc(39.8% - 2px);
-        height: -moz-calc(29.5% - 2px);
-        height: -o-calc(29.5% - 2px);
-        height: -webkit-calc(29.5% - 2px);
-        height: calc(29.5% - 2px);
+        width: -moz-calc(38%);
+        width: -o-calc(38%);
+        width: -webkit-calc(38%);
+        width: calc(38%);
+        height: -moz-calc(30% - 2px);
+        height: -o-calc(30% - 2px);
+        height: -webkit-calc(30% - 2px);
+        height: calc(30% - 2px);
         right: 0;
-        top: 29.9%; } }
+        top: auto;
+        bottom: 40%; } }
   body.intro main > figure:nth-child(5) {
     width: -moz-calc(50% - 1px);
     width: -o-calc(50% - 1px);
@@ -547,14 +549,14 @@ body.intro main {
     left: auto; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(5) {
-        width: -moz-calc(16.75% - 2px);
-        width: -o-calc(16.75% - 2px);
-        width: -webkit-calc(16.75% - 2px);
-        width: calc(16.75% - 2px);
-        height: -moz-calc(29.9% - 2px);
-        height: -o-calc(29.9% - 2px);
-        height: -webkit-calc(29.9% - 2px);
-        height: calc(29.9% - 2px);
+        width: -moz-calc(16%);
+        width: -o-calc(16%);
+        width: -webkit-calc(16%);
+        width: calc(16%);
+        height: -moz-calc(30%);
+        height: -o-calc(30%);
+        height: -webkit-calc(30%);
+        height: calc(30%);
         top: 0; } }
   body.intro main > figure:nth-child(6), body.intro main > figure:nth-child(7) {
     width: -moz-calc(31% - 1px);
@@ -570,15 +572,15 @@ body.intro main {
     transform: translateY(-50%); }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(6), body.intro main > figure:nth-child(7) {
-        width: -moz-calc(18.75% - 2px);
-        width: -o-calc(18.75% - 2px);
-        width: -webkit-calc(18.75% - 2px);
-        width: calc(18.75% - 2px);
-        height: -moz-calc(51.7% - 2px);
-        height: -o-calc(51.7% - 2px);
-        height: -webkit-calc(51.7% - 2px);
-        height: calc(51.7% - 2px);
-        left: 22.65%;
+        width: -moz-calc(20% - 2px);
+        width: -o-calc(20% - 2px);
+        width: -webkit-calc(20% - 2px);
+        width: calc(20% - 2px);
+        height: -moz-calc(50% - 2px);
+        height: -o-calc(50% - 2px);
+        height: -webkit-calc(50% - 2px);
+        height: calc(50% - 2px);
+        left: 22%;
         top: 0;
         -webkit-transform: translateY(0%);
         -moz-transform: translateY(0%);
@@ -594,15 +596,15 @@ body.intro main {
     right: 0; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(7) {
-        width: -moz-calc(18.95% - 2px);
-        width: -o-calc(18.95% - 2px);
-        width: -webkit-calc(18.95% - 2px);
-        width: calc(18.95% - 2px);
-        height: -moz-calc(51.7% - 2px);
-        height: -o-calc(51.7% - 2px);
-        height: -webkit-calc(51.7% - 2px);
-        height: calc(51.7% - 2px);
-        left: 41.4%;
+        width: -moz-calc(20% - 2px);
+        width: -o-calc(20% - 2px);
+        width: -webkit-calc(20% - 2px);
+        width: calc(20% - 2px);
+        height: -moz-calc(50% - 2px);
+        height: -o-calc(50% - 2px);
+        height: -webkit-calc(50% - 2px);
+        height: calc(50% - 2px);
+        left: 42%;
         top: 0;
         -webkit-transform: translateY(0%);
         -moz-transform: translateY(0%);
@@ -621,15 +623,15 @@ body.intro main {
     bottom: 17%; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(8), body.intro main > figure:nth-child(9) {
-        width: -moz-calc(31.2% - 2px);
-        width: -o-calc(31.2% - 2px);
-        width: -webkit-calc(31.2% - 2px);
-        width: calc(31.2% - 2px);
-        height: -moz-calc(48.5% - 2px);
-        height: -o-calc(48.5% - 2px);
-        height: -webkit-calc(48.5% - 2px);
-        height: calc(48.5% - 2px);
-        left: 29.15%;
+        width: -moz-calc(31% - 2px);
+        width: -o-calc(31% - 2px);
+        width: -webkit-calc(31% - 2px);
+        width: calc(31% - 2px);
+        height: -moz-calc(50%);
+        height: -o-calc(50%);
+        height: -webkit-calc(50%);
+        height: calc(50%);
+        left: 31%;
         bottom: 0; } }
   body.intro main > figure:nth-child(9) {
     width: -moz-calc(40% - 1px);
@@ -640,21 +642,21 @@ body.intro main {
     height: -o-calc(17% - 2px);
     height: -webkit-calc(17% - 2px);
     height: calc(17% - 2px);
-    right: 0; }
+    right: 0;
+    z-index: 2; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(9) {
-        width: -moz-calc(19.85% - 2px);
-        width: -o-calc(19.85% - 2px);
-        width: -webkit-calc(19.85% - 2px);
-        width: calc(19.85% - 2px);
-        height: -moz-calc(40.85% - 2px);
-        height: -o-calc(40.85% - 2px);
-        height: -webkit-calc(40.85% - 2px);
-        height: calc(40.85% - 2px);
+        width: -moz-calc(19%);
+        width: -o-calc(19%);
+        width: -webkit-calc(19%);
+        width: calc(19%);
+        height: -moz-calc(40% - 2px);
+        height: -o-calc(40% - 2px);
+        height: -webkit-calc(40% - 2px);
+        height: calc(40% - 2px);
         left: auto;
-        right: 20%;
-        bottom: 0;
-        z-index: 2; } }
+        right: 19%;
+        bottom: 0; } }
   body.intro main > figure:nth-child(10), body.intro main > figure:nth-child(11) {
     width: -moz-calc(50% - 1px);
     width: -o-calc(50% - 1px);
@@ -667,14 +669,14 @@ body.intro main {
     bottom: 0; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(10), body.intro main > figure:nth-child(11) {
-        width: -moz-calc(29.15% - 2px);
-        width: -o-calc(29.15% - 2px);
-        width: -webkit-calc(29.15% - 2px);
-        width: calc(29.15% - 2px);
-        height: -moz-calc(24.3% - 2px);
-        height: -o-calc(24.3% - 2px);
-        height: -webkit-calc(24.3% - 2px);
-        height: calc(24.3% - 2px); } }
+        width: -moz-calc(31% - 2px);
+        width: -o-calc(31% - 2px);
+        width: -webkit-calc(31% - 2px);
+        width: calc(31% - 2px);
+        height: -moz-calc(25% - 2px);
+        height: -o-calc(25% - 2px);
+        height: -webkit-calc(25% - 2px);
+        height: calc(25% - 2px); } }
   body.intro main > figure:nth-child(11) {
     width: -moz-calc(50% - 1px);
     width: -o-calc(50% - 1px);
@@ -687,16 +689,16 @@ body.intro main {
     right: 0; }
     @media screen and (min-width: 30.0625em) {
       body.intro main > figure:nth-child(11) {
-        width: -moz-calc(29.15% - 2px);
-        width: -o-calc(29.15% - 2px);
-        width: -webkit-calc(29.15% - 2px);
-        width: calc(29.15% - 2px);
-        height: -moz-calc(24.3% - 2px);
-        height: -o-calc(24.3% - 2px);
-        height: -webkit-calc(24.3% - 2px);
-        height: calc(24.3% - 2px);
+        width: -moz-calc(31% - 2px);
+        width: -o-calc(31% - 2px);
+        width: -webkit-calc(31% - 2px);
+        width: calc(31% - 2px);
+        height: -moz-calc(25%);
+        height: -o-calc(25%);
+        height: -webkit-calc(25%);
+        height: calc(25%);
         left: 0;
-        bottom: 24.3%; } }
+        bottom: 25%; } }
 
 /* ==========================================================================
    Helper classes
