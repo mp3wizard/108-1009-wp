@@ -2,6 +2,16 @@ $retina-filename: '@2x.png';
 // Vertical
 $w-container_v: 100%;	//1536px
 $h-container_v: 100%;	//2520px
-
-
+$h-header: 46px;
+$a-ios7: cubic-bezier(.10, .70, .10, 1);
 $landscape: em(481);
+
+
+
+// Favorite
+$w-grid-img: 100%;
+$p-figure: 15px;
+$c-link: #4f3f27;
+$f-link: em(17);
+$f-text: em(12);
+$f-stat: em(12);

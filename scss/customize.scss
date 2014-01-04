@@ -1,15 +1,46 @@
-html, body { @include size(100% 100%);  }
+
+html, body { @include size(100% 100%); -webkit-font-smoothing: antialiased; }
 body { 
 	@include size($w-container_v $h-container_v); 
 	margin: 0 auto; 
 }
-main { position: relative; overflow: hidden;  }
+main { position: relative; overflow: hidden; 
+	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px;
+		@include box-shadow(0 1px 0 rgba(0,0,0,.19));
+		@include background-image(linear-gradient(bottom, #dad7c8 0%, #fff 100%));
+		h1 { margin: 0 auto; position: relative; z-index: 1; text-indent: -1000em;
+			@include size(119px 43px); background-position: center center;
+			@include retina-image('../img/hd-top10', 119px 43px);
+		}
+		a { position: absolute; top: 0; height: $h-header; width: 55px; text-align: center; 
+			i:before {  font-size: 22px; position: relative; top: 3px;}
+		}
+		a:nth-child(2) { left: 0; border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5) }
+		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; box-shadow: inset 1px 0 0 rgba(255, 255, 255, .5) }
+	}
+}
+a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
+a:hover { color: lighten($c-link, 15%)}
 
+// animation
+.slideLeftOut { 
+	@include transition(all .3s $a-ios7);
+	@include transform(translateX(80%)); 
+}
+.slideIn { 
+	@include transition(all .2s $a-ios7);
+	@include transform(translateX(0%)); 
+}
+.slideRightOut { 
+	@include transition(all .3s $a-ios7);
+	@include transform(translateX(-80%)); 
+}
 
+// Start Intro Page
 body.intro {
 	$gap: 2px;
 	$gap_c: $gap/2;
-	$w-banner-top10: 37.8%;
+	$w-banner-top10: 38%;
 	$w-figure-2: 40%;
 	$w-figure-3: 60%;
 	$w-figure-4: 50%;
@@ -21,11 +52,11 @@ body.intro {
 	$w-figure-10: $w-figure-4;
 	$w-figure-11: $w-figure-4;
 
-	$h-figure-2: 17%;
+	$h-figure-2: 17.5%;
 	$h-figure-3: $h-figure-2;
 	$h-figure-4: $h-figure-2;
 	$h-figure-5: $h-figure-2;
-	$h-figure-6: 31.9%;
+	$h-figure-6: 30%;
 	$h-figure-7: $h-figure-6;
 	$h-figure-8: $h-figure-2;
 	$h-figure-9: $h-figure-2;
@@ -62,9 +93,13 @@ body.intro {
 
 	//- #{$gap}
 
-	//end 
-	main { @include size(100% 100%);
-		>figure { position: absolute; background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet; background-position: center center;}
+	//end
+	main { @include size(100% 100%);} 
+	article { width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header;
+		
+		figure { position: absolute; background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet; background-position: center center;
+			a { display:block; width: 100%; height:100%; }
+		}
 		figcaption { color: #fff; padding: 30px 20px 5%; bottom: 0; left: 0; right: 0; position: absolute; font-size: em(12); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; @include background-image(linear-gradient(bottom, rgba(0,0,0,.96) 0%, rgba(0,0,0,.03) 100%));
 			@include media($landscape) { 
 				padding: 30px 20px 10px;
@@ -74,7 +109,9 @@ body.intro {
 			@include retina-image('../img/intro/banner-intro', 100% 100%); background-size: 100% 100%;
 			font-family: 'PSLxThaiCommon'; color: rgba(76, 60, 33, 1);  text-align: center;
 			position: absolute; z-index: 2;
-			@include calc(width, "#{$w-banner-top10}"); height: $h-figure-6; left: 50%; top: 50%; @include transform(translate(-50%, -50%)); margin-left: 1px;
+			@include calc(width, $w-banner-top10); left: $w-figure-6; 
+			@include calc(height, #{$h-figure-6} + 1px);  top: $h-figure-2 + $h-figure-4;
+			
 			@include media($landscape) { 
 				left: 0; top: 0; @include transform(translate(0, 0)); margin-left: 0;
 				@include calc(width, "#{$w-banner-top10-l} - #{$gap}");
@@ -82,14 +119,14 @@ body.intro {
 			}  
 		} 
 		
-		>figure:nth-child(2) { @include calc(width, "#{$w-figure-2} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
+		>figure:nth-child(2) { @include calc(width, "#{$w-figure-2}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-2-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-2-l} ");
 				left: auto; right: $w-figure-5-l; margin-right: $gap;
 			}
 		}
-		>figure:nth-child(3) { @include calc(width, "#{$w-figure-3} - #{$gap_c}"); @include calc(height, "#{$h-figure-3} - #{$gap}"); right:0;
+		>figure:nth-child(3) { @include calc(width, "#{$w-figure-3} - #{$gap}"); @include calc(height, "#{$h-figure-3} - #{$gap}"); right:0;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-3-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-3-l} - #{$gap}");
@@ -97,15 +134,17 @@ body.intro {
 			}
 		}
 		
-		>figure:nth-child(4) { @include calc(width, "#{$w-figure-4} - #{$gap_c}"); @include calc(height, "#{$h-figure-4} - #{$gap}"); 
-			top: $h-figure-2;
+		>figure:nth-child(4) { @include calc(width, "#{$w-figure-4} - #{$gap_c}"); 
+			@include calc(height, "#{$h-figure-4} - #{$gap}"); top: $h-figure-2;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-4-l}");
 				@include calc(height, "#{$h-figure-4-l} - #{$gap}");
 				right: 0; top: auto; bottom: $h-figure-9-l;
 			}
 		}
-		>figure:nth-child(5) { @extend figure:nth-child(4); @include calc(width, "#{$w-figure-5} - #{$gap_c}"); @include calc(height, "#{$h-figure-5} - #{$gap}"); right: 0; left: auto;
+		>figure:nth-child(5) { 
+			@include calc(width, "#{$w-figure-5} - #{$gap_c}"); right: 0; left: auto;
+			@include calc(height, "#{$h-figure-5} - #{$gap}"); top: $h-figure-2;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-5-l}");
 				@include calc(height, "#{$h-figure-5-l}");
@@ -113,15 +152,17 @@ body.intro {
 			}
 		}
 		
-		>figure:nth-child(6) { @include calc(width, "#{$w-figure-6} - #{$gap_c}"); height: $h-figure-6; 
-			top: 50%; @include transform(translateY(-50%));
+		>figure:nth-child(6) { @include calc(width, "#{$w-figure-6} - #{$gap}"); 
+			height: $h-figure-6; top: $h-figure-2 + $h-figure-4;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-6-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-6-l} - #{$gap}");
 				left:$w-banner-top10-l; top: 0; @include transform(translateY(0%));
 			}
 		}
-		>figure:nth-child(7) { @extend figure:nth-child(6); @include calc(width, "#{$w-figure-7} - #{$gap}"); height: $h-figure-7; right: 0; 
+		>figure:nth-child(7) {  
+			@include calc(width, "#{$w-figure-7} - #{$gap}");  right: 0;
+			height: $h-figure-7; top: $h-figure-2 + $h-figure-4; 
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-7-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-7-l} - #{$gap}");
@@ -131,8 +172,10 @@ body.intro {
 		}
 
 
-		>figure:nth-child(8) { @include calc(width, "#{$w-figure-8} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
-			bottom: $h-figure-10;
+		>figure:nth-child(8) { 
+			@include calc(width, "#{$w-figure-8} - #{$gap}"); left: 0; 
+			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: $h-figure-10;
+			
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-8-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-8-l}");
@@ -140,7 +183,9 @@ body.intro {
 				bottom: 0;
 			}
 		}
-		>figure:nth-child(9) { @extend figure:nth-child(8); @include calc(width, "#{$w-figure-9} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); right: 0; z-index: 2;
+		>figure:nth-child(9) { z-index: 2;
+			@include calc(width, "#{$w-figure-9}");  right: 0; left: auto;
+			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: $h-figure-10;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-9-l}");
 				@include calc(height, "#{$h-figure-9-l} - #{$gap}");
@@ -150,14 +195,17 @@ body.intro {
 		}
 
 
-		>figure:nth-child(10) { @include calc(width, "#{$w-figure-10} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
-			bottom: 0;
+		>figure:nth-child(10) { 
+			@include calc(width, "#{$w-figure-10} - #{$gap_c}"); 
+			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: 0;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-10-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-10-l} - #{$gap}");
 			}
 		}
-		>figure:nth-child(11) { @extend figure:nth-child(10); @include calc(width, "#{$w-figure-11} - #{$gap_c}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); right: 0; 
+		>figure:nth-child(11) {  
+			@include calc(width, "#{$w-figure-11} - #{$gap_c}"); right: 0; 
+			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: 0;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-11-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-11-l}");
@@ -166,3 +214,27 @@ body.intro {
 		}
 	}
 }
+// End Intro Page
+.favorite { background-color: #c6beaa;
+	article { padding-top: 46px; }
+	figure { width: $w-grid-img; background-color: #f3f3e8; @include box-shadow(0 1px 1px 1px rgba(0,0,0,.2));
+		img { width: 100%;  }
+
+	}
+	figcaption { color: #656565;
+		>p { margin: 0; padding: $p-figure; font-size: $f-text; }
+		strong {
+			a { display: block; margin-bottom:10px; font-size: $f-link; }
+		} 
+		>ul { list-style: none; margin: 0; height: 30px; padding: 0 $p-figure; background-color: #fff;
+			li { display: inline; line-height: 30px; font-weight: bold; font-size: $f-stat; margin-right: 10px; 
+				label { margin-right: 5px; display: inline-block; }
+			}
+		}
+	}
+}
+// Start Favorite Page
+
+
+
+// End Intro Page

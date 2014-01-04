@@ -2,17 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/img\/touch\/apple-touch-icon-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-precomposed.png",
-      "initialSize" : 1144,
-      "fileType" : 8192
-    },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -24,47 +13,90 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.js",
       "fileType" : 64
     },
-    "\/img\/startup\/startup-tablet-landscape.png" : {
+    "\/img\/favorite\/img-fav-07@2x.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape.png",
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-07@2x.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape.png",
-      "initialSize" : 3228,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-07@2x.jpg",
+      "initialSize" : 38327,
+      "fileType" : 4096
     },
-    "\/img\/touch\/apple-touch-icon-144x144-precomposed.png" : {
+    "\/img\/intro\/img-10.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-144x144-precomposed.png",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-10.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-144x144-precomposed.png",
-      "initialSize" : 1795,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/img\/intro\/img-10.jpg",
+      "initialSize" : 120421,
+      "fileType" : 4096
     },
-    "\/img\/startup\/startup-tablet-portrait.png" : {
+    "\/img\/intro\/img-4.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-4.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
-      "initialSize" : 3206,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/img\/intro\/img-4.jpg",
+      "initialSize" : 97004,
+      "fileType" : 4096
     },
-    "\/css\/main.css" : {
+    "\/kit\/_header.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/main.css",
+      "inputAbbreviatedPath" : "\/kit\/_header.kit",
+      "outputAbbreviatedPath" : "\/_header.html",
+      "fileType" : 65536
+    },
+    "\/scss\/vendor\/_icon.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/vendor\/_icon.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/scss\/css\/_icon.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/img\/intro\/img-8.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-8.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-8.jpg",
+      "initialSize" : 73442,
+      "fileType" : 4096
+    },
+    "\/img\/touch\/apple-touch-icon-72x72-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-72x72-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-72x72-precomposed.png",
+      "initialSize" : 1351,
+      "fileType" : 8192
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "fileType" : 2048
     },
     "\/scss\/main.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -78,17 +110,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/touch\/apple-touch-icon-72x72-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-72x72-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-72x72-precomposed.png",
-      "initialSize" : 1351,
-      "fileType" : 8192
-    },
     "\/img\/touch\/apple-touch-icon-57x57-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -99,6 +120,350 @@
       "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-57x57-precomposed.png",
       "initialSize" : 1144,
       "fileType" : 8192
+    },
+    "\/img\/intro\/img-1.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
+      "initialSize" : 25836,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-03@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-03@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-03@2x.jpg",
+      "initialSize" : 41287,
+      "fileType" : 4096
+    },
+    "\/js\/helper.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/helper.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/helper.min.js",
+      "fileType" : 64
+    },
+    "\/img\/touch\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-precomposed.png",
+      "initialSize" : 1144,
+      "fileType" : 8192
+    },
+    "\/img\/intro\/img-5.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-5.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-5.jpg",
+      "initialSize" : 261421,
+      "fileType" : 4096
+    },
+    "\/img\/intro\/banner-intro@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/banner-intro@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/banner-intro@2x.png",
+      "initialSize" : 129911,
+      "fileType" : 8192
+    },
+    "\/img\/favorite\/img-fav-06@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-06@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-06@2x.jpg",
+      "initialSize" : 54555,
+      "fileType" : 4096
+    },
+    "\/favorite.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/favorite.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/img\/intro\/img-9.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
+      "initialSize" : 100611,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-01.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-01.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-01.jpg",
+      "initialSize" : 17037,
+      "fileType" : 4096
+    },
+    "\/img\/startup\/startup-tablet-landscape.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape.png",
+      "initialSize" : 3228,
+      "fileType" : 8192
+    },
+    "\/kit\/favorite.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/favorite.kit",
+      "outputAbbreviatedPath" : "\/favorite.html",
+      "fileType" : 65536
+    },
+    "\/img\/touch\/apple-touch-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon.png",
+      "initialSize" : 1144,
+      "fileType" : 8192
+    },
+    "\/kit\/_aside-left.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/_aside-left.kit",
+      "outputAbbreviatedPath" : "\/_aside-left.html",
+      "fileType" : 65536
+    },
+    "\/img\/startup\/startup-tablet-portrait.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
+      "initialSize" : 3206,
+      "fileType" : 8192
+    },
+    "\/img\/favorite\/img-fav-02.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-02.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-02.jpg",
+      "initialSize" : 11997,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-03.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
+      "initialSize" : 13891,
+      "fileType" : 4096
+    },
+    "\/img\/startup\/startup-tablet-portrait-retina.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait-retina.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait-retina.png",
+      "initialSize" : 5397,
+      "fileType" : 8192
+    },
+    "\/img\/favorite\/img-fav-04.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-04.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-04.jpg",
+      "initialSize" : 20289,
+      "fileType" : 4096
+    },
+    "\/js\/vendor\/modernizr-2.6.2.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/modernizr-2.6.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/modernizr-2.6.2.min.min.js",
+      "fileType" : 64
+    },
+    "\/img\/favorite\/img-fav-05.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-05.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-05.jpg",
+      "initialSize" : 28208,
+      "fileType" : 4096
+    },
+    "\/img\/intro\/img-2.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-2.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-2.jpg",
+      "initialSize" : 488537,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-06.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-06.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-06.jpg",
+      "initialSize" : 15512,
+      "fileType" : 4096
+    },
+    "\/img\/touch\/apple-touch-icon-114x114-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-114x114-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-114x114-precomposed.png",
+      "initialSize" : 2042,
+      "fileType" : 8192
+    },
+    "\/img\/hd-top10.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/hd-top10.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/hd-top10.png",
+      "initialSize" : 11640,
+      "fileType" : 8192
+    },
+    "\/img\/startup\/startup-retina-4in.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-retina-4in.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-retina-4in.png",
+      "initialSize" : 5346,
+      "fileType" : 8192
+    },
+    "\/img\/favorite\/img-fav-07.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-07.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-07.jpg",
+      "initialSize" : 13291,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-08.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-08.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-08.jpg",
+      "initialSize" : 17801,
+      "fileType" : 4096
+    },
+    "\/img\/intro\/banner-intro.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/banner-intro.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/banner-intro.png",
+      "initialSize" : 73223,
+      "fileType" : 8192
+    },
+    "\/img\/favorite\/img-fav-02@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-02@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-02@2x.jpg",
+      "initialSize" : 30207,
+      "fileType" : 4096
+    },
+    "\/img\/intro\/img-6.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-6.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-6.jpg",
+      "initialSize" : 140487,
+      "fileType" : 4096
+    },
+    "\/kit\/_script.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/_script.kit",
+      "outputAbbreviatedPath" : "\/_script.html",
+      "fileType" : 65536
     },
     "\/scss\/_variable.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -112,6 +477,37 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/img\/favorite\/img-fav-05@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-05@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-05@2x.jpg",
+      "initialSize" : 101060,
+      "fileType" : 4096
+    },
+    "\/js\/vendor\/jquery.grid-a-licious.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.grid-a-licious.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.grid-a-licious.min.js",
+      "fileType" : 64
+    },
+    "\/kit\/_head.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/_head.kit",
+      "outputAbbreviatedPath" : "\/_head.html",
+      "fileType" : 65536
+    },
     "\/scss\/vendor\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -123,6 +519,29 @@
       "outputAbbreviatedPath" : "\/scss\/css\/_normalize.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/scss\/mixin\/_calc.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/mixin\/_calc.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/scss\/css\/_calc.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/img\/favorite\/img-fav-08@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
+      "initialSize" : 57214,
+      "fileType" : 4096
     },
     "\/scss\/customize.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -136,27 +555,71 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/startup\/startup-retina-4in.png" : {
+    "\/img\/intro\/img-3.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-retina-4in.png",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-3.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-retina-4in.png",
-      "initialSize" : 5346,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/img\/intro\/img-3.jpg",
+      "initialSize" : 59003,
+      "fileType" : 4096
     },
-    "\/js\/vendor\/zepto.min.js" : {
+    "\/js\/vendor\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/zepto.min.js",
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/zepto.min.min.js",
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.min.min.js",
       "fileType" : 64
+    },
+    "\/img\/startup\/startup-tablet-landscape-retina.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape-retina.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape-retina.png",
+      "initialSize" : 5406,
+      "fileType" : 8192
+    },
+    "\/img\/intro\/img-7.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
+      "initialSize" : 296596,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-01@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-01@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-01@2x.jpg",
+      "initialSize" : 40901,
+      "fileType" : 4096
+    },
+    "\/img\/hd-top10@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/hd-top10@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/hd-top10@2x.png",
+      "initialSize" : 31568,
+      "fileType" : 8192
     },
     "\/img\/startup\/startup-retina.png" : {
       "ignoreWasSetByUser" : 0,
@@ -169,48 +632,15 @@
       "initialSize" : 1628,
       "fileType" : 8192
     },
-    "\/img\/startup\/startup-tablet-portrait-retina.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait-retina.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait-retina.png",
-      "initialSize" : 5397,
-      "fileType" : 8192
-    },
     "\/js\/main.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/main.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/main.min.js",
-      "fileType" : 64
-    },
-    "\/js\/helper.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/helper.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/helper.min.js",
-      "fileType" : 64
-    },
-    "\/js\/vendor\/modernizr-2.6.2.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/modernizr-2.6.2.min.min.js",
       "fileType" : 64
     },
     "\/img\/startup\/startup.png" : {
@@ -224,47 +654,54 @@
       "initialSize" : 1906,
       "fileType" : 8192
     },
-    "\/index.html" : {
+    "\/img\/favorite\/img-fav-04@2x.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-04@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-04@2x.jpg",
+      "initialSize" : 48638,
+      "fileType" : 4096
+    },
+    "\/kit\/index.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/index.kit",
+      "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 65536
+    },
+    "\/css\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/main.css",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "fileType" : 16
     },
-    "\/img\/touch\/apple-touch-icon.png" : {
+    "\/img\/touch\/apple-touch-icon-144x144-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon.png",
+      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-144x144-precomposed.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon.png",
-      "initialSize" : 1144,
+      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-144x144-precomposed.png",
+      "initialSize" : 1795,
       "fileType" : 8192
     },
-    "\/img\/touch\/apple-touch-icon-114x114-precomposed.png" : {
+    "\/kit\/_aside-right.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-114x114-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/touch\/apple-touch-icon-114x114-precomposed.png",
-      "initialSize" : 2042,
-      "fileType" : 8192
-    },
-    "\/img\/startup\/startup-tablet-landscape-retina.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape-retina.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-landscape-retina.png",
-      "initialSize" : 5406,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/kit\/_aside-right.kit",
+      "outputAbbreviatedPath" : "\/_aside-right.html",
+      "fileType" : 65536
     }
   },
   "manualImportLinks" : [

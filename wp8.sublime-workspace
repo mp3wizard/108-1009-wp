@@ -4,20 +4,104 @@
 		"selected_items":
 		[
 			[
-				"pad",
-				"padding-top"
+				"mar",
+				"margin-right"
 			],
 			[
-				"mar",
+				"d",
+				"d:b	display:block"
+			],
+			[
+				"ga",
+				"gap"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"margin",
 				"margin"
+			],
+			[
+				"h-fi",
+				"h-figure-5-l"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"w-fi",
+				"w-figure-2"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"w-figur",
+				"w-figure-6"
+			],
+			[
+				"w-",
+				"w-banner-top10"
+			],
+			[
+				"w-ban",
+				"w-banner-top10-l"
+			],
+			[
+				"media",
+				"media	@media"
+			],
+			[
+				"w-fig",
+				"w-figure-11-l"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"include",
+				"include	@include"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"h-fig",
+				"h-figure-4"
+			],
+			[
+				"gap",
+				"gap_c"
+			],
+			[
+				"nor",
+				"nowrap"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"po",
+				"pos:a	position:absolute"
+			],
+			[
+				"bour",
+				"bourbon"
 			],
 			[
 				"font-",
 				"font-size"
-			],
-			[
-				"pos",
-				"pos-r	position: relative;"
 			],
 			[
 				"co",
@@ -52,14 +136,6 @@
 				"c_gray2"
 			],
 			[
-				"marg",
-				"margin-right"
-			],
-			[
-				"backg",
-				"background-color"
-			],
-			[
 				"text",
 				"text-align"
 			],
@@ -79,6 +155,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "kit/favorite.kit",
+			"settings":
+			{
+				"buffer_size": 7541,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "kit/_script.kit",
+			"settings":
+			{
+				"buffer_size": 179,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/customize.scss",
+			"settings":
+			{
+				"buffer_size": 6867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/_variable.scss",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -140,10 +256,24 @@
 	},
 	"file_history":
 	[
+		"/Users/mp3wizard/Sites/108-1009/git/scss/main.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/js/main.min.js",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/vendor/_icon.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_aside-right.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_aside-left.kit",
+		"/Users/mp3wizard/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mp3wizard/Sites/108-1009/git/index.html",
+		"/Users/mp3wizard/Sites/108-1009/git/crossdomain.xml",
+		"/Users/mp3wizard/Sites/108-1009/git/js/main.js",
+		"/Users/mp3wizard/Sites/108-1009/git/css/main.css",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_head.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_script.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/mixin/_calc.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/_font.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/customize.scss",
 		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-admin/my-sites.php",
 		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/SimplePie/Cache/MySQL.php",
 		"/Users/mp3wizard/Sites/redbull/HTML/_modules/mysql/mysql.php",
-		"/Users/mp3wizard/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-includes/theme-compat/footer.php",
 		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/TheProfessional/footer.php",
 		"/Users/mp3wizard/Sites/redbull/HTML/blog-test/wp-content/themes/twentyfourteen/footer.php",
@@ -240,7 +370,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -257,6 +387,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$gap_c",
+			"'PSLxThaiCommon",
+			"body",
+			"em",
 			"'Quark-Light",
 			"#copyright",
 			"-webkit-text",
@@ -292,6 +426,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'../font/PSLxThaiCommon",
 			"'font/Quark-Light",
 			"'font/",
 			"#header",
@@ -306,8 +441,150 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "kit/favorite.kit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7468,
+								7468
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1509.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "kit/_script.kit",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/customize.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6823,
+								6823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2332.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/_variable.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -349,7 +626,7 @@
 	"project": "wp8.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -357,6 +634,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"main",
+				"scss/main.scss"
+			],
+			[
+				"script",
+				"kit/_script.kit"
+			],
+			[
+				"main.css",
+				"css/main.css"
+			],
 			[
 				"mys",
 				"_modules/mysql/mysql.php"
@@ -384,14 +673,6 @@
 			[
 				"wp-config",
 				"blog-test/wp-config.php"
-			],
-			[
-				"main",
-				"css/main.css"
-			],
-			[
-				"main.css",
-				"css/main.css"
 			],
 			[
 				"_tp_deat",
