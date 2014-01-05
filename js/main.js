@@ -25,4 +25,15 @@ jQuery(document).ready(function($){
 	$('main').on('swipeleft', function(){
 		$('main').addClass('slideLeftIn');
 	});
+	$('.popup').magnificPopup({
+		type:'image',
+		alignTop: false,
+		closeBtnInside: false,
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<p><span>'+item.el.attr('data-view')+'</span> <span>'+item.el.attr('data-share')+' Stories</span><p>';
+			}
+		}
+	});
 });
