@@ -15,7 +15,28 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>    <body class="intro" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
         <aside id="nav">
-	
+	<header></header>
+	<nav>
+		<ul>
+			<li><a href="#"><i class="icon-home"></i> 10 สถานที่ท่องเที่ยวยอดนิยมประจำเดือน</a></li>
+			<li><a href="#"><i class="icon-location"></i> ค้นหาที่ท่องเที่ยวน่าสนใจใกล้ๆ</a></li>
+			<li  id="type" data-feed="9999+"> <!-- ใส่จำนวน feed ที่ unread ใน data-feed -->
+				<i class="icon-doc"></i> เรื่องราวท่องเที่ยว
+				<ul>
+					<li><a href="#">โพสท์ล่าสุด</a></li>
+					<li><a href="#">ความนิยม</a></li>
+					<li><a href="#">จำนวนคนเข้าชม</a></li>
+					<li><a href="#">สถานที่ท่องเที่ยว</a></li>
+					<li><a href="#">ที่พัก</a></li>
+					<li><a href="#">ร้านอาหาร</a></li>
+					<li><a href="#">เฉพาะวิดีโอ</a></li>
+				</ul>
+			</li>
+			<li data-feed="999+"><a href="#">สถานที่โปรด</a></li>
+			<li data-feed="999+"><a href="#">เรื่องราวท่องเที่ยวของฉัน <i class="icon-plus"></i></a></li>
+			<li id="btnProfile"><a href="#"><img src="avatar/user.png" alt="Wissarut Pimanmassusiya"> Wissarut Pimanmassusiya <i class="icon-setting"></i></a></li>
+		</ul>
+	</nav>
 </aside>        <aside id="search">
 	<header></header>	
 </aside>

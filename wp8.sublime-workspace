@@ -4,8 +4,68 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pos",
+				"pos:f	position:fixed"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
 				"mar",
-				"margin-right"
+				"margin"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"h-figu",
+				"h-figure-10"
+			],
+			[
+				"w-figu",
+				"w-figure-6"
+			],
+			[
+				"h-fi",
+				"h-figure-8-l"
 			],
 			[
 				"d",
@@ -22,14 +82,6 @@
 			[
 				"margin",
 				"margin"
-			],
-			[
-				"h-fi",
-				"h-figure-5-l"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"w-fi",
@@ -60,16 +112,8 @@
 				"w-figure-11-l"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"include",
 				"include	@include"
-			],
-			[
-				"backg",
-				"background-size"
 			],
 			[
 				"h-fig",
@@ -86,10 +130,6 @@
 			[
 				"wid",
 				"width"
-			],
-			[
-				"pos",
-				"pos:a	position:absolute"
 			],
 			[
 				"po",
@@ -124,10 +164,6 @@
 				"c_lightBlue"
 			],
 			[
-				"bor",
-				"border"
-			],
-			[
 				"c_red",
 				"c_red2"
 			],
@@ -156,26 +192,18 @@
 	"buffers":
 	[
 		{
-			"file": "kit/favorite.kit",
+			"file": "kit/index.kit",
 			"settings":
 			{
-				"buffer_size": 7541,
+				"buffer_size": 4372,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/main.js",
+			"file": "kit/_aside-left.kit",
 			"settings":
 			{
-				"buffer_size": 123,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "kit/_script.kit",
-			"settings":
-			{
-				"buffer_size": 179,
+				"buffer_size": 1017,
 				"line_ending": "Unix"
 			}
 		},
@@ -183,7 +211,7 @@
 			"file": "scss/customize.scss",
 			"settings":
 			{
-				"buffer_size": 6867,
+				"buffer_size": 11911,
 				"line_ending": "Unix"
 			}
 		},
@@ -191,7 +219,7 @@
 			"file": "scss/_variable.scss",
 			"settings":
 			{
-				"buffer_size": 245,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		}
@@ -199,9 +227,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 93.0,
 		"selected_items":
 		[
+			[
+				"merge",
+				"Emmet: Merge Lines"
+			],
 			[
 				"merge ",
 				"Emmet: Merge Lines"
@@ -231,7 +263,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 358.0
+		"width": 453.0
 	},
 	"console":
 	{
@@ -256,18 +288,28 @@
 	},
 	"file_history":
 	[
+		"/Users/mp3wizard/Sites/108-1009/git/js/main.js",
+		"/Users/mp3wizard/Sites/108-1009/git/css/main.css",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/vendor/_settings.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_script.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/scss/vendor/magnific-popup.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/js/vendor/jquery.magnific-popup.js",
+		"/Users/mp3wizard/Sites/108-1009/git/favorite.html",
 		"/Users/mp3wizard/Sites/108-1009/git/scss/main.scss",
-		"/Users/mp3wizard/Sites/108-1009/git/js/main.min.js",
 		"/Users/mp3wizard/Sites/108-1009/git/scss/vendor/_icon.scss",
+		"/Users/mp3wizard/Sites/108-1009/git/codekit-config.json",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_header.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/favorite.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/kit/_head.kit",
+		"/Users/mp3wizard/Sites/108-1009/git/js/helper.js",
+		"/Users/mp3wizard/Sites/108-1009/git/font/icon.woff",
+		"/Users/mp3wizard/Sites/108-1009/git/font/icon.svg",
+		"/Users/mp3wizard/Sites/108-1009/git/index.html",
+		"/Users/mp3wizard/Sites/108-1009/git/js/main.min.js",
 		"/Users/mp3wizard/Sites/108-1009/git/kit/_aside-right.kit",
 		"/Users/mp3wizard/Sites/108-1009/git/kit/_aside-left.kit",
 		"/Users/mp3wizard/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/mp3wizard/Sites/108-1009/git/index.html",
 		"/Users/mp3wizard/Sites/108-1009/git/crossdomain.xml",
-		"/Users/mp3wizard/Sites/108-1009/git/js/main.js",
-		"/Users/mp3wizard/Sites/108-1009/git/css/main.css",
-		"/Users/mp3wizard/Sites/108-1009/git/kit/_head.kit",
-		"/Users/mp3wizard/Sites/108-1009/git/kit/_script.kit",
 		"/Users/mp3wizard/Sites/108-1009/git/scss/mixin/_calc.scss",
 		"/Users/mp3wizard/Sites/108-1009/git/scss/_font.scss",
 		"/Users/mp3wizard/Sites/108-1009/git/scss/customize.scss",
@@ -387,6 +429,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nth-child(2)",
+			"transition",
+			"zoom",
+			"class=\"popup\"",
+			"opacity",
+			".mfp-close",
+			"900px",
+			"$popup-padding-left-mobile",
+			"popup-padding-left-mobile",
+			".mfp-container",
 			"$gap_c",
 			"'PSLxThaiCommon",
 			"body",
@@ -441,81 +493,54 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "kit/favorite.kit",
+					"file": "kit/index.kit",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7541,
+						"buffer_size": 4372,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7468,
-								7468
+								785,
+								785
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1509.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/main.js",
+					"file": "kit/_aside-left.kit",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 123,
+						"buffer_size": 1017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								97
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "kit/_script.kit",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 179,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29,
-								29
+								247,
+								247
 							]
 						],
 						"settings":
@@ -524,6 +549,35 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/customize.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2516,
+								2516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 439.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -531,47 +585,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "scss/customize.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6867,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6823,
-								6823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2332.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "scss/_variable.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								209,
-								209
+								305,
+								305
 							]
 						],
 						"settings":
@@ -582,7 +608,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -635,8 +661,48 @@
 		"selected_items":
 		[
 			[
+				"se",
+				"scss/vendor/_settings.scss"
+			],
+			[
+				"magn",
+				"scss/vendor/magnific-popup.scss"
+			],
+			[
 				"main",
-				"scss/main.scss"
+				"css/main.css"
+			],
+			[
+				"icon",
+				"scss/vendor/_icon.scss"
+			],
+			[
+				"mag",
+				"js/vendor/jquery.magnific-popup.js"
+			],
+			[
+				"magni",
+				"scss/vendor/magnific-popup.scss"
+			],
+			[
+				"sc",
+				"kit/_script.kit"
+			],
+			[
+				"he",
+				"kit/_header.kit"
+			],
+			[
+				"scr",
+				"kit/_script.kit"
+			],
+			[
+				"mai",
+				"js/main.js"
+			],
+			[
+				"index.k",
+				"kit/index.kit"
 			],
 			[
 				"script",

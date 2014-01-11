@@ -827,7 +827,8 @@ img.mfp-img {
 html, body {
   width: 100%;
   height: 100%;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background-color: #000; }
 
 body {
   width: 100%;
@@ -836,7 +837,11 @@ body {
 
 main {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px 5px 0 0;
+  z-index: 2; }
   main header {
     width: 100%;
     height: 46px;
@@ -846,6 +851,8 @@ main {
     right: 0;
     z-index: 99;
     line-height: 46px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
     background-image: -webkit-linear-gradient(bottom, #dad7c8 0%, white 100%);
     background-image: linear-gradient(to top, #dad7c8 0%, white 100%); }
@@ -896,11 +903,11 @@ a:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.1, 0.7, 0.1, 1);
   -moz-transition: all 0.3s cubic-bezier(0.1, 0.7, 0.1, 1);
   transition: all 0.3s cubic-bezier(0.1, 0.7, 0.1, 1);
-  -webkit-transform: translateX(80%);
-  -moz-transform: translateX(80%);
-  -ms-transform: translateX(80%);
-  -o-transform: translateX(80%);
-  transform: translateX(80%); }
+  -webkit-transform: translateX(275px);
+  -moz-transform: translateX(275px);
+  -ms-transform: translateX(275px);
+  -o-transform: translateX(275px);
+  transform: translateX(275px); }
 
 .slideIn {
   -webkit-transition: all 0.2s cubic-bezier(0.1, 0.7, 0.1, 1);
@@ -921,6 +928,46 @@ a:hover {
   -ms-transform: translateX(-80%);
   -o-transform: translateX(-80%);
   transform: translateX(-80%); }
+
+#nav {
+  position: fixed;
+  width: 280px;
+  z-index: 1;
+  height: 100%; }
+  #nav header {
+    background-image: url("../img/bg-nav_header.png");
+    background-clip: padding-box;
+    width: 100%;
+    height: 44px;
+    border-bottom: solid 1px #062a3d;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #nav header {
+        background-image: url("../img/bg-nav_header@2x.png");
+        background-size: 280px 44px; } }
+  #nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #d8d3c3; }
+  #nav nav {
+    height: -moz-calc(100% - 44px);
+    height: -o-calc(100% - 44px);
+    height: -webkit-calc(100% - 44px);
+    height: calc(100% - 44px);
+    width: 275px; }
+    #nav nav > ul {
+      width: 100%;
+      height: 100%; }
+      #nav nav > ul > li {
+        background-color: #f8f4ea;
+        border-top: solid 1px #fefdfb;
+        border-bottom: solid 1px #e7e2d3; }
+  #nav li {
+    height: 38px;
+    line-height: 38px; }
+  #nav #type {
+    height: auto; }
 
 body.intro main {
   width: 100%;

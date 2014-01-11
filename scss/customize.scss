@@ -1,11 +1,11 @@
 
-html, body { @include size(100% 100%); -webkit-font-smoothing: antialiased; }
+html, body { @include size(100% 100%); -webkit-font-smoothing: antialiased; background-color: #000; }
 body { 
 	@include size($w-container_v $h-container_v); 
 	margin: 0 auto; 
 }
-main { position: relative; overflow: hidden; 
-	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px;
+main { position: relative; overflow: hidden; background-color: transparent; @include box-shadow(-2px 0 5px rgba(0,0,0,.5)); border-radius: $menu-radius $menu-radius 0 0; z-index: 2;
+	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px; border-radius: $menu-radius $menu-radius 0 0; overflow: hidden;
 		@include box-shadow(0 1px 0 rgba(0,0,0,.19));
 		@include background-image(linear-gradient(bottom, #dad7c8 0%, #fff 100%));
 		h1 { margin: 0 auto; position: relative; z-index: 1; text-indent: -1000em;
@@ -15,8 +15,8 @@ main { position: relative; overflow: hidden;
 		a { position: absolute; top: 0; height: $h-header; width: 55px; text-align: center; 
 			i:before {  font-size: 22px; position: relative; top: 3px;}
 		}
-		a:nth-child(2) { left: 0; border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5) }
-		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; box-shadow: inset 1px 0 0 rgba(255, 255, 255, .5) }
+		a:nth-child(2) { left: 0; border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
+		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; box-shadow: inset 1px 0 0 rgba(255, 255, 255, .5); }
 	}
 }
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
@@ -25,7 +25,7 @@ a:hover { color: lighten($c-link, 15%)}
 // animation
 .slideLeftOut { 
 	@include transition(all .3s $a-ios7);
-	@include transform(translateX(80%)); 
+	@include transform(translateX($w-sidebar-left - $menu-radius)); 
 }
 .slideIn { 
 	@include transition(all .2s $a-ios7);
@@ -35,6 +35,23 @@ a:hover { color: lighten($c-link, 15%)}
 	@include transition(all .3s $a-ios7);
 	@include transform(translateX(-80%)); 
 }
+
+// Sidebar Navigation
+#nav { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; 
+	$h-header_nav: 44px;
+	$h-li: 38px;
+	header { @include retina-image('../img/bg-nav_header', $w-sidebar-left $h-header_nav); background-clip: padding-box; @include size(100% 44px); border-bottom: solid 1px #062a3d; @include box-shadow(0 4px 3px rgba(0,0,0,.1)); }
+	ul { margin: 0; padding: 0; list-style: none; background-color: #d8d3c3;}
+	nav { @include calc(height, 100% - #{$h-header_nav}); width: $w-sidebar-left - $menu-radius; 
+		>ul {  width: 100%; height: 100%; 
+			>li { background-color: #f8f4ea; border-top: solid 1px #fefdfb; border-bottom: solid 1px #e7e2d3; }
+		}
+	}
+	li { height: $h-li; line-height: $h-li; }
+	#type { height: auto; }
+
+}
+// End Sidebar Navigation
 
 // Start Intro Page
 body.intro {
