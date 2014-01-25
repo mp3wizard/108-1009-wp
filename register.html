@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>    <body class="register" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+        
+        <main>
+            <header class="lv2">
+                <h1>ลงทะเบียน</h1>
+                <button id="btnCancel" class="btn1">Cancel</button>
+                <button id="btnDone" class="btn1">Done</button>
+            </header>
+            <article class="lv2">
+                <section>
+                    <h2>ข้อมูลส่วนตัว</h2>
+                    <div>
+                        <p><label for="regist-name">ชื่อ</label><input type="text" name="regist-name" id="regist-name"></p>
+                        <p><label for="regist-surname">นามสกุล</label><input type="text" name="regist-surname" id="regist-surname"></p>
+                        <p><label for="regist-email">อีเมล์</label><input type="email" name="regist-email" id="regist-email"></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>ข้อมูลระบบ</h2>
+                    <div>
+                        <p><label for="regist-username">ชื่อผู้ใช้</label><input type="text" name="regist-username" id="regist-username"></p>
+                        <p><label for="regist-password">รหัสผ่าน</label><input type="password" name="regist-password" id="regist-password"></p>
+                        <p><label for="regist-confirm">ยืนยันรหัสผ่าน</label><input type="password" name="regist-confirm" id="regist-confirm"></p>
+                    </div>
+                </section>
+                <div class="border">
+                    <input type="submit" value="บันทึกการลงทะเบียน" class="btn2">
+                </div>
+            </article>
+        </main>
+
+        <script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery.mobile.custom.js"></script>
+<script src="js/vendor/jquery.grid-a-licious.js"></script>
+<script src="js/vendor/jquery.magnific-popup.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/main.js"></script>
+
+    </body>
+</html>

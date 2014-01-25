@@ -9,12 +9,18 @@ main { position: relative; overflow: hidden; background-color: #fff; @include bo
 		@include background-image(linear-gradient(bottom, #dad7c8 0%, #fff 100%));
 		h1 { margin: 0 auto; position: relative; z-index: 1;text-align: center; }
 		a { position: absolute; top: 0; height: $h-header; width: 55px; text-align: center; z-index: 2;
-			i:before {  font-size: 22px; position: relative; top: 3px;}
+			i:before { position: relative; top: 3px;}
 		}
-		a:nth-child(2) { left: 0; border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
+		a:nth-child(2) { left: 0;  border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
 		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .5)); }
+		i.icon-menu:before { font-size: 26px; top: 6px;}
+		i.icon-search:before { font-size: 20px; }
+
+		&.lv2 { height:45px;@include background-image(linear-gradient(bottom, #efede5 0%, #fff 100%)); background-clip: padding-box;background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,1,.45); }
 	}
-	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header; background-color: #f5f1e5; }
+	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header; background-color: #f5f1e5; overflow: auto;
+		h2 { margin: 0 0 10; font-family: 'PSLxThaiCommon';  }
+	}
 }
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
 a:hover { color: lighten($c-link, 15%)}
@@ -377,3 +383,26 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 
 
 // End Intro Page
+
+
+// Start Page Level 2
+article.lv2 { padding: 32px 10px; background-color: #f5f3ef; @include background-image(linear-gradient(bottom, #f5f3ef 0%, #f5f3ef 90%, #edebdf 100%)); }
+section { margin-bottom:20px;
+	h2 { font-size: 26px; line-height: 20px; margin: 0 0 12px; color: $c-h1; text-shadow: 0 1px 0 rgba(255,255,255,.85); text-indent: 10px; }
+	label { font-family: 'PSLxThaiCommon'; font-size: 24px; }
+	>div { 
+		p { border: 1px solid rgba(135, 129, 102, .7); border-bottom: 0; background-color: rgba(255, 255, 255, .7); margin: 0; height: 45px; line-height: 45px; padding: 0 0 0 9px; background-clip: padding-box;  
+			input { width: 180px; height: 40px; border: none; position: relative; top: -1px; background-color: transparent; font-family: 'PSLxThaiCommon'; font-size: 24px; color: $c-h1;
+				&:focus { outline: none; }
+			}
+		}
+		p:first-child { border-radius:10px 10px 0 0;}
+		p:last-child { border-bottom: 1px solid rgba(135, 129, 102, .7); border-radius: 0 0 10px 10px;}
+		label { display: inline-block; width: 100px; }
+		#regist-username, #regist-email { text-transform: lowercase; }
+		#regist-name, #regist-surname { text-transform: capitalize; }
+	}
+}
+
+
+// End Page Level 2
