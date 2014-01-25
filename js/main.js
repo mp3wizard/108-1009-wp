@@ -8,16 +8,20 @@ jQuery(document).ready(function($){
 	$('#btnMenu').on('click tap', function(){
 		if($('main').hasClass('slideLeftOut')) { 
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
+			$('aside#nav').removeClass('show');
 		} else { 
 			$('main').removeClass('slideIn').addClass('slideLeftOut');
+			$('aside#nav').addClass('show');
 		}
 		return false;
 	});
 	$('#btnSearch').on('click tap', function(){
 		if($('main').hasClass('slideRightOut')) { 
 			$('main').removeClass('slideRightOut').addClass('slideIn');
+			$('aside#search').removeClass('show');
 		} else { 
 			$('main').removeClass('slideIn').addClass('slideRightOut');
+			$('aside#search').addClass('show');
 		}
 		return false;
 	});

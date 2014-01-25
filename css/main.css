@@ -836,7 +836,7 @@ img.mfp-img {
 html, body {
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #eae6de;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -845,7 +845,8 @@ html, body {
 body {
   width: 100%;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 main {
   position: relative;
@@ -969,6 +970,9 @@ a:hover {
   -o-transform: translateX(-272px);
   transform: translateX(-272px); }
 
+aside#nav.show, aside#searh.show {
+  z-index: 2; }
+
 #nav {
   position: fixed;
   width: 280px;
@@ -1017,10 +1021,10 @@ a:hover {
       text-indent: 40px;
       display: inline-block; }
   #nav #type {
-    height: -moz-calc(100% - 200px);
-    height: -o-calc(100% - 200px);
-    height: -webkit-calc(100% - 200px);
-    height: calc(100% - 200px); }
+    height: -moz-calc(100% - 198px);
+    height: -o-calc(100% - 198px);
+    height: -webkit-calc(100% - 198px);
+    height: calc(100% - 198px); }
     #nav #type ul {
       height: -moz-calc(100% - 38px);
       height: -o-calc(100% - 38px);
@@ -1040,9 +1044,6 @@ a:hover {
   #nav #favorite {
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.35); }
   #nav #btnProfile {
-    font-family: Helvetica, Arial, san-serif;
-    font-weight: 700;
-    font-size: 14px;
     background-color: #f0ede4;
     border-top: 0;
     border-bottom: 0;
@@ -1052,16 +1053,24 @@ a:hover {
       width: 28px;
       border-radius: 5px;
       border: solid 1px #fff;
-      margin-right: 3px; }
+      margin-right: 3px;
+      top: -2px;
+      position: relative;
+      margin-left: -5px; }
     #nav #btnProfile a {
       padding-left: 5px;
       height: 46px;
-      line-height: 46px;
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25); }
+      line-height: 50px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+      text-indent: 5px; }
+    #nav #btnProfile span {
+      font-family: Helvetica, Arial, san-serif;
+      font-weight: 700;
+      font-size: 14px; }
     #nav #btnProfile:before {
       content: '▼';
       position: absolute;
-      top: -2px;
+      top: 0px;
       left: 13px;
       text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       color: #fff;
@@ -1072,6 +1081,16 @@ a:hover {
       -o-transform: scaleX(2);
       transform: scaleX(2);
       font-size: 11px; }
+
+#search {
+  position: fixed;
+  width: 280px;
+  z-index: 1;
+  height: 100%;
+  left: auto;
+  right: 0;
+  top: 0;
+  background-color: #f8f4ea; }
 
 body.intro header h1 {
   text-indent: -1000em;
@@ -1646,7 +1665,7 @@ section {
   box-shadow: inset 2px 3px 2px rgba(255, 255, 255, 0.35), inset -2px -3px 2px rgba(0, 0, 0, 0.35);
   width: 100%;
   display: block;
-  line-height: 43px;
+  line-height: 38px;
   text-align: center; }
 
 div.border {

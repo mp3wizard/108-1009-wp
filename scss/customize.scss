@@ -1,7 +1,8 @@
-html, body { @include size(100% 100%); background-color: #000; @include font-smoothing(antialiased); }
+html, body { @include size(100% 100%); background-color: #eae6de; @include font-smoothing(antialiased); }
 body { 
 	@include size($w-container_v $h-container_v); 
 	margin: 0 auto; 
+	overflow: hidden;
 }
 main { position: relative; overflow: hidden; background-color: #fff; @include box-shadow(0 0 6px rgba(0,0,0,.5)); border-radius: $menu-radius $menu-radius 0 0; z-index: 2; @include size(100% 100%);
 	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px; border-radius: $menu-radius $menu-radius 0 0; overflow: hidden; font-family: 'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
@@ -40,6 +41,7 @@ a:hover { color: lighten($c-link, 15%)}
 }
 
 // Sidebar Navigation
+aside#nav.show, aside#searh.show { z-index: 2; }
 #nav { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; 
 	$h-header_nav: 44px;
 	$h-li: 38px;
@@ -54,7 +56,7 @@ a:hover { color: lighten($c-link, 15%)}
 		a { display: block; height: $h-li; padding: 0 5px 0 40px; }
 		.indent { text-indent: 40px; display: inline-block; }
 	}
-	$h-btnNav-all: 200px;
+	$h-btnNav-all: 198px;
 	#type { @include calc(height, 100% - #{$h-btnNav-all}); 
 		ul { @include calc(height, 100% - #{$h-li}); overflow: auto; background-color: rgba(216, 211, 195, .8);
 			>li:first-child { border-top-color: #aca795; }
@@ -64,13 +66,15 @@ a:hover { color: lighten($c-link, 15%)}
 	}
 	#favorite, #my_story { background-color: #fff; }
 	#favorite { @include box-shadow(0 -1px 5px rgba(0,0,0,.35)); }
-	#btnProfile { font-family: Helvetica, Arial, san-serif; font-weight: 700; font-size: 14px; background-color: rgba(240, 237, 228, 1); border-top: 0; border-bottom: 0;height: 46px; position: relative;
-		img { width: 28px; border-radius: 5px; border: solid 1px #fff; margin-right: 3px; }
-		a { padding-left: 5px; height: 46px; line-height: 46px; @include box-shadow(inset 0 1px 2px rgba(0,0,0, .25)); }
-		&:before { content: '▼';  position: absolute;  top: -2px; left: 13px; text-shadow: 0 2px 2px rgba(0,0,0,.2); color: #fff; line-height: 7px; @include transform(scaleX(2)); font-size: 11px;  }
+	#btnProfile {  background-color: rgba(240, 237, 228, 1); border-top: 0; border-bottom: 0;height: 46px; position: relative; 
+		img { width: 28px; border-radius: 5px; border: solid 1px #fff; margin-right: 3px; top: -2px; position: relative; margin-left: -5px; }
+		a { padding-left: 5px; height: 46px; line-height: 50px; @include box-shadow(inset 0 1px 2px rgba(0,0,0, .25)); text-indent: 5px; }
+		span { font-family: Helvetica, Arial, san-serif; font-weight: 700; font-size: 14px; }
+		&:before { content: '▼';  position: absolute;  top: 0px; left: 13px; text-shadow: 0 2px 2px rgba(0,0,0,.2); color: #fff; line-height: 7px; @include transform(scaleX(2)); font-size: 11px;  }
 	}
 
 }
+#search { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; left: auto; right: 0; top: 0; background-color: #f8f4ea; }
 // End Sidebar Navigation
 
 // Start Intro Page
