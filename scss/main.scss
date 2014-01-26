@@ -83,7 +83,7 @@ textarea {
 }
 
 .pressed {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* A hack for HTML5 contenteditable attribute on mobile */
@@ -203,4 +203,11 @@ textarea[contenteditable] {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+* {
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    /*-webkit-user-select:none;                   prevent copy paste, to allow, change 'none' to 'text' */
 }
