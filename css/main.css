@@ -1039,6 +1039,14 @@ aside#nav.show, aside#searh.show {
     #nav #type li {
       border-bottom: solid 1px rgba(0, 0, 0, 0.08);
       border-top: solid 1px rgba(255, 255, 255, 0.3); }
+      #nav #type li.select a {
+        background-image: url("../img/menu/icon-select.png");
+        background-position: 96% center;
+        background-repeat: no-repeat; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+          #nav #type li.select a {
+            background-image: url("../img/menu/icon-select@2x.png");
+            background-size: 20px 17px; } }
     #nav #type a {
       color: #7e785d; }
   #nav #favorite, #nav #my_story {
