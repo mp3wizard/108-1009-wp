@@ -5,7 +5,7 @@ body {
 	overflow: hidden;
 }
 
-
+button:focus, input:focus { outline: none; }
 main { position: relative; overflow: hidden; background-color: #fff; @include box-shadow(0 0 6px rgba(0,0,0,.5)); border-radius: $menu-radius $menu-radius 0 0; z-index: 2; @include size(100% 100%);
 	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px; border-radius: $menu-radius $menu-radius 0 0; overflow: hidden; font-family: 'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
 		@include box-shadow(0 1px 0 rgba(0,0,0,.2));
@@ -72,7 +72,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 	#btnProfile {  background-color: rgba(240, 237, 228, 1); border-top: 0; border-bottom: 0;height: 46px; position: relative; 
 		img { width: 28px; border-radius: 5px; border: solid 1px #fff; margin-right: 3px; top: -2px; position: relative; margin-left: -5px; }
 		a { padding-left: 5px; height: 46px; line-height: 50px; @include box-shadow(inset 0 1px 2px rgba(0,0,0, .25)); text-indent: 5px; }
-		span { font-family: Helvetica, Arial, san-serif; font-weight: 700; font-size: 14px; }
+		span { font-family: Helvetica, Arial, sans-serif; font-weight: 700; font-size: 14px; }
 		&:before { content: '▼';  position: absolute;  top: 0px; left: 13px; text-shadow: 0 2px 2px rgba(0,0,0,.2); color: #fff; line-height: 7px; @include transform(scaleX(2)); font-size: 11px; z-index: 2; }
 	}
 	nav i[class^="icon-"] { display: block; @include size($h-li $h-li - 2px); position: absolute; left: 0; top: 0; background-position: center center; background-repeat: no-repeat;  }
@@ -426,7 +426,7 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 // Start Page Level 2
 article.lv2 { padding: 32px 10px; background-color: #f5f3ef; @include background-image(linear-gradient(bottom, #f5f3ef 0%, #f5f3ef 90%, #edebdf 100%)); }
 section { margin-bottom:20px;
-	h2 { font-size: 26px; line-height: 20px; margin: 0 0 12px; color: $c-h1; text-shadow: 0 1px 0 rgba(255,255,255,.85); text-indent: 10px; }
+	h2 { font-size: 26px; line-height: 20px; margin: 0 0 12px; color: $c-h1; text-shadow: 0 1px 0 rgba(255,255,255,.85); text-indent: 10px; font-weight: 400; }
 	label { font-family: 'PSLxThaiCommon'; font-size: 24px; }
 	>div { 
 		p { border: 1px solid rgba(135, 129, 102, .7); border-bottom: 0; background-color: rgba(255, 255, 255, .7); margin: 0; height: 45px; line-height: 45px; padding: 0 0 0 9px; background-clip: padding-box;  
@@ -436,14 +436,20 @@ section { margin-bottom:20px;
 		}
 		p:first-child { border-radius:10px 10px 0 0;}
 		p:last-child { border-bottom: 1px solid rgba(135, 129, 102, .7); border-radius: 0 0 10px 10px;}
+		p.one { border-bottom: 1px solid rgba(135, 129, 102, .7); border-radius:10px;}
 		label { display: inline-block; width: 100px; }
 		#regist-username, #regist-email { text-transform: lowercase; }
 		#regist-name, #regist-surname { text-transform: capitalize; }
 	}
 }
 article.login {
-	section { margin-bottom: 30px; } 
+	section { margin-bottom: 30px; }
+	p { position: relative; } 
 	p.center { font-family: 'PSLxThaiCommon'; font-size: 24px; text-align: center; color: $c-h1; line-height: 77px; }
+	#btn-forgot_passowrd { @include retina-image('../img/form/btn-forgot_password', 30px 30px); @include size(30px); display:block; text-indent: -1000em; position: absolute; right: 7px; top: 7px; }
+	label { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
+	#login-password { width: 150px; }
+	.icon-fb { display: inline-block; @include size(14px 25px); @include retina-image('../img/form/icon-facebook', 14px 25px); position: relative; top: 8px; margin-right: 8px; }
 }
 
 
