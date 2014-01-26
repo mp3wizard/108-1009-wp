@@ -1,17 +1,7 @@
 @import "vendor/_normalize";
 @import "vendor/_icon";
 
-@font-face {
-  font-family: 'PSLxThaiCommon';
-  src: url('../font/PSLxThaiCommon Bold.eot'); /* IE9 Compat Modes */
-  src: url('../font/PSLxThaiCommon Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../font/PSLxThaiCommon Bold.woff') format('woff'), /* Modern Browsers */
-       url('../font/PSLxThaiCommon Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../font/PSLxThaiCommon Bold.svg#99a5231ddd1367f409be338241f19c04') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  700;
-}
+
 
 /*
  * HTML5 Boilerplate
