@@ -5,10 +5,12 @@ jQuery(document).ready(function($){
 		width: 245,
 		animate: true
 	});
+	// Slide Menu
 	$('#btnMenu').on('click tap', function(){
 		if($('main').hasClass('slideLeftOut')) { 
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
 			$('aside#nav').removeClass('show');
+			$('#search input[type=search]').blur();
 		} else { 
 			$('main').removeClass('slideIn').addClass('slideLeftOut');
 			$('aside#nav').addClass('show');
@@ -19,9 +21,11 @@ jQuery(document).ready(function($){
 		if($('main').hasClass('slideRightOut')) { 
 			$('main').removeClass('slideRightOut').addClass('slideIn');
 			$('aside#search').removeClass('show');
+			$('#search input[type=search]').blur();
 		} else { 
 			$('main').removeClass('slideIn').addClass('slideRightOut');
 			$('aside#search').addClass('show');
+			$('#search input[type=search]').focus();
 		}
 		return false;
 	});
@@ -50,7 +54,13 @@ jQuery(document).ready(function($){
 	});
 
 	// Disable click before login
-	$('.disable a').bind('click touch', function() { 
+	$('.disable a').on('click touch', function() { 
 		return false;
 	})
+
+	// Clear Search
+	$('.icon-clear').on('click touch',function(){
+	   $(this).parent().find('input').val('');
+	});
+
 });

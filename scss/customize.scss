@@ -4,17 +4,19 @@ body {
 	margin: 0 auto; 
 	overflow: hidden;
 }
+
+
 main { position: relative; overflow: hidden; background-color: #fff; @include box-shadow(0 0 6px rgba(0,0,0,.5)); border-radius: $menu-radius $menu-radius 0 0; z-index: 2; @include size(100% 100%);
 	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 46px; border-radius: $menu-radius $menu-radius 0 0; overflow: hidden; font-family: 'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
 		@include box-shadow(0 1px 0 rgba(0,0,0,.2));
 		@include background-image(linear-gradient(bottom, #dad7c8 0%, #fff 100%));
 		h1 { margin: 0 auto; position: relative; z-index: 1;text-align: center; }
 		a { position: absolute; top: 0; height: $h-header; width: 55px; text-align: center; z-index: 2;
-			i:before { position: relative; top: 3px;}
+			i:before { position: relative; top: 2px;}
 		}
 		a:nth-child(2) { left: 0;  border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
 		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .5)); }
-		i.icon-menu:before { font-size: 26px; top: 6px;}
+		i.icon-menu:before { font-size: 26px; top: 5px;}
 		i.icon-search:before { font-size: 20px; }
 
 		&.lv2 { height:45px;@include background-image(linear-gradient(bottom, #efede5 0%, #fff 100%)); background-clip: padding-box;background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,1,.45); }
@@ -41,10 +43,9 @@ a:hover { color: lighten($c-link, 15%)}
 }
 
 // Sidebar Navigation
-aside#nav.show, aside#searh.show { z-index: 2; }
+aside#nav.show, aside#search.show { z-index: 2; }
 #nav { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; 
-	$h-header_nav: 44px;
-	$h-li: 38px;
+	
 	header { @include retina-image('../img/menu/bg-nav_header', $w-sidebar-left $h-header_nav); background-clip: padding-box; @include size(100% 44px); border-bottom: solid 1px #062a3d; @include box-shadow(0 4px 3px rgba(0,0,0,.1)); }
 	ul { margin: 0; padding: 0; list-style: none; }
 	nav { @include calc(height, 100% - #{$h-header_nav}); width: $w-sidebar-left - $menu-radius; 
@@ -89,7 +90,25 @@ aside#nav.show, aside#searh.show { z-index: 2; }
 		&:hover { color: $c-link; }
 	}
 }
-#search { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; left: auto; right: 0; top: 0; background-color: #f8f4ea; }
+#search { position: fixed; width: $w-sidebar-left; z-index: 1; height: 100%; left: auto; right: 0; top: 0; background-color: #f8f4ea; 
+	header { @include retina-image('../img/search/bg-search_header', 276px 45px); height: $h-header_nav; 
+		input[type=search] { background-color: transparent; border: none; position: absolute; top: 8px; right: 24px; width: 175px; padding-right: 20px; height: 26px; font-size: 13px; line-height: 22px; color: #fff; @include font-smoothing(antialiased); }
+		input[type=search]:focus { outline: none; }
+		.icon-clear { color: $c-placeholder; position:absolute; right: 14px; top: 9px; font-size: 20px; }
+
+	}
+	article { @include calc(height, 100% - #{$h-header_nav}); overflow: auto; padding-left: 12px;
+		ul { list-style: none; margin: 0; padding: 0; font-family: 'PSLxThaiCommon';
+			li { background-color: #f8f4ea; border-top: solid 1px #fff; border-bottom: solid 1px rgba(238, 234, 221, 1); background-color: #f8f4ea; }
+			a { height: 45px; display: block; padding-left: 15px; font-size: 20px; line-height: 45px; position: relative;
+				&:after { content: '\e806'; font-family: 'icon'; position: absolute; right: 15px; color: #908b78; top: 1px; }
+				
+			}
+			li.no_more a:after { content: '\e801'; font-size: 16px; top: 0; }
+		}
+	}
+
+}
 // End Sidebar Navigation
 
 // Start Intro Page
@@ -425,3 +444,10 @@ section { margin-bottom:20px;
 
 
 // End Page Level 2
+
+// Placeholder
+$s-placeholder: .35s;
+input::-webkit-input-placeholder {color: $c-placeholder; @include transition(opacity $s-placeholder ease-out);}
+input:focus::-webkit-input-placeholder { opacity: 0; }
+input:-ms-input-placeholder { color: $c-placeholder; @include transition(opacity $s-placeholder ease-out); }
+input:focus:-ms-input-placeholder { opacity: 0;  }
