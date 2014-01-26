@@ -48,4 +48,9 @@ jQuery(document).ready(function($){
     }
   }
 	});
+
+	// Disable click before login
+	$('.disable a').bind('click touch', function() { 
+		return false;
+	})
 });
