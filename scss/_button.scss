@@ -9,6 +9,7 @@
 .btn4 { @extend .btn2; @include background-image(linear-gradient(bottom, #054461 0%, #0181bd 100%)); line-height: 45px; 
 	&:hover { color: #fff; }
 }
+.btn5 { display: block; margin: 0 auto 8px; text-align: center; width: 80%; max-width: 600px; color: #000; font-weight: bold; border-radius: 10px; background-color: rgba(255, 255, 255, .7); border: 1px solid #878166; background-clip: padding-box; line-height: 38px; font-size: 17px;  }
 
 .border { padding: 3px; display:block; background-clip: padding-box; @include background-image(linear-gradient(bottom, rgba(42,42,42,.75) 0%, rgba(3,3,3,.75) 100%)); border-radius: 12px;  }
 .border2 { @extend .border; @include background-image(linear-gradient(bottom, rgba(42,42,42,.25) 0%, rgba(3,3,3,.25) 100%)); margin-top: 0; margin-bottom: 5px; }
@@ -18,3 +19,9 @@ header {
 	>button:nth-child(2) { left: 15px; }
 	>button:nth-child(3) { right: 15px; }
 }
+// Favorite Button
+.btn-fav { position: absolute; display: block; @include size(27px 44px); text-indent: -1000em; @include retina-image('../img/favorite/favorite-active', 27px 44px); top: -2px; left: 5px; background-position: 0 -44px; background-repeat: no-repeat; @include transition(all 0.35s ease-out);
+
+	&:after { content: ''; @include size(20px 19px); display:block; @include retina-image('../img/favorite/favorite', 20px 19px); z-index: 2; top: 12px; left: 4px; position: absolute; }
+	&.active { background-position: 0 0; }
+}	
