@@ -898,7 +898,7 @@ main {
       position: relative;
       z-index: 1;
       text-align: center;
-      font-weight: normal; }
+      font-weight: 300; }
     main header a {
       position: absolute;
       top: 0;
@@ -1706,45 +1706,45 @@ button.mfp-close {
       background-image: url("../img/btnDone@2x.png");
       background-size: 60px 29px; } }
 
-.favorite article {
+.grid article {
   padding-top: 10px;
   background-color: #c6beaa; }
-.favorite figure {
+.grid figure {
   width: 100%;
   background-color: #f3f3e8;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
   position: relative; }
-  .favorite figure img {
+  .grid figure img {
     width: 100%; }
-.favorite figcaption {
+.grid figcaption {
   color: #656565; }
-  .favorite figcaption > p {
+  .grid figcaption > p {
     margin: 0;
     padding: 10px;
     font-size: 0.75em; }
-  .favorite figcaption strong a {
+  .grid figcaption strong a {
     display: block;
     margin-bottom: 10px;
     font-size: 1.0625em; }
-  .favorite figcaption > ul {
+  .grid figcaption > ul {
     list-style: none;
     margin: 0;
     height: 30px;
     padding: 0 10px;
     background-color: #fff;
     white-space: nowrap; }
-    .favorite figcaption > ul li {
+    .grid figcaption > ul li {
       display: inline;
       line-height: 30px;
       font-weight: bold;
       font-size: 0.6875em;
       margin-right: 5px; }
-      .favorite figcaption > ul li label {
+      .grid figcaption > ul li label {
         margin-right: 0px;
         display: inline-block; }
-      .favorite figcaption > ul li:first-child {
+      .grid figcaption > ul li:first-child {
         margin-left: -2px; }
-      .favorite figcaption > ul li:last-child {
+      .grid figcaption > ul li:last-child {
         margin-right: 0;
         text-align: right; }
 
