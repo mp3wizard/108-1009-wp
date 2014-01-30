@@ -1,4 +1,4 @@
-.btn1 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 0 rgba(255,255,255,.8); background-color: transparent; 
+.btn1 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255,255,255,.8); background-color: transparent; 
 	font-family: Helvetica, Arial, sans-serif; font-size: 11px;
 	font-weight: bold;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8); @include font-smoothing(antialiased); color: #5f5947; padding: 0 10px;
@@ -9,7 +9,8 @@
 .btn4 { @extend .btn2; @include background-image(linear-gradient(bottom, #054461 0%, #0181bd 100%)); line-height: 45px; 
 	&:hover { color: #fff; }
 }
-.btn5 { display: block; margin: 0 auto 8px; text-align: center; width: 80%; max-width: 600px; color: #000; font-weight: bold; border-radius: 10px; background-color: rgba(255, 255, 255, .7); border: 1px solid #878166; background-clip: padding-box; line-height: 38px; font-size: 17px;  }
+.btn5 { display: block; margin: 0 auto 8px; text-align: center; width: 90%; max-width: 300px; color: #000; font-weight: bold; border-radius: 10px; background-color: rgba(255, 255, 255, .7); border: 1px solid #878166; background-clip: padding-box; line-height: 38px; font-size: 17px;  }
+.btn6 { @extend .btn1; background-color: #69b32e; color: #fff; border: 1px solid #5d992c; text-shadow: none; }
 
 .border { padding: 3px; display:block; background-clip: padding-box; @include background-image(linear-gradient(bottom, rgba(42,42,42,.75) 0%, rgba(3,3,3,.75) 100%)); border-radius: 12px;  }
 .border2 { @extend .border; @include background-image(linear-gradient(bottom, rgba(42,42,42,.25) 0%, rgba(3,3,3,.25) 100%)); margin-top: 0; margin-bottom: 5px; }

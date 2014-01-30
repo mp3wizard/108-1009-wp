@@ -470,3 +470,10 @@ input::-webkit-input-placeholder {color: $c-placeholder; @include transition(opa
 input:focus::-webkit-input-placeholder { opacity: 0; }
 input:-ms-input-placeholder { color: $c-placeholder; @include transition(opacity $s-placeholder ease-out); }
 input:focus:-ms-input-placeholder { opacity: 0;  }
+
+
+// Terms Page
+.term { 
+	section { background-color: #fff; max-width: 300px; padding: 15px; margin: 0 auto; border-radius: 10px; border: 1px solid #878166; font-size: 13px; }
+	h3 { margin-top: 0; font-size: 16px; line-height: 1.2; color: #39361f; }
+}

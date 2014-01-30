@@ -1866,12 +1866,26 @@ input:-ms-input-placeholder {
 input:focus:-ms-input-placeholder {
   opacity: 0; }
 
-.btn1 {
+.term section {
+  background-color: #fff;
+  max-width: 300px;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #878166;
+  font-size: 13px; }
+.term h3 {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #39361f; }
+
+.btn1, .btn6 {
   height: 26px;
   border: 1px solid #bcbab1;
   border-radius: 5px;
   background-clip: padding-box;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
   background-color: transparent;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 11px;
@@ -1922,8 +1936,8 @@ input:focus:-ms-input-placeholder {
   display: block;
   margin: 0 auto 8px;
   text-align: center;
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 300px;
   color: #000;
   font-weight: bold;
   border-radius: 10px;
@@ -1932,6 +1946,12 @@ input:focus:-ms-input-placeholder {
   background-clip: padding-box;
   line-height: 38px;
   font-size: 17px; }
+
+.btn6 {
+  background-color: #69b32e;
+  color: #fff;
+  border: 1px solid #5d992c;
+  text-shadow: none; }
 
 .border, .border2 {
   padding: 3px;
