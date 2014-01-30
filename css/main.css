@@ -1279,7 +1279,7 @@ body.intro article figcaption {
   white-space: nowrap;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.03) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.03) 100%); }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article figcaption {
       padding: 30px 20px 10px; } }
 body.intro article #banner-top10 {
@@ -1304,7 +1304,7 @@ body.intro article #banner-top10 {
     body.intro article #banner-top10 {
       background-image: url("../img/intro/banner-intro@2x.png");
       background-size: 100% 100%; } }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article #banner-top10 {
       left: 0;
       top: 0;
@@ -1331,7 +1331,7 @@ body.intro article > figure:nth-child(2) {
   height: -o-calc(17.5% - 2px);
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px); }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(2) {
       width: -moz-calc(22% - 2px);
       width: -o-calc(22% - 2px);
@@ -1354,7 +1354,7 @@ body.intro article > figure:nth-child(3) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   right: 0; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(3) {
       width: -moz-calc(19% - 2px);
       width: -o-calc(19% - 2px);
@@ -1376,7 +1376,7 @@ body.intro article > figure:nth-child(4) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   top: 17.5%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(4) {
       width: -moz-calc(38%);
       width: -o-calc(38%);
@@ -1401,7 +1401,7 @@ body.intro article > figure:nth-child(5) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   top: 17.5%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(5) {
       width: -moz-calc(16%);
       width: -o-calc(16%);
@@ -1419,7 +1419,7 @@ body.intro article > figure:nth-child(6) {
   width: calc(31% - 2px);
   height: 30%;
   top: 35%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(6) {
       width: -moz-calc(20% - 2px);
       width: -o-calc(20% - 2px);
@@ -1444,7 +1444,7 @@ body.intro article > figure:nth-child(7) {
   right: 0;
   height: 30%;
   top: 35%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(7) {
       width: -moz-calc(20% - 2px);
       width: -o-calc(20% - 2px);
@@ -1472,7 +1472,7 @@ body.intro article > figure:nth-child(8) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   bottom: 17.5%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(8) {
       width: -moz-calc(31% - 2px);
       width: -o-calc(31% - 2px);
@@ -1497,7 +1497,7 @@ body.intro article > figure:nth-child(9) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   bottom: 17.5%; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(9) {
       width: -moz-calc(19%);
       width: -o-calc(19%);
@@ -1520,7 +1520,7 @@ body.intro article > figure:nth-child(10) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   bottom: 0; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(10) {
       width: -moz-calc(31% - 2px);
       width: -o-calc(31% - 2px);
@@ -1541,7 +1541,7 @@ body.intro article > figure:nth-child(11) {
   height: -webkit-calc(17.5% - 2px);
   height: calc(17.5% - 2px);
   bottom: 0; }
-  @media screen and (min-width: 40.0625em) {
+  @media screen and (min-width: 30em) {
     body.intro article > figure:nth-child(11) {
       width: -moz-calc(31% - 2px);
       width: -o-calc(31% - 2px);

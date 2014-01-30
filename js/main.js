@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	$("article.grid").gridalicious({
 		gutter: 8,
 		selector: 'figure',
-		width: 245,
+		width: 155,
 		animate: true
 	});
 	// Slide Menu
