@@ -1308,7 +1308,8 @@ aside#nav.show, aside#search.show {
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repaet;
-    background-position: center center; }
+    background-position: center center;
+    height: 100%; }
     .intro article figure a {
       display: block;
       width: 100%;
