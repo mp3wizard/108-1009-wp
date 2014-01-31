@@ -186,7 +186,8 @@ aside#nav.show, aside#search.show { z-index: 2; }
 	
 	article {
 		
-		figure { position: absolute; background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet; background-position: center center;
+		div, >figure { position: absolute;  }
+		figure { background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet; background-position: center center;
 			a { display:block; width: 100%; height:100%; }
 		}
 		figcaption { color: #fff; padding: 30px 20px 5%; bottom: 0; left: 0; right: 0; position: absolute; font-size: em(12); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; @include background-image(linear-gradient(bottom, rgba(0,0,0,.96) 0%, rgba(0,0,0,.03) 100%));
@@ -208,14 +209,14 @@ aside#nav.show, aside#search.show { z-index: 2; }
 			}  
 		} 
 		
-		>figure:nth-child(2) { @include calc(width, "#{$w-figure-2}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
+		>figure:nth-child(2), >div:nth-child(2) { @include calc(width, "#{$w-figure-2}"); @include calc(height, "#{$h-figure-2} - #{$gap}"); 
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-2-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-2-l} ");
 				left: auto; right: $w-figure-5-l; margin-right: $gap;
 			}
 		}
-		>figure:nth-child(3) { @include calc(width, "#{$w-figure-3} - #{$gap}"); @include calc(height, "#{$h-figure-3} - #{$gap}"); right:0;
+		>figure:nth-child(3), >div:nth-child(3) { @include calc(width, "#{$w-figure-3} - #{$gap}"); @include calc(height, "#{$h-figure-3} - #{$gap}"); right:0;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-3-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-3-l} - #{$gap}");
@@ -223,7 +224,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 			}
 		}
 		
-		>figure:nth-child(4) { @include calc(width, "#{$w-figure-4} - #{$gap_c}"); 
+		>figure:nth-child(4), >div:nth-child(4) { @include calc(width, "#{$w-figure-4} - #{$gap_c}"); 
 			@include calc(height, "#{$h-figure-4} - #{$gap}"); top: $h-figure-2;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-4-l}");
@@ -231,7 +232,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 				right: 0; top: auto; bottom: $h-figure-9-l;
 			}
 		}
-		>figure:nth-child(5) { 
+		>figure:nth-child(5), >div:nth-child(5) { 
 			@include calc(width, "#{$w-figure-5} - #{$gap_c}"); right: 0; left: auto;
 			@include calc(height, "#{$h-figure-5} - #{$gap}"); top: $h-figure-2;
 			@include media($landscape) { 
@@ -241,7 +242,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 			}
 		}
 		
-		>figure:nth-child(6) { @include calc(width, "#{$w-figure-6} - #{$gap}"); 
+		>figure:nth-child(6), >div:nth-child(6) { @include calc(width, "#{$w-figure-6} - #{$gap}"); 
 			height: $h-figure-6; top: $h-figure-2 + $h-figure-4;
 			@include media($landscape) { 
 				@include calc(width, "#{$w-figure-6-l} - #{$gap}");
@@ -249,7 +250,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 				left:$w-banner-top10-l; top: 0; @include transform(translateY(0%));
 			}
 		}
-		>figure:nth-child(7) {  
+		>figure:nth-child(7), >div:nth-child(7) {  
 			@include calc(width, "#{$w-figure-7} - #{$gap}");  right: 0;
 			height: $h-figure-7; top: $h-figure-2 + $h-figure-4; 
 			@include media($landscape) { 
@@ -261,7 +262,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 		}
 
 
-		>figure:nth-child(8) { 
+		>figure:nth-child(8), >div:nth-child(8) { 
 			@include calc(width, "#{$w-figure-8} - #{$gap}"); left: 0; 
 			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: $h-figure-10;
 			
@@ -272,7 +273,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 				bottom: 0;
 			}
 		}
-		>figure:nth-child(9) { z-index: 2;
+		>figure:nth-child(9), >div:nth-child(9) { z-index: 2;
 			@include calc(width, "#{$w-figure-9}");  right: 0; left: auto;
 			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: $h-figure-10;
 			@include media($landscape) { 
@@ -284,7 +285,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 		}
 
 
-		>figure:nth-child(10) { 
+		>figure:nth-child(10), >div:nth-child(10) { 
 			@include calc(width, "#{$w-figure-10} - #{$gap_c}"); 
 			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: 0;
 			@include media($landscape) { 
@@ -292,7 +293,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 				@include calc(height, "#{$h-figure-10-l} - #{$gap}");
 			}
 		}
-		>figure:nth-child(11) {  
+		>figure:nth-child(11), >div:nth-child(11) {  
 			@include calc(width, "#{$w-figure-11} - #{$gap_c}"); right: 0; 
 			@include calc(height, "#{$h-figure-2} - #{$gap}"); bottom: 0;
 			@include media($landscape) { 
