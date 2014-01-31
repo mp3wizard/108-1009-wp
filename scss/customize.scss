@@ -121,7 +121,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 // End Sidebar Navigation
 
 // Start Intro Page
-.intro {
+.intro { 
 	$gap: 2px;
 	$gap_c: $gap/2;
 	$w-banner-top10: 38%;
@@ -184,7 +184,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 			@include retina-image('../img/hd-top10', 119px 43px); }
 	}
 	
-	article {
+	article { background-color: #fff;
 		
 		div, >figure { position: absolute;  }
 		figure { background-color: rgba(0, 0, 0, .5); background-size: cover; background-repeat: no-repaet; background-position: center center;
