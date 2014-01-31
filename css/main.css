@@ -1790,7 +1790,8 @@ article.lv2 {
   background-image: linear-gradient(to top, #f5f3ef 0%, #f5f3ef 90%, #edebdf 100%); }
 
 section {
-  margin-bottom: 20px; }
+  margin: 0 auto 20px;
+  max-width: 300px; }
   section h2 {
     font-size: 26px;
     line-height: 20px;
@@ -1799,6 +1800,9 @@ section {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
     text-indent: 10px;
     font-weight: 400; }
+  section h2.center {
+    text-align: center;
+    text-indent: 0; }
   section label {
     font-family: 'PSLxThaiCommon';
     font-size: 24px; }
@@ -1880,6 +1884,9 @@ article.login .icon-fb {
     article.login .icon-fb {
       background-image: url("../img/form/icon-facebook@2x.png");
       background-size: 14px 25px; } }
+
+.addContent section > div label {
+  width: 60px; }
 
 input::-webkit-input-placeholder {
   color: #427ca1;
@@ -1992,7 +1999,9 @@ input:focus:-ms-input-placeholder {
   background-clip: padding-box;
   background-image: -webkit-linear-gradient(bottom, rgba(42, 42, 42, 0.75) 0%, rgba(3, 3, 3, 0.75) 100%);
   background-image: linear-gradient(to top, rgba(42, 42, 42, 0.75) 0%, rgba(3, 3, 3, 0.75) 100%);
-  border-radius: 12px; }
+  border-radius: 12px;
+  max-width: 300px;
+  margin: 0 auto; }
 
 .border2 {
   background-image: -webkit-linear-gradient(bottom, rgba(42, 42, 42, 0.25) 0%, rgba(3, 3, 3, 0.25) 100%);

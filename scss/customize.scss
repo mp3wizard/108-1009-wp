@@ -441,8 +441,9 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 
 // Start Page Level 2
 article.lv2 { padding: 32px 10px; background-color: #f5f3ef; @include background-image(linear-gradient(bottom, #f5f3ef 0%, #f5f3ef 90%, #edebdf 100%)); }
-section { margin-bottom:20px;
+section { margin:0 auto 20px; max-width: 300px; 
 	h2 { font-size: 26px; line-height: 20px; margin: 0 0 12px; color: $c-h1; text-shadow: 0 1px 0 rgba(255,255,255,.85); text-indent: 10px; font-weight: 400; }
+	h2.center { text-align: center; text-indent: 0; }
 	label { font-family: 'PSLxThaiCommon'; font-size: 24px; }
 	>div { 
 		p { border: 1px solid rgba(135, 129, 102, .7); border-bottom: 0; background-color: rgba(255, 255, 255, .7); margin: 0; height: 45px; line-height: 45px; padding: 0 0 0 9px; background-clip: padding-box;  
@@ -466,6 +467,10 @@ article.login {
 	label { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
 	#login-password { width: 150px; }
 	.icon-fb { display: inline-block; @include size(14px 25px); @include retina-image('../img/form/icon-facebook', 14px 25px); position: relative; top: 8px; margin-right: 8px; }
+
+}
+.addContent { 
+	section>div label { width: 60px;  }
 }
 
 
