@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 		animate: true
 	});
 	// Slide Menu
-	$('#btnMenu').on('click tap', function(){
+	$('#btnMenu').on('click', function(){
 		if($('main').hasClass('slideLeftOut')) { 
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
 			$('aside#nav').removeClass('show');
@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 		}
 		return false;
 	});
-	$('#btnSearch').on('click tap', function(){
+	$('#btnSearch').on('click', function(){
 		if($('main').hasClass('slideRightOut')) { 
 			$('main').removeClass('slideRightOut').addClass('slideIn');
 			$('aside#search').removeClass('show');
@@ -30,9 +30,21 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-	$('main').on('swipeleft', function(){
-		$('main').addClass('slideLeftIn');
+	$('main').on('click', function(){
+		if($('main').hasClass('slideRightOut')) { 
+			$('main').removeClass('slideRightOut').addClass('slideIn');
+			$('aside#search').removeClass('show');
+			$('#search input[type=search]').blur();
+			return false;
+		} if ($('main').hasClass('slideLeftOut')) { 
+			$('main').removeClass('slideLeftOut').addClass('slideIn');
+			$('aside#nav').removeClass('show');
+			$('#search input[type=search]').blur();
+			return false;
+		}
+		return true;
 	});
+
 	$('.popup').magnificPopup({
 		type:'image',
 		alignTop: false,

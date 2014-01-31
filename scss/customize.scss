@@ -25,6 +25,9 @@ main { position: relative; overflow: hidden; background-color: #fff; @include bo
 	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header; background-color: #f5f1e5; overflow: auto;
 		h2 { margin: 0 0 10; font-family: 'PSLxThaiCommon';  }
 	}
+
+	&:after { content:''; @include size(100%); z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; @include transition(background-color .35s ease-out); }
+	&.slideLeftOut:after, &.slideRightOut:after { z-index: 999;  }
 }
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
 a:hover { color: lighten($c-link, 15%)}
