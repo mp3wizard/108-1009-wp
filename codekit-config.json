@@ -2,15 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/kit\/register.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/kit\/register.kit",
-      "outputAbbreviatedPath" : "\/register.html",
-      "fileType" : 65536
-    },
     "\/img\/menu\/icon-nav-08.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -21,6 +12,26 @@
       "outputAbbreviatedPath" : "\/img\/menu\/icon-nav-08.png",
       "initialSize" : 887,
       "fileType" : 8192
+    },
+    "\/img\/menu\/icon-nav-05.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/menu\/icon-nav-05.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/menu\/icon-nav-05.png",
+      "initialSize" : 545,
+      "fileType" : 8192
+    },
+    "\/kit\/_header3.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/_header3.kit",
+      "outputAbbreviatedPath" : "\/_header3.html",
+      "fileType" : 65536
     },
     "\/img\/search\/bg-search_header.png" : {
       "ignoreWasSetByUser" : 0,
@@ -77,16 +88,16 @@
       "initialSize" : 1342,
       "fileType" : 8192
     },
-    "\/img\/intro\/img-9.jpg" : {
+    "\/img\/btnDone@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
+      "inputAbbreviatedPath" : "\/img\/btnDone@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
-      "initialSize" : 100611,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/img\/btnDone@2x.png",
+      "initialSize" : 1300,
+      "fileType" : 8192
     },
     "\/img\/intro\/img-8.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -165,15 +176,15 @@
       "initialSize" : 488537,
       "fileType" : 4096
     },
-    "\/img\/intro\/img-7.jpg" : {
+    "\/img\/intro\/img-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
-      "initialSize" : 296596,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
+      "initialSize" : 25836,
       "fileType" : 4096
     },
     "\/kit\/map.kit" : {
@@ -197,15 +208,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/intro\/img-1.jpg" : {
+    "\/img\/intro\/img-7.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/intro\/img-1.jpg",
-      "initialSize" : 25836,
+      "outputAbbreviatedPath" : "\/img\/intro\/img-7.jpg",
+      "initialSize" : 296596,
       "fileType" : 4096
     },
     "\/img\/favorite\/img-fav-05.jpg" : {
@@ -250,16 +261,16 @@
       "initialSize" : 1144,
       "fileType" : 8192
     },
-    "\/img\/btnDone@2x.png" : {
+    "\/img\/intro\/img-9.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/btnDone@2x.png",
+      "inputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/btnDone@2x.png",
-      "initialSize" : 1300,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/img\/intro\/img-9.jpg",
+      "initialSize" : 100611,
+      "fileType" : 4096
     },
     "\/kit\/_aside-right.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -334,17 +345,16 @@
       "initialSize" : 1802,
       "fileType" : 8192
     },
-    "\/scss\/mixin\/_text.scss" : {
+    "\/img\/startup\/startup-tablet-portrait.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/mixin\/_text.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/scss\/css\/_text.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
+      "initialSize" : 3206,
+      "fileType" : 8192
     },
     "\/img\/menu\/icon-add.png" : {
       "ignoreWasSetByUser" : 0,
@@ -357,16 +367,17 @@
       "initialSize" : 522,
       "fileType" : 8192
     },
-    "\/img\/startup\/startup-tablet-portrait.png" : {
+    "\/scss\/mixin\/_text.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/startup\/startup-tablet-portrait.png",
-      "initialSize" : 3206,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/scss\/mixin\/_text.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/scss\/css\/_text.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/img\/menu\/icon-location@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -777,16 +788,16 @@
       "outputAbbreviatedPath" : "\/js\/helper.min.js",
       "fileType" : 64
     },
-    "\/img\/favorite\/img-fav-03.jpg" : {
+    "\/js\/vendor\/jquery.magnific-popup.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
-      "initialSize" : 13891,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.magnific-popup.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.magnific-popup.min.js",
+      "fileType" : 64
     },
     "\/img\/intro\/full\/img-full-01@2x.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -799,16 +810,16 @@
       "initialSize" : 447262,
       "fileType" : 4096
     },
-    "\/js\/vendor\/jquery.magnific-popup.js" : {
+    "\/img\/favorite\/img-fav-03.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.magnific-popup.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.magnific-popup.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-03.jpg",
+      "initialSize" : 13891,
+      "fileType" : 4096
     },
     "\/img\/touch\/apple-touch-icon-144x144-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -861,6 +872,24 @@
       "initialSize" : 73223,
       "fileType" : 8192
     },
+    "\/kit\/index.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/index.kit",
+      "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 65536
+    },
+    "\/kit\/feed.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/feed.kit",
+      "outputAbbreviatedPath" : "\/feed.html",
+      "fileType" : 65536
+    },
     "\/img\/menu\/bg-nav_header.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -872,13 +901,13 @@
       "initialSize" : 28802,
       "fileType" : 8192
     },
-    "\/kit\/index.kit" : {
+    "\/kit\/_header.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/kit\/index.kit",
-      "outputAbbreviatedPath" : "\/index.html",
+      "inputAbbreviatedPath" : "\/kit\/_header.kit",
+      "outputAbbreviatedPath" : "\/_header.html",
       "fileType" : 65536
     },
     "\/img\/favorite\/favorite-active@2x.png" : {
@@ -891,15 +920,6 @@
       "outputAbbreviatedPath" : "\/img\/favorite\/favorite-active@2x.png",
       "initialSize" : 7239,
       "fileType" : 8192
-    },
-    "\/kit\/_header.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/kit\/_header.kit",
-      "outputAbbreviatedPath" : "\/_header.html",
-      "fileType" : 65536
     },
     "\/kit\/_aside-left_s.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -1182,6 +1202,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/feed.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/feed.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/font\/pslxthaicommon-demo.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1247,17 +1276,6 @@
       "initialSize" : 68070,
       "fileType" : 4096
     },
-    "\/img\/favorite\/img-fav-08@2x.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
-      "initialSize" : 57214,
-      "fileType" : 4096
-    },
     "\/img\/intro\/full\/img-full-03@2x.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1267,6 +1285,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/intro\/full\/img-full-03@2x.jpg",
       "initialSize" : 38614,
+      "fileType" : 4096
+    },
+    "\/img\/favorite\/img-fav-08@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/favorite\/img-fav-08@2x.jpg",
+      "initialSize" : 57214,
       "fileType" : 4096
     },
     "\/img\/touch\/apple-touch-icon.png" : {
@@ -1433,17 +1462,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/menu\/icon-nav-05.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/menu\/icon-nav-05.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/menu\/icon-nav-05.png",
-      "initialSize" : 545,
-      "fileType" : 8192
-    },
     "\/img\/menu\/icon-nav-06.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1454,6 +1472,15 @@
       "outputAbbreviatedPath" : "\/img\/menu\/icon-nav-06.png",
       "initialSize" : 1069,
       "fileType" : 8192
+    },
+    "\/kit\/register.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kit\/register.kit",
+      "outputAbbreviatedPath" : "\/register.html",
+      "fileType" : 65536
     }
   },
   "manualImportLinks" : [

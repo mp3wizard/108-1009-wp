@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 		width: 155,
 		animate: true
 	});
-	// Slide Menu
+	// Slide Menu Left & Right
 	$('#btnMenu').on('click', function(){
 		if($('main').hasClass('slideLeftOut')) { 
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
@@ -44,6 +44,22 @@ jQuery(document).ready(function($){
 		}
 		return true;
 	});
+	// End of Slide menu Left Right
+
+	// Start Slide menu Top
+	
+	var navList = $('#nav-list');
+
+	$('.header-list').on('click', function() { 
+		if($(this).hasClass('active')) { 
+			$(this).removeClass('active');
+			navList.removeClass('slideTopIn');
+		} else {
+			$(this).addClass('active');
+			navList.addClass('slideTopIn');
+		}
+		return false;
+	})
 
 	$('.popup').magnificPopup({
 		type:'image',
