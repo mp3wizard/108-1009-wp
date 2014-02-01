@@ -435,7 +435,7 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 // Start Grid View Page
 .grid { 
 	article { padding-top: 10px; background-color: #c6beaa; }
-	figure { width: $w-grid-img; background-color: #f3f3e8; @include box-shadow(0 1px 1px 1px rgba(0,0,0,.2)); position: relative;
+	figure { width: $w-grid-img; background-color: #f3f3e8; @include box-shadow(0 1px 1px 1px rgba(0,0,0,.2)); position: relative; opacity: 0;
 		img { width: 100%;  }
 		
 	}

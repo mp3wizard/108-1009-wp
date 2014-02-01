@@ -1813,7 +1813,8 @@ button.mfp-close {
   width: 100%;
   background-color: #f3f3e8;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-  position: relative; }
+  position: relative;
+  opacity: 0; }
   .grid figure img {
     width: 100%; }
 .grid figcaption {
@@ -2156,7 +2157,8 @@ header > button:nth-child(3) {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    top: -2px; }
 
 /* ==========================================================================
    Helper classes
