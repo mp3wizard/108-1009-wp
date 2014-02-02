@@ -15,8 +15,8 @@ main { position: relative; overflow: hidden; background-color: #fff; @include bo
 		>a { position: absolute; top: 0; height: $h-header; width: 55px; text-align: center; z-index: 2;
 			i:before { position: relative; top: 3px;}
 		}
-		a:nth-child(2) { left: 0;  border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
-		a:nth-child(3) { right: 0; left: auto; border-left: solid 1px #9d9889; @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .5)); }
+		#btnMenu { left: 0;  border-right: solid 1px #9d9889; box-shadow: inset -1px 0 0 rgba(255, 255, 255, .5); }
+		#btnSearch { right: 0; left: auto; border-left: solid 1px #9d9889; @include box-shadow(inset 1px 0 0 rgba(255, 255, 255, .5)); }
 		i.icon-menu:before { font-size: 26px; top: 5px;}
 		i.icon-search:before { font-size: 18px; }
 
@@ -444,17 +444,25 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 		strong {
 			a { display: block; margin-bottom:10px; font-size: $f-link; }
 		} 
-		>ul { list-style: none; margin: 0; height: 30px; padding: 0 $p-figure; background-color: #fff; white-space: nowrap;
-			li { display: inline; line-height: 30px; font-weight: bold; font-size: $f-stat; margin-right: 5px; 
-				label { margin-right: 0px; display: inline-block; }
-				
-				&:first-child { margin-left: -2px; }
-				&:last-child { margin-right: 0; text-align: right; }
-			}
-		}
+		
 	}
 }
 
+ul.stat { list-style: none; margin: 0; height: 30px; padding: 0 $p-figure; background-color: #fff; white-space: nowrap; font-family: Arial, Helvetica, sans-serif;
+	li { display: inline; line-height: 30px; font-weight: bold; font-size: $f-stat; margin-right: 5px; 
+		label { margin-right: 0px; display: inline-block; }
+		
+		&:first-child { margin-left: -2px; }
+		&:last-child { margin-right: 0; text-align: right; }
+		a.like { color: $c-like; }
+	}
+
+	.webview & { background-color: transparent; display: inline-block; 
+		li { font-size: 13px; 
+			&:last-child { margin-left: 5px; }
+		}
+	}
+}
 
 // End Intro Page
 
@@ -508,4 +516,11 @@ input:focus:-ms-input-placeholder { opacity: 0;  }
 .term { 
 	section { background-color: #fff; max-width: 300px; padding: 15px; margin: 0 auto; border-radius: 10px; border: 1px solid #878166; font-size: 13px; }
 	h3 { margin-top: 0; font-size: 16px; line-height: 1.2; color: #39361f; }
+}
+
+// WebView
+.webview {  
+	header { @include background-image(linear-gradient(bottom, #dad7c8 0%, #f7f3e9 100%)); overflow: visible; }
+	footer { @extend header; @include size(100% 45px); position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 99; @include box-shadow(0 -3px 1px rgba(0,0,0,.19)); }
+	iframe { width: 100%; @include calc(height, 100% - #{45px}); }
 }

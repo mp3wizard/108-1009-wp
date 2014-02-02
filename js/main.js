@@ -91,4 +91,8 @@ jQuery(document).ready(function($){
 	   $(this).parent().find('input').val('');
 	});
 
+	// Append meta viewport in iframe
+
+	$('#webviewFrame').contents().find("head").append('<meta name="viewport" content="width=1024">');
+
 });
