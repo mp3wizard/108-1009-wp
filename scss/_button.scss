@@ -1,12 +1,12 @@
-.btn1 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255,255,255,.8); background-color: transparent; 
+.btn1 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255,255,255,.8); background-color: transparent;
 	font-family: Helvetica, Arial, sans-serif; font-size: 11px;
 	font-weight: bold;
 	text-shadow: 0 1px 0 rgba(255,255,255,.8); @include font-smoothing(antialiased); color: #5f5947; padding: 0 10px;
 }
-.btn2 { position: relative; border: none; @include background-image(linear-gradient(bottom, #215601 0%, #369013 100%)); height: 43px; font-family: 'PSLxThaiCommon'; color: #fff; font-weight: 400; font-size: 24px; @include font-smoothing(antialiased); border-radius: 10px; background-clip: padding-box; text-shadow: 0 -1px 0 rgba(0,0,0,.4); box-shadow: inset 2px 3px 2px rgba(255, 255, 255, .35), inset -2px -3px 2px rgba(0,0,0,.35); width: 100%; display: block; line-height: 40px; text-align: center; 
+.btn2 { position: relative; border: none; @include background-image(linear-gradient(bottom, #215601 0%, #369013 100%)); height: 43px; font-family: 'PSLxThaiCommon'; color: #fff; font-weight: 400; font-size: 24px; @include font-smoothing(antialiased); border-radius: 10px; background-clip: padding-box; text-shadow: 0 -1px 0 rgba(0,0,0,.4); box-shadow: inset 2px 3px 2px rgba(255, 255, 255, .35), inset -2px -3px 2px rgba(0,0,0,.35); width: 100%; display: block; line-height: 40px; text-align: center;
 }
 .btn3 { @extend .btn2; @include background-image(linear-gradient(bottom, #293d65 0%, #4565bf 100%)); }
-.btn4 { @extend .btn2; @include background-image(linear-gradient(bottom, #054461 0%, #0181bd 100%)); line-height: 45px; 
+.btn4 { @extend .btn2; @include background-image(linear-gradient(bottom, #054461 0%, #0181bd 100%)); line-height: 45px;
 	&:hover { color: #fff; }
 }
 .btn5 { display: block; margin: 0 auto 8px; text-align: center; width: 90%; max-width: 300px; color: #000; font-weight: bold; border-radius: 10px; background-color: rgba(255, 255, 255, .7); border: 1px solid #878166; background-clip: padding-box; line-height: 38px; font-size: 17px;  }
@@ -15,7 +15,7 @@
 .border { padding: 3px; display:block; background-clip: padding-box; @include background-image(linear-gradient(bottom, rgba(42,42,42,.75) 0%, rgba(3,3,3,.75) 100%)); border-radius: 12px; max-width: 300px; margin: 0 auto; }
 .border2 { @extend .border; @include background-image(linear-gradient(bottom, rgba(42,42,42,.25) 0%, rgba(3,3,3,.25) 100%)); margin-top: 0; margin-bottom: 5px; }
 
-header { 
+header {
 	button { position: absolute;top: 10px; z-index: 2;  }
 	>button:nth-child(2) { left: 15px; }
 	>button:nth-child(3) { right: 15px; }
@@ -29,13 +29,13 @@ header {
 
 .header-list {  color: #4b4739!important; border: 1px solid rgba(67,64,54,.15); height: 33px; display: inline-block; line-height: 35px; padding: 0 45px 0 40px; border-radius: 5px; background-color: rgba(198,190,170,.15); @include box-shadow(0 1px 0 rgba(255, 255, 255, .8)); position: relative;
 	font-size: 24px; background-clip: padding;
-	
+
 	&:after { content: '\e807'; font-family: 'icon'; @include transform(rotate(90deg)); margin-left: 20px; position:absolute; font-size: 25px; font-weight:bold; color: #79756b; right: 12px; top: 0; @include transition(all .2s ease-in-out); }
 
 	&:active { background-color: rgba(198,190,170,.4); }
 
 	&.active:after { @include transform(rotate(-90deg)); top: -2px; }
-}	
+}
 
 .btnBack { @include size(50px 45px); @include hide-text; display: block; float: left; position: relative; top: 0; left: 0; background-repeat: no-repeat; @include retina-image('../img/webview/btnBack', 43px 33px); background-position: right center; }
 
@@ -44,9 +44,9 @@ header {
 }
 .btnHistory { @include hide-text; @include retina-image('../img/webview/btnClock', 24px 24px); background-repeat: no-repeat; background-position: center center; @include size(24px 45px); position: absolute; top: 0; right: 60px; }
 
-.btnShare { display: block; float:left; height: 30px; position: relative; top: 8px; line-height: 29px; margin-left: 5px; width: 75px; 
+.btnShare { display: block; float:left; height: 30px; position: relative; top: 8px; line-height: 29px; margin-left: 5px; width: 75px;
 	&:after { content: ''; @include size(16px); display:inline-block; @include retina-image('../img/webview/iconSocial', 16px 16px); position: relative; top: 5px; margin-left: 5px;}
 }
-.btnGo { @include text-truncate; @extend .btnShare; @include calc('width', 100% - #{90px}); padding-right: 25px; 
+.btnGo { @include text-truncate; @extend .btnShare; @include calc('width', 100% - #{90px}); padding-right: 25px;
 	&:after { position:absolute; right: 5px; @include retina-image('../img/webview/iconGo', 16px 14px); background-repeat: no-repeat; top: 6px; }
 }

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){ 
+jQuery(document).ready(function($){
 	$("article.grid").gridalicious({
 		gutter: 8,
 		selector: 'figure',
@@ -7,22 +7,26 @@ jQuery(document).ready(function($){
 	});
 	// Slide Menu Left & Right
 	$('#btnMenu').on('click', function(){
-		if($('main').hasClass('slideLeftOut')) { 
+		if($('main').hasClass('slideLeftOut')) {
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
 			$('aside#nav').removeClass('show');
 			$('#search input[type=search]').blur();
-		} else { 
+			$('body').removeClass('sliderOpen');
+		} else {
+			$('body').addClass('sliderOpen');
 			$('main').removeClass('slideIn').addClass('slideLeftOut');
 			$('aside#nav').addClass('show');
 		}
 		return false;
 	});
 	$('#btnSearch').on('click', function(){
-		if($('main').hasClass('slideRightOut')) { 
+		if($('main').hasClass('slideRightOut')) {
 			$('main').removeClass('slideRightOut').addClass('slideIn');
 			$('aside#search').removeClass('show');
 			$('#search input[type=search]').blur();
-		} else { 
+			$('body').removeClass('sliderOpen');
+		} else {
+			$('body').addClass('sliderOpen');
 			$('main').removeClass('slideIn').addClass('slideRightOut');
 			$('aside#search').addClass('show');
 			$('#search input[type=search]').focus();
@@ -31,15 +35,17 @@ jQuery(document).ready(function($){
 	});
 
 	$('main').on('click', function(){
-		if($('main').hasClass('slideRightOut')) { 
+		if($('main').hasClass('slideRightOut')) {
 			$('main').removeClass('slideRightOut').addClass('slideIn');
 			$('aside#search').removeClass('show');
 			$('#search input[type=search]').blur();
+			$('body').removeClass('sliderOpen');
 			return false;
-		} if ($('main').hasClass('slideLeftOut')) { 
+		} if ($('main').hasClass('slideLeftOut')) {
 			$('main').removeClass('slideLeftOut').addClass('slideIn');
 			$('aside#nav').removeClass('show');
 			$('#search input[type=search]').blur();
+			$('body').removeClass('sliderOpen');
 			return false;
 		}
 		return true;
@@ -47,11 +53,11 @@ jQuery(document).ready(function($){
 	// End of Slide menu Left Right
 
 	// Start Slide menu Top
-	
+
 	var navList = $('#nav-list');
 
-	$('.header-list').on('click', function() { 
-		if($(this).hasClass('active')) { 
+	$('.header-list').on('click', function() {
+		if($(this).hasClass('active')) {
 			$(this).removeClass('active');
 			navList.removeClass('slideTopIn');
 		} else {
@@ -68,13 +74,13 @@ jQuery(document).ready(function($){
 		image: {
 			verticalFit: true,
 			titleSrc: function(item) {
-				return item.el.attr('title') + '<p><span>'+item.el.attr('data-view')+'</span> <span>'+item.el.attr('data-share')+' Stories</span><p>';
+				return item.el.attr('title') + '<p><span>'+item.el.attr('data-view')+'</span> <a hreft="javascript:void(0);">'+item.el.attr('data-share')+' Stories</a><p>';
 			}
 		},
 		removalDelay: 500, //delay removal by X to allow out-animation
   callbacks: {
     beforeOpen: function() {
-      // just a hack that adds mfp-anim class to markup 
+      // just a hack that adds mfp-anim class to markup
        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
        this.st.mainClass = this.st.el.attr('data-effect');
     }
@@ -82,7 +88,7 @@ jQuery(document).ready(function($){
 	});
 
 	// Disable click before login
-	$('.disable a').on('click touch', function() { 
+	$('.disable a').on('click touch', function() {
 		return false;
 	})
 
