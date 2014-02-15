@@ -542,3 +542,10 @@ input:focus:-ms-input-placeholder { opacity: 0;  }
 	footer { @extend header; @include size(100% 45px); position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 99; @include box-shadow(0 -3px 1px rgba(0,0,0,.19)); }
 	iframe { width: 100%; @include calc(height, 100% - #{45px}); }
 }
+
+//History
+ul.full { margin: 0; padding: 0; list-style: none;
+	li { border-bottom: solid 1px $c-border-bottom; border-top: solid 1px $c-border-top; 
+		a { line-height: 40px; font-size: 12px;  @include text-truncate(); display:block; padding: 0 20px 0 50px; @include retina-image('../img/history/icon-paper', 19px 22px); background-position: 15px center; background-repeat: no-repeat;  }
+	}
+}

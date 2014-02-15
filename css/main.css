@@ -2028,6 +2028,31 @@ input:focus:-ms-input-placeholder {
   height: -webkit-calc(100% - 45px);
   height: calc(100% - 45px); }
 
+ul.full {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul.full li {
+    border-bottom: solid 1px #e1decf;
+    border-top: solid 1px #fffcf9; }
+    ul.full li a {
+      line-height: 40px;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      vertical-align: top;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      display: block;
+      padding: 0 20px 0 50px;
+      background-image: url("../img/history/icon-paper.png");
+      background-position: 15px center;
+      background-repeat: no-repeat; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        ul.full li a {
+          background-image: url("../img/history/icon-paper@2x.png");
+          background-size: 19px 22px; } }
+
 .btn1, .btn6 {
   height: 26px;
   border: 1px solid #bcbab1;
