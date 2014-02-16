@@ -549,3 +549,10 @@ ul.full { margin: 0; padding: 0; list-style: none;
 		a { line-height: 40px; font-size: 12px;  @include text-truncate(); display:block; padding: 0 20px 0 50px; @include retina-image('../img/history/icon-paper', 19px 22px); background-position: 15px center; background-repeat: no-repeat;  }
 	}
 }
+
+//Guide
+#guide { position: fixed; top: 0; left: 0; right: 0; @include size(100%); z-index: 999; background-color: rgba(0, 0, 0, .6); display: none;}
+.txt-guide { display: block; @extend .ir; position: absolute; }
+#guide-1 { @include size(109px 116px); @include retina-image('../img/guide/guide-01', 109px 116px); left: 5px; top: 15px; }
+#guide-2 { @include size(271px 148px); @include retina-image('../img/guide/guide-02', 271px 148px); right: 3px; top: 40px;  }
+#guide-3 { @include size(248px 133px); @include retina-image('../img/guide/guide-03', 248px 133px); bottom: 15px; left: 30px;}

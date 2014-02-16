@@ -2053,6 +2053,54 @@ ul.full {
           background-image: url("../img/history/icon-paper@2x.png");
           background-size: 19px 22px; } }
 
+#guide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none; }
+
+.txt-guide {
+  display: block;
+  position: absolute; }
+
+#guide-1 {
+  width: 109px;
+  height: 116px;
+  background-image: url("../img/guide/guide-01.png");
+  left: 5px;
+  top: 15px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #guide-1 {
+      background-image: url("../img/guide/guide-01@2x.png");
+      background-size: 109px 116px; } }
+
+#guide-2 {
+  width: 271px;
+  height: 148px;
+  background-image: url("../img/guide/guide-02.png");
+  right: 3px;
+  top: 40px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #guide-2 {
+      background-image: url("../img/guide/guide-02@2x.png");
+      background-size: 271px 148px; } }
+
+#guide-3 {
+  width: 248px;
+  height: 133px;
+  background-image: url("../img/guide/guide-03.png");
+  bottom: 15px;
+  left: 30px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #guide-3 {
+      background-image: url("../img/guide/guide-03@2x.png");
+      background-size: 248px 133px; } }
+
 .btn1, .btn6 {
   height: 26px;
   border: 1px solid #bcbab1;
@@ -2364,7 +2412,7 @@ textarea[contenteditable] {
 /*
  * Image replacement
  */
-.ir {
+.ir, .txt-guide {
   background-color: transparent;
   background-repeat: no-repeat;
   border: 0;
@@ -2374,7 +2422,7 @@ textarea[contenteditable] {
   text-align: left;
   text-indent: -999em; }
 
-.ir br {
+.ir br, .txt-guide br {
   display: none; }
 
 /*
