@@ -18,3 +18,5 @@ xcuserdata
 CVS
 *.sublime-workspace
 **/.sass-cache/*
+config.codekit
+codekit-config.json

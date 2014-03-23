@@ -58,12 +58,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import "bourbon/bourbon";
+@import "bourbon", "neat";
 @import "mixin/_calc";
 @import "mixin/_text";
 @import "_variable";
 
-@import "neat/neat";
 @import "vendor/magnific-popup";
 
 @import "customize";

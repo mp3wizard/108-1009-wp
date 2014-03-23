@@ -2,7 +2,7 @@ $retina-filename: '@2x.png';
 // Vertical
 $w-container_v: 100%;	//1536px
 $h-container_v: 100%;	//2520px
-$h-header: 44px;
+$h-header: 80px;
 $a-ios7: cubic-bezier(.10, .70, .10, 1);
 $landscape: orientation landscape;
 $f-caption: em(12);
@@ -30,3 +30,5 @@ $c-like: #ec1297;
 
 $c-border-bottom: #e1decf;
 $c-border-top: #fffcf9;
+
+$r-mobile: 360px;

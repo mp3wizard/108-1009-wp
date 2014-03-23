@@ -27,7 +27,7 @@ header {
 	&.active { background-position: 0 0; }
 }
 
-.header-list {  color: #4b4739!important; border: 1px solid rgba(67,64,54,.15); height: 33px; display: inline-block; line-height: 35px; padding: 0 45px 0 40px; border-radius: 5px; background-color: rgba(198,190,170,.15); @include box-shadow(0 1px 0 rgba(255, 255, 255, .8)); position: relative;
+.header-list {  color: #4b4739!important; border: 1px solid rgba(67,64,54,.15); height: 33px; display: inline-block; line-height: 35px; padding: 0 45px 0 40px; border-radius: 5px; background-color: rgba(198,190,170,.15); box-shadow: 0 1px 0 rgba(255, 255, 255, .8); position: relative;
 	font-size: 24px; background-clip: padding;
 
 	&:after { content: '\e807'; font-family: 'icon'; @include transform(rotate(90deg)); margin-left: 20px; position:absolute; font-size: 25px; font-weight:bold; color: #79756b; right: 12px; top: 0; @include transition(all .2s ease-in-out); }
