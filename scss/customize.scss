@@ -33,19 +33,19 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 	.wrap-button {  width:50%; float:right; }
 	#btnHome { @include retina-image('../img/base/icon-home', auto 24px); background-size: auto 24px; background-position: center center; background-repeat: no-repeat; text-indent: -1000em; text-align: left; width: 33.33%; max-width: 72px;
 		@include media($r-mobile) { background-size: auto 33px; }
-		&:active, &.active { @include retina-image('../img/base/icon-home-active', auto 24px); 
+		&:active, &.active { @include retina-image('../img/base/icon-home-active', auto 24px);
 			@include media($r-mobile) { background-size: auto 33px; }
 		}
 	}
-	#btnUser { @extend #btnHome; @include retina-image('../img/base/icon-user', auto 24px); 
+	#btnUser { @extend #btnHome; @include retina-image('../img/base/icon-user', auto 24px);
 		@include media($r-mobile) { background-size: auto 32px; }
-		&:active, &.active { @include retina-image('../img/base/icon-user-active', auto 24px); 
+		&:active, &.active { @include retina-image('../img/base/icon-user-active', auto 24px);
 			@include media($r-mobile) { background-size: auto 32px; }
 		}
 	}
-	#btnSearch {@extend #btnHome; @include retina-image('../img/base/icon-search', auto 24px); 
+	#btnSearch {@extend #btnHome; @include retina-image('../img/base/icon-search', auto 24px);
 		@include media($r-mobile) { background-size: auto 32px; }
-		&:active, &.active { @include retina-image('../img/base/icon-search-active', auto 24px); 
+		&:active, &.active { @include retina-image('../img/base/icon-search-active', auto 24px);
 			@include media($r-mobile) { background-size: auto 32px; }
 		}
 	}
@@ -169,7 +169,7 @@ body.sliderOpen { overflow-x: hidden; }
 .intro {
 	$gap: 5px;
 	$gap_c: $gap/2;
-	$w-banner-top10: 39%;
+	$w-banner-top10: 37%;
 	$w-figure-2: 25%;
 	$w-figure-3: $w-figure-2;
 	$w-figure-4: $w-figure-2;
@@ -564,7 +564,7 @@ input:focus:-ms-input-placeholder { opacity: 0;  }
 
 //History
 ul.full { margin: 0; padding: 0; list-style: none;
-	li { border-bottom: solid 1px $c-border-bottom; border-top: solid 1px $c-border-top; 
+	li { border-bottom: solid 1px $c-border-bottom; border-top: solid 1px $c-border-top;
 		a { line-height: 40px; font-size: 12px;  @include text-truncate(); display:block; padding: 0 20px 0 50px; @include retina-image('../img/history/icon-paper', 19px 22px); background-position: 15px center; background-repeat: no-repeat;  }
 	}
 }
@@ -575,3 +575,11 @@ ul.full { margin: 0; padding: 0; list-style: none;
 #guide-1 { @include size(109px 116px); @include retina-image('../img/guide/guide-01', 109px 116px); left: 5px; top: 15px; }
 #guide-2 { @include size(271px 148px); @include retina-image('../img/guide/guide-02', 271px 148px); right: 3px; top: 40px;  }
 #guide-3 { @include size(248px 133px); @include retina-image('../img/guide/guide-03', 248px 133px); bottom: 15px; left: 30px;}
+
+#overlay { background-color: rgba(0,0,0,.85); @include size(100%); position: fixed; z-index: 10; top: 0; left: 0; right: 0; }
+.wp-popup { background-color: $bg-popup; position: fixed; z-index: 11; @include size(100% 32%); top: 0; left: 0; right: 0; padding: 3%; color: #fff; font-family: tahoma;
+	h2, h3 { font-weight: normal; margin: 0; }
+	h2 { font-size: 32px; line-height: 1.7; margin-bottom: 5%; }
+	h3 { font-size: 21px; line-height: 1.7; margin-bottom: 5%;}
+	button { width: 100%; margin-top: 6%; height: 23.5%; border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; }
+}
