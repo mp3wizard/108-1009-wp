@@ -1,4 +1,4 @@
-html, body { @include size(100% 100%); background-color: #d1ccbe; @include font-smoothing(antialiased); }
+html, body { @include size(100% 100%); background-color: #d1ccbe; @include font-smoothing(antialiased); font-family: 'Segoe UI'; }
 body {
 	@include size($w-container_v $h-container_v);
 	margin: 0 auto;
@@ -8,8 +8,8 @@ body {
 
 button:focus, input:focus { outline: none; }
 main { position: relative; overflow: hidden; background-color: #fff; box-shadow: 0 0 6px rgba(0,0,0,.5); z-index: 2; @include size(100% 100%);
-	header { @include size(100% $h-header); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 80px;  overflow: hidden; font-family: 'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
-		box-shadow: 0 1px 0 rgba(0,0,0,.2); background-color: #ebe9e1;; text-align: right;
+	header { @include size(100% ($h-header + $h-topbar)); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 80px;  overflow: hidden; font-family:'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
+		box-shadow: 0 1px 0 rgba(0,0,0,.2); background-color: #ebe9e1;; text-align: right; border-top: solid $h-topbar #000;
 		h1 { position: relative; z-index: 1;text-align: center; font-weight: 300; margin: 0; float: left;
 			@include size(50% 80px);   max-width: 221px;
 			@include retina-image('../img/base/logo', 100% auto); background-size: 100% auto; background-position: center center; background-repeat: no-repeat;
@@ -576,10 +576,13 @@ ul.full { margin: 0; padding: 0; list-style: none;
 #guide-2 { @include size(271px 148px); @include retina-image('../img/guide/guide-02', 271px 148px); right: 3px; top: 40px;  }
 #guide-3 { @include size(248px 133px); @include retina-image('../img/guide/guide-03', 248px 133px); bottom: 15px; left: 30px;}
 
+
+// New Design
 #overlay { background-color: rgba(0,0,0,.85); @include size(100%); position: fixed; z-index: 10; top: 0; left: 0; right: 0; }
-.wp-popup { background-color: $bg-popup; position: fixed; z-index: 11; @include size(100% 32%); top: 0; left: 0; right: 0; padding: 3%; color: #fff; font-family: tahoma;
-	h2, h3 { font-weight: normal; margin: 0; }
-	h2 { font-size: 32px; line-height: 1.7; margin-bottom: 5%; }
-	h3 { font-size: 21px; line-height: 1.7; margin-bottom: 5%;}
-	button { width: 100%; margin-top: 6%; height: 23.5%; border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; }
+.wp-popup { background-color: $bg-popup; position: fixed; z-index: 11; @include size(100% auto); top: 0; left: 0; right: 0; padding: 9% 3% 4%; color: #fff;
+	h2, h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%;  }
+	h2 { font-size: 32px; }
+	h3 { font-size: 21px; }
+	button { width: 100%; margin-top: 5.6%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 300; padding: 2.5% 0; }
 }
+#timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 12; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 18px; }
