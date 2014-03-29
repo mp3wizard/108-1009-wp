@@ -27,6 +27,13 @@ jQuery(document).ready(function($){
 	// End of Slide menu Left Right
 
 	// Start Slide menu Top
+	$('.open-overlay').on('click', function(){
+		$('body').addClass('show-overlay');
+		$('.close-overlay, #overlay').on('click', function(){
+			$('body').removeClass('show-overlay');
+		})
+	})
+
 
 	var navList = $('#nav-list');
 

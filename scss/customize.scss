@@ -15,7 +15,7 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 			@include retina-image('../img/base/logo', 100% auto); background-size: 100% auto; background-position: center center; background-repeat: no-repeat;
 		}
 		h1.bold { font-weight: 400; }
-		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; }
+		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; line-height: 70px; }
 		a {  height: $h-header; text-align: center; z-index: 2; display: inline-block;
 			i:before { position: relative; top: 3px;}
 		}
@@ -27,6 +27,7 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header + $h-topbar; background-color: $bg-article; overflow: auto;
 		&.lv2 { @include calc(height, 100% - #{$h-header + $h-topbar + $h-footer}); padding: 5px 10px; }
 		h2 { margin: 0 0 10;   }
+		section { margin-bottom: 60px; }
 	}
 
 	&:after { content:''; @include size(100%); z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; @include transition(background-color .35s ease-out); }
@@ -56,7 +57,7 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
 a:hover { color: lighten($c-link, 15%)}
 label { display: block; color: $c-h1; font-size: 20px; font-weight: 400; margin-bottom: 10px; line-height: 31px; }
-input[type="text"], input[type="password"], input[type="email"] { width: 100%; border: none; background-color: #efede7; height: 44px; padding: 0 10px; color: #555; font-size: 24px; font-weight: 300; }
+input[type="text"], input[type="password"], input[type="email"] { width: 100%; border: none; background-color: #efede7; height: 44px; padding: 0 10px; color: #555; font-size: 22px; font-weight: 300; }
 
 // animation
 .slideLeftOut {
@@ -564,7 +565,7 @@ ul.full { margin: 0; padding: 0; list-style: none;
 	h3 { font-size: 21px; }
 }
 .wp-popup, footer, .lv2 {
-		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin-top: 5.2%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 300; padding: 8px 0; }
+		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin-top: 5.2%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 400; padding: 8px 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 		a.button { display:block; text-align: center; }
  }
  article.lv2 {
@@ -572,12 +573,22 @@ ul.full { margin: 0; padding: 0; list-style: none;
  }
 #timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
-footer { background-color: $bg-footer; z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 2%;
+footer { background-color: $bg-footer; z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 2% 0; height: 73px;
 	button, input[type="submit"] { margin: 0; }
 
 	&.login { background-color: #fff; text-align: center; }
 }
 .grid-2 {
-	button, input[type="submit"], a.button, input[type="reset"] { width: 47%; font-weight: 400; }
+	button, input[type="submit"], a.button, input[type="reset"] { width: 47%; font-weight: 400;  }
 	*:nth-child(1) { margin-right: 4.5%; }
+	&:last-child { margin-bottom: 0; }
+}
+.wp-popup { @include transition(all .5s ease-in-out); top: -100%; }
+#overlay { opacity: 0; @include transition(all .25s linear); display:none; }
+.show-overlay {
+	.wp-popup { top: 0; }
+	#overlay { opacity: 1; display:block; }
+}
+.regist {
+	label { line-height: 24px; }
 }
