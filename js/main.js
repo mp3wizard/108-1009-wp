@@ -6,33 +6,7 @@ jQuery(document).ready(function($){
 		animate: true
 	});
 	// Slide Menu Left & Right
-	$('#btnMenu').on('click', function(){
-		if($('main').hasClass('slideLeftOut')) {
-			$('main').removeClass('slideLeftOut').addClass('slideIn');
-			$('aside#nav').removeClass('show');
-			$('#search input[type=search]').blur();
-			$('body').removeClass('sliderOpen');
-		} else {
-			$('body').addClass('sliderOpen');
-			$('main').removeClass('slideIn').addClass('slideLeftOut');
-			$('aside#nav').addClass('show');
-		}
-		return false;
-	});
-	$('#btnSearch').on('click', function(){
-		if($('main').hasClass('slideRightOut')) {
-			$('main').removeClass('slideRightOut').addClass('slideIn');
-			$('aside#search').removeClass('show');
-			$('#search input[type=search]').blur();
-			$('body').removeClass('sliderOpen');
-		} else {
-			$('body').addClass('sliderOpen');
-			$('main').removeClass('slideIn').addClass('slideRightOut');
-			$('aside#search').addClass('show');
-			$('#search input[type=search]').focus();
-		}
-		return false;
-	});
+
 
 	$('main').on('click', function(){
 		if($('main').hasClass('slideRightOut')) {

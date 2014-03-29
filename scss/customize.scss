@@ -1,4 +1,4 @@
-html, body { @include size(100% 100%); background-color: #d1ccbe; @include font-smoothing(antialiased); font-family: 'Segoe UI'; }
+html, body { @include size(100% 100%); background-color: #d1ccbe; @include font-smoothing(antialiased); font-family: 'Segoe UI', Tahoma; }
 body {
 	@include size($w-container_v $h-container_v);
 	margin: 0 auto;
@@ -8,13 +8,14 @@ body {
 
 button:focus, input:focus { outline: none; }
 main { position: relative; overflow: hidden; background-color: #fff; box-shadow: 0 0 6px rgba(0,0,0,.5); z-index: 2; @include size(100% 100%);
-	header { @include size(100% ($h-header + $h-topbar)); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 80px;  overflow: hidden; font-family:'PSLxThaiCommon'; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1; text-shadow: 0 1px 0 #fff;
-		box-shadow: 0 1px 0 rgba(0,0,0,.2); background-color: #ebe9e1;; text-align: right; border-top: solid $h-topbar #000;
+	header { @include size(100% ($h-header + $h-topbar)); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: 80px;  overflow: hidden; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1;
+		background-color: $bg-header; text-align: right; border-top: solid $h-topbar #000;
 		h1 { position: relative; z-index: 1;text-align: center; font-weight: 300; margin: 0; float: left;
 			@include size(50% 80px);   max-width: 221px;
 			@include retina-image('../img/base/logo', 100% auto); background-size: 100% auto; background-position: center center; background-repeat: no-repeat;
 		}
 		h1.bold { font-weight: 400; }
+		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; }
 		a {  height: $h-header; text-align: center; z-index: 2; display: inline-block;
 			i:before { position: relative; top: 3px;}
 		}
@@ -23,8 +24,9 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 
 		&.lv2 { height:45px;@include background-image(linear-gradient(bottom, #efede5 0%, #fff 100%)); background-clip: padding-box;background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,1,.45); }
 	}
-	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header; background-color: #f5f1e5; overflow: auto;
-		h2 { margin: 0 0 10; font-family: 'PSLxThaiCommon';  }
+	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header + $h-topbar; background-color: $bg-article; overflow: auto;
+		&.lv2 { @include calc(height, 100% - #{$h-header + $h-topbar + $h-footer}); padding: 5px 10px; }
+		h2 { margin: 0 0 10;   }
 	}
 
 	&:after { content:''; @include size(100%); z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; @include transition(background-color .35s ease-out); }
@@ -53,6 +55,8 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 }
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
 a:hover { color: lighten($c-link, 15%)}
+label { display: block; color: $c-h1; font-size: 20px; font-weight: 400; margin-bottom: 10px; line-height: 31px; }
+input[type="text"], input[type="password"], input[type="email"] { width: 100%; border: none; background-color: #efede7; height: 44px; padding: 0 10px; color: #555; font-size: 24px; font-weight: 300; }
 
 // animation
 .slideLeftOut {
@@ -80,7 +84,7 @@ body.sliderOpen { overflow-x: hidden; }
 			>li { background-color: #f8f4ea; border-top: solid 1px #fefdfb; border-bottom: solid 1px #e7e2d3;  }
 		}
 	}
-	li { height: $h-li; line-height: $h-li; text-shadow: 0 2px 1px rgba(255,255,255,.8); font-family: 'PSLxThaiCommon'; font-size: 20px; color: rgba(89, 84, 62, 1.0); position: relative;
+	li { height: $h-li; line-height: $h-li; text-shadow: 0 2px 1px rgba(255,255,255,.8); font-size: 20px; color: rgba(89, 84, 62, 1.0); position: relative;
 		a { display: block; height: $h-li; padding: 0 5px 0 40px; line-height: 38px; }
 		.indent { text-indent: 40px; display: inline-block; }
 
@@ -125,7 +129,7 @@ body.sliderOpen { overflow-x: hidden; }
 		&:hover { color: $c-link; }
 	}
 }
-#nav-list { position: absolute; z-index: 3; left: 0; right:0; top: 0; background-color: #f8f4ea; width: 100%; text-align: center; font-family: 'PSLxThaiCommon'; font-weight: 300; font-size: 20px; height: 100%; font-size: 20px;
+#nav-list { position: absolute; z-index: 3; left: 0; right:0; top: 0; background-color: #f8f4ea; width: 100%; text-align: center;font-weight: 300; font-size: 20px; height: 100%; font-size: 20px;
 	@include transform(translateY(-100%)); @include transition(all .35s $a-ios7);
 
 	&.slideTopIn { @include transform(translateY(0)); }
@@ -153,7 +157,7 @@ body.sliderOpen { overflow-x: hidden; }
 
 	}
 	article { @include calc(height, 100% - #{$h-header_nav}); overflow: auto; padding-left: 12px;
-		ul { list-style: none; margin: 0; padding: 0; font-family: 'PSLxThaiCommon';
+		ul { list-style: none; margin: 0; padding: 0;
 			li { background-color: #f8f4ea; border-top: solid 1px #fff; border-bottom: solid 1px rgba(238, 234, 221, 1); background-color: #f8f4ea; }
 			a { height: 45px; display: block; padding-left: 15px; font-size: 20px; line-height: 45px; position: relative;
 				&:after { content: '\e806'; font-family: 'icon'; position: absolute; right: 15px; color: #908b78; top: 1px; }
@@ -169,7 +173,7 @@ body.sliderOpen { overflow-x: hidden; }
 .intro {
 	$gap: 5px;
 	$gap_c: $gap/2;
-	$w-banner-top10: 37%;
+	$w-banner-top10: 36%;
 	$w-figure-2: 25%;
 	$w-figure-3: $w-figure-2;
 	$w-figure-4: $w-figure-2;
@@ -181,16 +185,16 @@ body.sliderOpen { overflow-x: hidden; }
 	$w-figure-10: $w-figure-2;
 	$w-figure-11: $w-figure-2;
 
-	$h-figure-2: 33.33%;
+	$h-figure-2: 37.4%;
 	$h-figure-3: $h-figure-2;
 	$h-figure-4: $h-figure-2;
 	$h-figure-5: $h-figure-2;
-	$h-figure-6: 33.33%;
+	$h-figure-6: 30.75%;
 	$h-figure-7: $h-figure-6;
-	$h-figure-8: $h-figure-2;
-	$h-figure-9: $h-figure-2;
-	$h-figure-10: $h-figure-2;
-	$h-figure-11: $h-figure-2;
+	$h-figure-8: 31.8%;
+	$h-figure-9: $h-figure-8;
+	$h-figure-10: $h-figure-8;
+	$h-figure-11: $h-figure-8;
 
 	//Landscape Variable
 	$w-banner-top10-l: 22%;
@@ -237,7 +241,7 @@ body.sliderOpen { overflow-x: hidden; }
 		}
 		#banner-top10 {
 			@include retina-image('../img/intro/banner-intro', 100% 100%); background-size: 100% 100%;
-			font-family: 'PSLxThaiCommon'; color: rgba(76, 60, 33, 1);  text-align: center;
+			 color: rgba(76, 60, 33, 1);  text-align: center;
 			position: absolute; z-index: 2;
 			@include calc(width, $w-banner-top10);
 			@include calc(height, #{$h-figure-6});
@@ -317,7 +321,7 @@ body.sliderOpen { overflow-x: hidden; }
 
 		>figure:nth-child(8), >div:nth-child(8) {
 			@include calc(width, "#{$w-figure-8} - #{$gap}");
-			@include calc(height, "#{$h-figure-2} - #{$gap}");
+			@include calc(height, "#{$h-figure-8} - #{$gap}");
 			left: 0; bottom: 0;
 
 			@include media($landscape) {
@@ -329,7 +333,7 @@ body.sliderOpen { overflow-x: hidden; }
 		}
 		>figure:nth-child(9), >div:nth-child(9) { z-index: 2;
 			@include calc(width, "#{$w-figure-9} - #{$gap_c}");
-			@include calc(height, "#{$h-figure-2} - #{$gap}");
+			@include calc(height, "#{$h-figure-9} - #{$gap}");
 			left: $w-figure-8; bottom: 0;
 
 			@include media($landscape) {
@@ -343,7 +347,7 @@ body.sliderOpen { overflow-x: hidden; }
 
 		>figure:nth-child(10), >div:nth-child(10) {
 			@include calc(width, "#{$w-figure-10} - #{$gap_c}");
-			@include calc(height, "#{$h-figure-2} - #{$gap}");
+			@include calc(height, "#{$h-figure-10} - #{$gap}");
 			bottom: 0; left: auto; right: $w-figure-11;
 
 			@include media($landscape) {
@@ -353,7 +357,7 @@ body.sliderOpen { overflow-x: hidden; }
 		}
 		>figure:nth-child(11), >div:nth-child(11) {
 			@include calc(width, "#{$w-figure-11} - #{$gap}");
-			@include calc(height, "#{$h-figure-2} - #{$gap}");
+			@include calc(height, "#{$h-figure-11} - #{$gap}");
 			right: 0; bottom: 0;
 
 			@include media($landscape) {
@@ -426,9 +430,6 @@ body.sliderOpen { overflow-x: hidden; }
 	  	opacity: 0;
 	}
 }
-
-
-
 
 
 /* content at start */
@@ -505,35 +506,13 @@ ul.stat { list-style: none; margin: 0; height: 30px; padding: 0 $p-figure; backg
 
 
 // Start Page Level 2
-article.lv2 { padding: 32px 10px; background-color: #f5f3ef; @include background-image(linear-gradient(bottom, #f5f3ef 0%, #f5f3ef 90%, #edebdf 100%)); }
-section { margin:0 auto 20px; max-width: 300px;
-	h2 { font-size: 26px; line-height: 20px; margin: 0 0 12px; color: $c-h1; text-shadow: 0 1px 0 rgba(255,255,255,.85); text-indent: 10px; font-weight: 400; }
-	h2.center { text-align: center; text-indent: 0; }
-	label { font-family: 'PSLxThaiCommon'; font-size: 24px; }
-	>div {
-		p { border: 1px solid rgba(135, 129, 102, .7); border-bottom: 0; background-color: rgba(255, 255, 255, .7); margin: 0; height: 45px; line-height: 45px; padding: 0 0 0 9px; background-clip: padding-box;
-			input { width: 180px; height: 40px; border: none; position: relative; top: -1px; background-color: transparent; font-family: 'PSLxThaiCommon'; font-size: 24px; color: $c-h1;
-				&:focus { outline: none; }
-			}
-		}
-		p:first-child { border-radius:10px 10px 0 0;}
-		p:last-child { border-bottom: 1px solid rgba(135, 129, 102, .7); border-radius: 0 0 10px 10px;}
-		p.one { border-bottom: 1px solid rgba(135, 129, 102, .7); border-radius:10px;}
-		label { display: inline-block; width: 100px; }
-		#regist-username, #regist-email { text-transform: lowercase; }
-		#regist-name, #regist-surname { text-transform: capitalize; }
-	}
-}
-article.login {
-	section { margin-bottom: 30px; }
-	p { position: relative; }
-	p.center { font-family: 'PSLxThaiCommon'; font-size: 24px; text-align: center; color: $c-h1; line-height: 77px; }
-	#btn-forgot_passowrd { @include retina-image('../img/form/btn-forgot_password', 30px 30px); @include size(30px); display:block; text-indent: -1000em; position: absolute; right: 7px; top: 7px; }
-	label { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
-	#login-password { width: 150px; }
-	.icon-fb { display: inline-block; @include size(14px 25px); @include retina-image('../img/form/icon-facebook', 14px 25px); position: relative; top: 8px; margin-right: 8px; }
 
+article.login {
+	section { margin-bottom: 20px; }
+	p { position: relative; }
+	p.center {  font-size: 20px; text-align: center; color: $c-h1; line-height: 22px; font-weight: 600; }
 }
+#btn-forgot_passowrd { font-weight: 700; font-size: 36px; line-height: 50px; @include size(56px); border: solid 2px #c6beaa; display: inline-block; border-radius: 50%;}
 .addContent {
 	section>div label { width: 60px;  }
 }
@@ -583,6 +562,22 @@ ul.full { margin: 0; padding: 0; list-style: none;
 	h2, h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%;  }
 	h2 { font-size: 32px; }
 	h3 { font-size: 21px; }
-	button { width: 100%; margin-top: 5.6%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 300; padding: 2.5% 0; }
 }
-#timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 12; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 18px; }
+.wp-popup, footer, .lv2 {
+		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin-top: 5.2%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 300; padding: 8px 0; }
+		a.button { display:block; text-align: center; }
+ }
+ article.lv2 {
+	button, input[type="submit"], a.button, input[type="reset"] { border-color:#7d6949; color: #7d6949; }
+ }
+#timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
+
+footer { background-color: $bg-footer; z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 2%;
+	button, input[type="submit"] { margin: 0; }
+
+	&.login { background-color: #fff; text-align: center; }
+}
+.grid-2 {
+	button, input[type="submit"], a.button, input[type="reset"] { width: 47%; font-weight: 400; }
+	*:nth-child(1) { margin-right: 4.5%; }
+}

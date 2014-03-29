@@ -7,39 +7,51 @@
         <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="cleartype" content="on">
 
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>    <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-        
+
         <main>
-            <header class="lv2">
-                <h1>เข้าสู่ระบบ</h1>
-                <button id="btnCancel" class="btn1">Cancel</button>
-            </header>
-            <article class="lv2 login">
+                        <div id="timer">2:25</div>
+<header>
+    <h1 class="text">เข้าสู่ระบบ</h1>
+</header>            <article class="lv2 login">
                 <section>
                     <div>
-                        <p><label for="login-username">Username</label><input type="text" name="login-username" id="login-username"></p>
-                        <p> 
-                            <label for="login-password">Password</label><input type="password" name="login-password" id="login-password">
-                            <a href="forgot.html" id="btn-forgot_passowrd">?</a>
+                        <p><label for="login-username">ชื่อผู้ใช้</label><input type="text" name="login-username" id="login-username"></p>
+                        <p>
+                            <label for="login-password">รหัสผ่าน</label><input type="password" name="login-password" id="login-password">
                         </p>
                     </div>
                 </section>
-                <div class="border2"><input type="submit" value="เข้าสู่ระบบ" class="btn2"></div> <br>
+                <input type="submit" value="เข้าสู่ระบบ">
 
-                <div class="border2"><button class="btn3"><i class="icon-fb"></i> เข้าสู่ระบบด้วย Facebook ของคุณ</button></div>
-                
+                <button>เข้าสู่ระบบด้วย Facebook ของคุณ</button>
+
                 <p class="center">หรือ</p>
-                
-                <div class="border2"><a href="register.html" class="btn4">ลงทะเบียน</a></div>
-            </article>
-        </main>
 
+                <a href="register.html" class="button">ลงทะเบียน</a>
+            </article>
+            <footer class="login">
+                <a href="forgot.html" id="btn-forgot_passowrd">?</a>
+            </footer>
+        </main>
+        <!-- Overlay Popup -->
+        <div id="overlay"></div>
+
+        <div class="wp-popup">
+            <h2>ลืมรหัสผ่าน</h2>
+            <h3>ใส่ email ของคุณเพื่อขอรับรหัสผ่านใหม่</h3>
+            <input type="email">
+            <p class="grid-2">
+                <input type="submit" value="รับรหัสผ่าน">
+                <input type="reset" value="ยกเลิก" class="button">
+            </p>
+        </div>
         <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/jquery.mobile.custom.js"></script>
 <script src="js/vendor/jquery.grid-a-licious.js"></script>
