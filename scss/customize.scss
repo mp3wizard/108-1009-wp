@@ -474,7 +474,7 @@ button.mfp-close { @include retina-image('../img/btnDone', 60px 29px); width: 60
 // Start Grid View Page
 .grid {
 	article { padding-top: 10px; background-color: #c6beaa; }
-	figure { width: $w-grid-img; background-color: #f3f3e8; box-shadow:0 1px 1px 1px rgba(0,0,0,.2); position: relative; opacity: 0;
+	figure { width: $w-grid-img; background-color: #f3f3e8; position: relative; opacity: 0; overflow: hidden;
 		img { width: 100%;  }
 
 	}
@@ -513,7 +513,7 @@ article.login {
 	p { position: relative; }
 	p.center {  font-size: 20px; text-align: center; color: $c-h1; line-height: 22px; font-weight: 600; }
 }
-#btn-forgot_passowrd { font-weight: 700; font-size: 36px; line-height: 50px; @include size(56px); border: solid 2px #c6beaa; display: inline-block; border-radius: 50%; text-align: center; position: relative; top: -5px;}
+#btn-forgot_passowrd { }
 .addContent {
 	section>div label { width: 60px;  }
 }
@@ -574,8 +574,22 @@ ul.full { margin: 0; padding: 0; list-style: none;
 #timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
 footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 2% 0; height: 73px; text-align: center;
+	@include transition(all .35s ease-out);
 	button, input[type="submit"] { margin: 0;  }
 	&.invert { background-color: $bg-footer;  }
+	ul { list-style: none; margin: 0; padding: 0; }
+	li { display: inline-block; padding: 0 12px;}
+	li a, #btn-forgot_passowrd { font-weight: 700; font-size: 36px; line-height: 50px; @include size(56px); border: solid 2px #c6beaa; display: inline-block; border-radius: 50%; text-align: center; position: relative; top: -5px; position: relative; background-repeat: no-repeat; background-position: center center;
+		em { position:absolute; font-style: normal; font-size: 10px; font-weight: normal; width: 90px; text-align: center; left: -20px; line-height: 1.2; top: 58px; @include transition(all .35s ease-in); opacity: 0;  }
+	}
+	#btn-expand { position: absolute; right: 5px; top: 0; font-size: 24px; letter-spacing: 2px; color: #7d6a4a; line-height: 1.2; }
+	#btn-top10 { @include retina-image('../img/base/icon-top10', 33px 34px); }
+	#btn-location { @include retina-image('../img/base/icon-location', 21px 35px); }
+	#btn-story { @include retina-image('../img/base/icon-story', 33px 33px); }
+
+	&.show { height: 97px;
+		a em { opacity: 1; }
+	}
 }
 .grid-2 {
 	button, input[type="submit"], a.button, input[type="reset"] { width: 47%; font-weight: 400;  }

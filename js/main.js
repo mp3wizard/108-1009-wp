@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	$("article.grid").gridalicious({
 		gutter: 8,
 		selector: 'figure',
-		width: 155,
+		width: 160,
 		animate: true
 	});
 	// Slide Menu Left & Right
@@ -24,6 +24,8 @@ jQuery(document).ready(function($){
 		}
 		return true;
 	});
+
+
 	// End of Slide menu Left Right
 
 	// Start Slide menu Top
@@ -63,4 +65,15 @@ jQuery(document).ready(function($){
 
 	$('#webviewFrame').contents().find("head").append('<meta name="viewport" content="width=1024">');
 
+	$('main.feed').find('#btnHome').addClass('active');
+
+	// Footer Expand
+	var footer = $('footer');
+	$('#btn-expand').on('click', function() {
+		if(footer.hasClass('show')) {
+			footer.removeClass('show');
+		} else {
+			footer.addClass('show');
+		}
+	})
 });
