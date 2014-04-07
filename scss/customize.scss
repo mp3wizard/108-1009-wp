@@ -499,9 +499,12 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 		a.like { color: $c-like; }
 	}
 
-	.webview & { background-color: transparent; display: inline-block;
-		li { font-size: 13px;
-			&:last-child { margin-left: 5px; }
+	.webview & { background-color: transparent; display: inline-block; float: left;
+		li { font-size: 18px;
+			i:before { top: 0px; }
+			&:last-child { margin-left: 15px; color: #5f5947; letter-spacing: 0;
+				label { color: #5f5947; font-size: 18px; }
+			}
 		}
 	}
 }
@@ -534,7 +537,7 @@ input:focus:-ms-input-placeholder { opacity: 0;  }
 
 // WebView
 .webview {
-	iframe { width: 100%; @include calc(height, 100% - #{45px}); }
+	iframe { width: 100%; @include calc(height, 100%); }
 }
 
 //History
@@ -601,7 +604,7 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 	label { line-height: 24px; }
 }
 
-main.regist { display:block; }
+main.webview { display:block; }
 
 
 .galcolumn { padding-bottom: 0!important; }
