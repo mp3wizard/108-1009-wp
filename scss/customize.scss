@@ -12,7 +12,7 @@ main { position: relative; overflow: hidden; background-color: #fff; box-shadow:
 			@include retina-image('../img/base/logo', 100% auto); background-size: 100% auto; background-position: center center; background-repeat: no-repeat;
 		}
 		h1.bold { font-weight: 400; }
-		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; line-height: 70px; width: 100%; white-space: nowrap; }
+		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; line-height: 70px; max-width: 100%; white-space: nowrap;  }
 		a {  height: $h-header; text-align: center; z-index: 2; display: inline-block;
 			i:before { position: relative; top: 3px;}
 		}
@@ -604,13 +604,14 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 	label { line-height: 24px; }
 }
 
-main.webview { display:block; }
-
-
 .galcolumn { padding-bottom: 0!important; }
 main.feed {
 	article { padding-bottom: 108px; }
 }
 ul.list { margin: 0; padding: 0; list-style: none; padding-top: 8px;
-	a { line-height: 56px; font-size: 24px; padding: 0 20px; border-bottom: solid 1px #7d6a4a; color: #7d6a4a; display:block; }
+	a { line-height: 56px; font-size: 24px; padding: 0 15px; border-bottom: solid 1px #7d6a4a; color: #7d6a4a; display:block; }
 }
+
+
+// Show Page
+main.setting { display:block; }
