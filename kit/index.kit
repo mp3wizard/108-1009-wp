@@ -1,9 +1,7 @@
 <!-- @import "_head" -->
     <body  onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-    <div id="timer">2:25</div>
 
         <main class="intro">
-            <!-- $txt-head =  10 สถานที่เที่ยวยอดนิยม-->
             <!-- @import "_header"-->
             <article>
                 <div id="banner-top10" style="background-image: url('img/intro/banner-intro.png')"></div>
@@ -546,6 +544,44 @@
             </footer>
         </main> <!-- .feed -->
 
+        <main class="search">
+            <!-- @import "_header"-->
+            <article>
+                <p><input type="search" name="searchbox" id="searchbox" placeholder="ค้นหาเรื่องราวท่องเที่ยว"></p>
+                <ul class="list">
+                    <li><a href="#">เรื่องราวท่องเที่ยวทั้งหมด</a>
+                        <ul>
+                            <li><a href="#">ท่องเที่ยวเชิงวัฒนธรรม</a></li>
+                            <li><a href="#">ท่องเทียวเชิงนิเวศ</a></li>
+                            <li><a href="#">เที่ยวธรรมชาติ</a></li>
+                            <li><a href="#">สถานหย่อนใจ</a></li>
+                            <li><a href="#">ศิลปะ, วัฒนธรรม และโบราณสถาน</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">กิจกรรมทางทะเล</a>
+                        <ul>
+                            <li><a href="#">กิจกรรมผจญภัย</a></li>
+                            <li><a href="#">กิจกรรมอื่นๆ</a></li>
+                            <li><a href="#">ที่พัก</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </main> <!-- .search -->
+
+        <main class="search sub">
+            <!-- @import "_header"-->
+            <article>
+                <p><input type="search" name="searchbox" id="searchbox" placeholder="ค้นหาเรื่องราวท่องเที่ยว" value="ท่องเที่ยวเชิงวัฒนธรรม"></p>
+                <ul class="list">
+                    <li><a href="#">ทั้งหมด</a></li>
+                    <li><a href="#">หมู่บ้าน, ชุมชน</a></li>
+                    <li><a href="#">ตลาด, ตลาดน้ำ</a></li>
+                </ul>
+            </article>
+        </main> <!-- .search -->
+
         <main class="menulist">
             <!-- $txt-head =  เรื่องราวท่องเที่ยว-->
             <!-- @import "_header2"-->
@@ -763,12 +799,6 @@
             </p>
             <p class="grid-2"><input type="submit" value="เพิ่มลิงค์"> <button class="close-overlay">ยกเลิก</button></p>
         </div>
-
-        <!-- <div id="guide">
-            <span id="guide-1" class="txt-guide">กดเพื่อเปิดเมนูหลัก</span>
-            <span id="guide-2" class="txt-guide">กดเพื่อเปิดเครื่องมือ ค้นหาเรื่องราวท่องเที่ยว</span>
-            <span id="guide-3" class="txt-guide">กดเพื่อดู เรื่องราวท่องเที่ยวที่เกี่ยวข้อง</span>
-        </div> -->
 
         <!-- @import "_script" -->
     </body>
