@@ -646,6 +646,12 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; wid
 		ul a { @include retina-image('../img/search/icon-search_sub', 16px 18px); background-position: 14px center; }
 	}
 }
+.map {
+	.tools { background-color: #333; color: #f2f2f2; font-size: 22px; font-weight: 600; position: absolute; padding: 15px 30px 15px 15px; display: none;
+		a { color: #f2f2f2; font-weight: 400; font-size: 17px; display: inline-block; padding: 0 15px 0 0; }
+		p { margin: 0; }
+	}
+}
 
 // Show Page
-main.search.sub { display:block; }
+main.map { display:block; }
