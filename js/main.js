@@ -115,4 +115,11 @@ jQuery(document).ready(function($){
 		$('main.intro').show();
 	})
 
+	var main = $('main');
+	main.on('click', function(){
+		if($(this).hasClass('first')) {
+				$(this).removeClass('first');
+		}
+	})
+
 });
