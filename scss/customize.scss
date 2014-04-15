@@ -479,10 +479,14 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 
 // Start Page Level 2
 
-article.login {
+.login {
 	section { margin-bottom: 20px; }
 	p { position: relative; }
 	p.center {  font-size: 20px; text-align: center; color: $c-h1; line-height: 22px; font-weight: 600; }
+
+	@include media($tablet) {
+		article { width: 500px; margin: 0 auto; }
+	}
 }
 #btn-forget_password { }
 .addContent {
@@ -546,11 +550,14 @@ ul.full { margin: 0; padding: 0; list-style: none;
 }
 .wp-popup, footer, .lv2 {
 		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin-top: 5.2%;  border: solid 2px #fff; background-color: transparent; color: #fff; font-size: 20px; font-weight: 400; padding: 8px 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+
 		}
 		a.button { display:block; text-align: center; }
  }
  article.lv2 {
-	button, input[type="submit"], a.button, input[type="reset"] { border-color:#7d6949; color: #7d6949; }
+	button, input[type="submit"], a.button, input[type="reset"] { border-color:#7d6949; color: #7d6949; 
+		@include media($tablet) { border: solid 3px #7d6949; }
+	}
  }
  .wp-popup {
  	p:last-child {
@@ -726,6 +733,9 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; wid
 		@include media($tablet) { display:block; }
 	}
 }
+p.center { text-align: center; 
+	@include media($tablet) { font-weight:bold; }
+}
 
 // Show Page
-main.webview { display:block; }
+main.login { display:block; }
