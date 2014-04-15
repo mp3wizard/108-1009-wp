@@ -26,8 +26,7 @@ jQuery(document).ready(function($){
 	// Start Slide menu Top
 
 	$('#btn-forget_password').on('click', function(){
-		// $('#forget_password').show();
-		$('#logout').show();
+		$('#forget_password').show();
 		$('body').addClass('show-overlay');
 		$('.close-overlay, #overlay').on('click', function(){
 			$('body').removeClass('show-overlay');
