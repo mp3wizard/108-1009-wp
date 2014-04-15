@@ -1,9 +1,14 @@
 $retina-filename: '@2x.png';
+$tablet: min-width 720px;
+$desktop: orientation landscape min-width 720px;
+
+
 // Vertical
 $w-container_v: 100%;	//1536px
 $h-container_v: 100%;	//2520px
 $h-topbar: 0;
 $h-header: 80px;
+$h-header-tablet: 96px;
 $a-ios7: cubic-bezier(.10, .70, .10, 1);
 $landscape: orientation landscape;
 $f-caption: em(12);
@@ -42,3 +47,4 @@ $bg-article: #c6beaa;
 $h-footer: 146/2;
 
 $bg-tile-button: #78735d;
+

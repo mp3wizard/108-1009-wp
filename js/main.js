@@ -26,7 +26,8 @@ jQuery(document).ready(function($){
 	// Start Slide menu Top
 
 	$('#btn-forget_password').on('click', function(){
-		$('#forget_password').show();
+		// $('#forget_password').show();
+		$('#logout').show();
 		$('body').addClass('show-overlay');
 		$('.close-overlay, #overlay').on('click', function(){
 			$('body').removeClass('show-overlay');
@@ -70,15 +71,50 @@ jQuery(document).ready(function($){
 
 	$('#webviewFrame').contents().find("head").append('<meta name="viewport" content="width=1024">');
 
-	$('main.feed').find('#btnHome').addClass('active');
+	// $('main.feed').find('#btnHome').addClass('active');
 
+
+	// Grid
 	$("article.grid").gridalicious({
 		gutter: 8,
 		selector: 'figure',
 		width: 160,
 		animate: true
 	});
-	var footer = $('footer');
+	$(window).setBreakpoints({
+// use only largest available vs use all available
+    distinct: true,
+// array of widths in pixels where breakpoints
+// should be triggered
+    breakpoints: [
+        320,
+        480,
+        768,
+        1024
+    ]
+});
+
+$(window).bind('enterBreakpoint768',function() {
+    $("article.grid").gridalicious({
+			gutter: 10,
+			selector: 'figure',
+			width: 240,
+			animate: true
+		});
+});
+$(window).bind('enterBreakpoint1024',function() {
+    $("article.grid").gridalicious({
+			gutter: 12,
+			selector: 'figure',
+			width: 240,
+			animate: true
+		});
+});
+
+// End of Grid
+
+	var footer =
+	 $('footer');
 		$('#btn-expand').on('click', function() {
 			if(footer.hasClass('show')) {
 				footer.removeClass('show');
