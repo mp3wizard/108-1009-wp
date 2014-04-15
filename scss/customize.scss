@@ -612,12 +612,12 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 }
 .wp-popup { @include transition(all .5s ease-in-out); top: -100%; 
 	p { margin: 0;}
+	@include media($desktop) { padding-left: 25%; padding-right: 25%; }
 }
 #overlay { opacity: 0; @include transition(all .25s linear); display:none; }
 .show-overlay {
 	.wp-popup { top: 0;
 		@include media($tablet) { top: 50%; @include transform(translateY(-50%));}
-		@include media($desktop) { padding-left: 25%; padding-right: 25%; }
 	}
 	#overlay { opacity: 1; display:block; }
 }
