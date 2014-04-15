@@ -11,7 +11,7 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 		@include media($tablet) { @include size(100% ($h-header-tablet + $h-topbar)); line-height: $h-header-tablet;}
 
 		h1 { position: relative; z-index: 1;text-align: center; font-weight: 300; margin: 0; float: left;
-			@include size(50% 80px);   max-width: 221px;
+			@include size(50% 80px); max-width: 221px;
 			@include retina-image('../img/base/logo', 100% auto); background-size: 100% auto; background-position: left center; background-repeat: no-repeat;
 
 			@include media($tablet) { @include size(250px 80px); max-width: 280px; top: 7px; }
@@ -19,7 +19,7 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 		h1.bold { font-weight: 400; }
 		h1.text { background-image: none; text-align: left; width: auto; font-size: 32px; padding: 0 10px; line-height: 70px; max-width: 100%; white-space: nowrap; font-weight: 500;
 
-			@include media($tablet) { font-size: 40px;   }
+			@include media($tablet) { font-size: 40px; padding: 0 20px;   }
 			@include media($desktop) { line-height: 74px;}
 		}
 		a {  height: $h-header; text-align: center; z-index: 2; display: inline-block;
@@ -464,6 +464,13 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 				label { color: #5f5947; font-size: 18px; }
 			}
 		}
+		@include media($tablet) { height: $h-header-tablet;
+			li { font-size: 23px; line-height: $h-header-tablet - 4px;
+				&:last-child { margin-left: 30px;
+					label { font-size: 22px; }
+				}
+			}
+		}
 	}
 }
 
@@ -496,6 +503,12 @@ input:focus:-ms-input-placeholder { opacity: 0;  }
 // WebView
 .webview {
 	iframe { width: 100%; @include calc(height, 100%); }
+
+	@include media($tablet) { 
+		footer { text-align: right; 
+			#btnShare, #btnGo { float: none;  }
+		}
+	}
 }
 
 //History
@@ -638,11 +651,6 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; wid
 		@include media($desktop) { background-size: auto 33px; }
 	}
 }
-.menulist {
-	footer { display: none;
-		@include media($tablet) { display:block; }
-	}
-}
 
 .menu {
 	#btnUser { @include retina-image('../img/base/icon-user-active', auto 24px);
@@ -713,5 +721,11 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; wid
 	}
 }
 
+.menulist, .recent {
+	footer { display: none;
+		@include media($tablet) { display:block; }
+	}
+}
+
 // Show Page
-main.login { display:block; }
+main.webview { display:block; }
