@@ -247,15 +247,17 @@ body.sliderOpen { overflow-x: hidden; }
 
 	// Tablet Landscape
 	$w-banner-top10-tl: 24%;
-	$w-figure-2-tl: 30%;
-
+	$w-figure-2-tl: 20%;
+	$w-figure-3-tl: 30%;
+	$w-figure-4-tl: $w-figure-3-tl;
 	$w-figure-5-tl: $w-figure-2-tl;
-
+	$w-figure-6-tl: (100% - $w-banner-top10-tl)/2;
+	$w-figure-7-tl: $w-figure-6-tl;
 	$w-figure-8-tl: $w-figure-2-tl;
-
+	$w-figure-9-tl: $w-figure-3-tl;
+	$w-figure-10-tl: $w-figure-3-tl;
 	$w-figure-11-tl: $w-figure-2-tl;
 
-	$h-banner-top10-tl: 33.33%;
 	$h-figure-2-tl: 35%;
 	$h-figure-3-tl: $h-figure-2-tl;
 	$h-figure-4-tl: $h-figure-2-tl;
@@ -268,6 +270,8 @@ body.sliderOpen { overflow-x: hidden; }
 	$h-figure-9-tl: $h-figure-8-tl;
 	$h-figure-10-tl: $h-figure-8-tl;
 	$h-figure-11-tl: $h-figure-8-tl;
+
+	$h-banner-top10-tl: $h-figure-6-tl;
 
 	//end
 	header {
@@ -300,7 +304,7 @@ body.sliderOpen { overflow-x: hidden; }
 			}
 
 			@include media($desktop) {
-				left: 50%; top: 50%; @include transform(translate(-50%, -50%));
+				top: $h-figure-2-tl; left: 50%; @include transform(translateX(-50%));
 				@include calc(width, "#{$w-banner-top10-tl} - #{$gap}");
 				@include calc(height, "#{$h-banner-top10-tl} - #{$gap}");
 			}
@@ -320,7 +324,13 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(width, "#{$w-figure-2} - #{$gap}");
 				@include calc(height, "#{$h-figure-2} - #{$gap}");
 			}
+
+			@include media($desktop) {
+				@include calc(width, "#{$w-figure-2-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-2-tl} - #{$gap}");
+			}
 		}
+
 		>figure:nth-child(3), >div:nth-child(3) {
 			@include calc(width, "#{$w-figure-3} - #{$gap_c}");
 			@include calc(height, "#{$h-figure-3} - #{$gap}");
@@ -329,6 +339,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(width, "#{$w-figure-3-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-3-l} - #{$gap}");
 
+			}
+
+			@include media($desktop) { left: $w-figure-2-tl;
+				@include calc(width, "#{$w-figure-3-tl} - #{$gap-c}");
+				@include calc(height, "#{$h-figure-3-tl} - #{$gap}");
 			}
 		}
 
@@ -341,6 +356,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(height, "#{$h-figure-4-l} - #{$gap}");
 				right: 0; top: auto; bottom: $h-figure-9-l;
 			}
+
+			@include media($desktop) { right: $w-figure-5-tl; top: 0;
+				@include calc(width, "#{$w-figure-4-tl} - #{$gap-c}");
+				@include calc(height, "#{$h-figure-4-tl} - #{$gap}");
+			}
 		}
 		>figure:nth-child(5), >div:nth-child(5) {
 			@include calc(width, "#{$w-figure-5} - #{$gap}");
@@ -350,6 +370,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(width, "#{$w-figure-5-l}");
 				@include calc(height, "#{$h-figure-5-l}");
 				top: 0;
+			}
+
+			@include media($desktop) { right: 0;
+				@include calc(width, "#{$w-figure-5-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-5-tl} - #{$gap}");
 			}
 		}
 
@@ -362,6 +387,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(height, "#{$h-figure-6-l} - #{$gap}");
 				left:$w-banner-top10-l; top: 0; @include transform(translateY(0%));
 			}
+
+			@include media($desktop) { left: 0; top: $h-figure-2-tl;
+				@include calc(width, "#{$w-figure-6-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-6-tl} - #{$gap}");
+			}
 		}
 		>figure:nth-child(7), >div:nth-child(7) {
 			@include calc(width, "#{$w-figure-7} - #{$gap}");
@@ -372,6 +402,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(height, "#{$h-figure-7-l} - #{$gap}");
 				left: $w-banner-top10-l + $w-figure-6-l;
 				top: 0; @include transform(translateY(0%));
+			}
+
+			@include media($desktop) { left: auto; right: 0; top: $h-figure-2-tl;
+				@include calc(width, "#{$w-figure-7-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-7-tl} - #{$gap}");
 			}
 		}
 
@@ -387,6 +422,11 @@ body.sliderOpen { overflow-x: hidden; }
 				left: $w-figure-10-l;
 				bottom: 0;
 			}
+
+			@include media($desktop) { left: 0; bottom: 0;
+				@include calc(width, "#{$w-figure-8-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-8-tl}");
+			}
 		}
 		>figure:nth-child(9), >div:nth-child(9) { z-index: 2;
 			@include calc(width, "#{$w-figure-9} - #{$gap_c}");
@@ -398,6 +438,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(height, "#{$h-figure-9-l} - #{$gap}");
 				left: auto; right: $w-figure-3-l;
 				bottom: 0;
+			}
+
+			@include media($desktop) { left: $w-figure-8-tl; bottom: 0;
+				@include calc(width, "#{$w-figure-9-tl} - #{$gap-c}");
+				@include calc(height, "#{$h-figure-9-tl}");
 			}
 		}
 
@@ -411,6 +456,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(width, "#{$w-figure-10-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-10-l} - #{$gap}");
 			}
+
+			@include media($desktop) { right: $w-figure-11-tl; bottom: 0;
+				@include calc(width, "#{$w-figure-10-tl} - #{$gap-c}");
+				@include calc(height, "#{$h-figure-10-tl}");
+			}
 		}
 		>figure:nth-child(11), >div:nth-child(11) {
 			@include calc(width, "#{$w-figure-11} - #{$gap}");
@@ -421,6 +471,11 @@ body.sliderOpen { overflow-x: hidden; }
 				@include calc(width, "#{$w-figure-11-l} - #{$gap}");
 				@include calc(height, "#{$h-figure-11-l}");
 				left: 0; bottom: $h-figure-10-l;
+			}
+
+			@include media($desktop) { left: auto; right: 0; bottom: 0;
+				@include calc(width, "#{$w-figure-11-tl} - #{$gap}");
+				@include calc(height, "#{$h-figure-11-tl}");
 			}
 		}
 	}
@@ -738,4 +793,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.login { display:block; }
+main.intro { display:block; }
