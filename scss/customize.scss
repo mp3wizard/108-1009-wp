@@ -764,18 +764,19 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 	}
 }
 .view-photo {
-	article { height: 100%; top: 0;
-		img { width: 100%; }
+	article { height: 100%; top: 0; text-align: center; background-color: #000;
+		img { max-width: 100%; max-height: 100%; }
 	}
 	figure { height: 100%; }
-	figcaption { position: fixed; bottom: 0; left: 0; right: 0; @include background-image(linear-gradient(bottom, #000 0%, #000 60%, rgba(0,0,0,0) 100%)); color: #f2f2f2; padding: 120px 15px 10px;
+	figcaption { position: fixed; bottom: 0; left: 0; right: 0; text-align:left; @include background-image(linear-gradient(bottom, #000 0%, #000 60%, rgba(0,0,0,0) 100%)); color: #f2f2f2; padding: 120px 15px 10px;
 		h4 { margin: 0 0 20px; font-size: 22px; line-height: 1.1; }
 		p { font-size: 20px; line-height: 1.1; font-weight: 600; }
 		section { margin-bottom: 10px; @extend .clearfix; line-height: 44px;
-			strong { font-size: 21px; }
+			strong { font-size: 21px; margin-left: 70px; }
 			a { border: solid 2px #f2f2f2; color: #f2f2f2; font-weight: 700;  display: inline-block; padding: 0 38px 0 20px; font-size: 18px; float: right;  background: no-repeat 95% center; @include retina-image('../img/intro/icon-share_mini', 19px); }
 		}
 	}
+	.btn-back {   display:inline-block; position: absolute; top: auto; bottom: 20px; left: 20px; text-indent: -1000em; text-align:left; @include retina-image('../img/view-photo/btnBack', 42px); @include size(42px);}
 }
 .tutorial { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; opacity: 0; @include transition(opacity .35s ease-in-out); z-index: -1;
 	&:before { background-color: rgba(0,0,0,.85); position: fixed; top: 0; left: 0; width: 100%; height: 100%; content: ''; }
@@ -818,4 +819,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.intro { display:block; }
+main.view-photo { display:block; }
