@@ -799,6 +799,9 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 		img:nth-child(1) { top: 120px; right: 20%; }
 		img:nth-child(2) { top: 300px; right: 25%; }
 	}
+	@include media($tablet) { 
+		// img { transform: scale(1.5); }
+	}
 }
 .first .tutorial { z-index: 100; opacity: 1; }
 
@@ -819,4 +822,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.view-photo { display:block; }
+main.intro { display:block; }
