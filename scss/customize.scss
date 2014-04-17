@@ -46,6 +46,8 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 		}
 		h2 { margin: 0 0 10;   }
 		section { margin-bottom: 60px; }
+
+		@include media($tablet) { @include calc(height, 100% - #{$h-header-tablet}); top: $h-header-tablet + $h-topbar; }
 	}
 
 	&:after { content:''; @include size(100%); z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; @include transition(background-color .35s ease-out); }
@@ -707,9 +709,15 @@ ul.list { margin: 0; padding: 0; list-style: none; padding-top: 8px;
 ul.tile { margin: 0; padding: 18px 0 0 12px; list-style: none; width: 100%; height: 100%;
 	li { width: 50%; display: block; float: left; padding-right: 12px; height: 33.33%; padding-bottom: 12px; }
 	a { color: #fff; width: 100%; height: 100%; display:block; text-align: center; float: left; padding-top: 63%; background-color: $bg-tile-button; margin: 0 18px 18px 0; font-size: 20px; line-height: 1.15; position: relative;
+
 	}
 	a:active { background-color: #d2980e; }
 	img { height: 72px; position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -95%)); }
+
+	@include media($tablet) { padding: 35px 30px;
+		li {  height: 235px; width: 235px; }
+		a { font-size: 22px; }
+	}
 }
 input[type="url"] { width: 100%; height: 46px; border: none; color: #555; font-size: 21px; padding: 0 10px; font-weight: 400; }
 input[type="search"] { @extend input[type="url"]; background-color: #efede7; width: 91%; margin: 0 auto; display:block; }
@@ -793,7 +801,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; wid
 	}
 }
 
-.menulist, .recent, .map {
+.menulist, .recent, .map, .menu {
 	footer { display: none;
 		@include media($tablet) { display:block; }
 	}
@@ -803,4 +811,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.map { display:block; }
+main.menu { display:block; }
