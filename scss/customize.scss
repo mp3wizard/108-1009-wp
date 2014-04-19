@@ -4,6 +4,7 @@ body {@include size($w-container_v $h-container_v);margin: 0 auto;overflow: hidd
 
 
 button:focus, input:focus, a:hover, a:focus { outline: none; }
+.search.sub { display: none; }
 main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100%); display: none;
 	header { @include size(100% ($h-header + $h-topbar)); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: $h-header;  overflow: hidden; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1;
 		background-color: $bg-header; text-align: right; border-top: solid $h-topbar #000;
@@ -799,8 +800,25 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 		img:nth-child(1) { top: 120px; right: 20%; }
 		img:nth-child(2) { top: 300px; right: 25%; }
 	}
-	@include media($tablet) { 
-		// img { transform: scale(1.5); }
+	@include media($tablet) {
+		img { transform: scale(1.5); }
+
+		.intro & {
+			img:nth-child(1) { top: 30px; right: 300px; }
+			img:nth-child(2) { top: 100px; right: 190px; }
+			img:nth-child(3) { top: 125px; right: 100px; }
+			img:nth-child(4) { top:auto; bottom: 9%; margin-left: -10%; left: 50%; }
+		}
+
+		.view-photo & {
+			img:nth-child(1) { top:auto; bottom: 70px; left: 200px;  }
+			img:nth-child(2) { top:auto; bottom: 130px; left: auto; right: 210px;  }
+		}
+
+		.search & {
+			img:nth-child(1) { top: 160px; right: 30%; }
+			img:nth-child(2) { top: 300px; right: 15%; }
+		}
 	}
 }
 .first .tutorial { z-index: 100; opacity: 1; }
@@ -822,4 +840,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.intro { display:block; }
+main.search { display:block; }
