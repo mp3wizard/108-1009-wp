@@ -838,6 +838,11 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 p.center { text-align: center;
 	@include media($tablet) { font-weight:bold; }
 }
+.term {
+	article.lv2  {
+		p { font-size: 18px; }
+	}
+}
 
 // Show Page
 main.intro { display:block; }
