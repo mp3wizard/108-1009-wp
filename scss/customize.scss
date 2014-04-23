@@ -1,6 +1,8 @@
 html, body { @include size(100% 100%); background-color: #C6BEAA; @include font-smoothing(antialiased); font-family: 'Segoe UI', Tahoma; }
-body {@include size($w-container_v $h-container_v);margin: 0 auto;overflow: hidden;-webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;}
+body { width:$w-container_v; @include calc(height, 100% - #{32px}); margin: 0 auto;overflow: hidden;-webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+	@include media($tablet) { @include calc(height, 100%); }
+}
 
 
 button:focus, input:focus, a:hover, a:focus { outline: none; }
@@ -845,4 +847,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.intro { display:block; }
+main.feed { display:block; }
