@@ -642,7 +642,7 @@ ul.full { margin: 0; padding: 0; list-style: none;
  }
 #timer { color: #fff; @include size(100% $h-topbar); position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
-footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 2% 0; height: 73px; text-align: center;
+footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 32px; padding: 14px 2% 0; height: 73px; text-align: center;
 	@include transition(all .35s ease-out);
 
 	button, input[type="submit"] { margin: 0;  }
@@ -665,7 +665,7 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 		a em { opacity: 1; }
 	}
 
-	@include media($tablet) { text-align: right;
+	@include media($tablet) { text-align: right; bottom: 0;
 		ul { padding-right: 30px; }
 		li { padding: 0 20px; }
 		li a, #btn-forget_password  { @include size(44px); border: solid 4px #c6beaa; top: 0; font-size: 30px; line-height: 38px;
@@ -860,4 +860,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.intro { display:block; }
+main.feed { display:block; }

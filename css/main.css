@@ -565,7 +565,7 @@ article.lv2 button, article.lv2 input[type="submit"], article.lv2 a.button, arti
 
 #timer { color: #fff; width: 100%; height: 0px; position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
-footer { background-color: rgba(255, 255, 255, 0.94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 2% 0; height: 73px; text-align: center; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
+footer { background-color: rgba(255, 255, 255, 0.94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 32px; padding: 14px 2% 0; height: 73px; text-align: center; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
 footer button, footer input[type="submit"] { margin: 0; }
 footer.invert { background-color: #7d6949; }
 @media screen and (min-width: 720px) { footer.invert { background-color: #fff; text-align: right; padding: 12px 15px 0; }
@@ -584,7 +584,7 @@ footer #btn-story { background-image: url("../img/base/icon-story.png"); }
 footer .btn-back { display: none; }
 footer.show { height: 97px; }
 footer.show a em { opacity: 1; }
-@media screen and (min-width: 720px) { footer { text-align: right; }
+@media screen and (min-width: 720px) { footer { text-align: right; bottom: 0; }
   footer ul { padding-right: 30px; }
   footer li { padding: 0 20px; }
   footer li a, footer #btn-forget_password { width: 44px; height: 44px; border: solid 4px #c6beaa; top: 0; font-size: 30px; line-height: 38px; }
@@ -720,7 +720,7 @@ p.center { text-align: center; }
 
 .term article.lv2 p { font-size: 18px; }
 
-main.intro { display: block; }
+main.feed { display: block; }
 
 .btn1, .btn6 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); background-color: transparent; font-family: Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; color: #5f5947; padding: 0 10px; }
 
