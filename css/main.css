@@ -282,10 +282,10 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .mfp-ie7 .mfp-content { padding-top: 44px; }
 .mfp-ie7 .mfp-close { top: 0; right: 0; padding-top: 0; }
 
-html, body { width: 100%; height: 100%; background-color: #C6BEAA; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-family: 'Segoe UI', Tahoma; }
+html { width: 100%; height: -moz-calc(100% - 32px); height: -o-calc(100% - 32px); height: -webkit-calc(100% - 32px); height: calc(100% - 32px); background-color: #C6BEAA; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-family: 'Segoe UI', Tahoma; }
+@media screen and (min-width: 720px) { html { height: -moz-calc(100%); height: -o-calc(100%); height: -webkit-calc(100%); height: calc(100%); } }
 
-body { width: 100%; height: -moz-calc(100% - 32px); height: -o-calc(100% - 32px); height: -webkit-calc(100% - 32px); height: calc(100% - 32px); margin: 0 auto; overflow: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-@media screen and (min-width: 720px) { body { height: -moz-calc(100%); height: -o-calc(100%); height: -webkit-calc(100%); height: calc(100%); } }
+body { width: 100%; height: 100%; margin: 0 auto; overflow: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 button:focus, input:focus, a:hover, a:focus { outline: none; }
 
