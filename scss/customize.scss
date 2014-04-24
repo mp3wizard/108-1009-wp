@@ -37,7 +37,7 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 
 		&.lv2 { height:45px;@include background-image(linear-gradient(bottom, #efede5 0%, #fff 100%)); background-clip: padding-box;background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,1,.45); }
 	}
-	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header + $h-topbar; background-color: $bg-article; overflow: auto;
+	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header + $h-topbar; background-color: $bg-article; overflow: auto; z-index: 1;
 		&.lv2 { @include calc(height, 100% - #{$h-header + $h-topbar + $h-footer}); padding: 5px 10px; color: #5f5947;
 			h3 { line-height: 1.5; margin: 20px 0;
 				@include media($tablet) { font-size: 22px; }
@@ -860,4 +860,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.intro { display:block; }
+main.feed { display:block; }

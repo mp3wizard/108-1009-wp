@@ -307,7 +307,7 @@ main header a i:before { position: relative; top: 3px; }
 main header i.icon-menu:before { font-size: 26px; top: 5px; }
 main header i.icon-search:before { font-size: 18px; }
 main header.lv2 { height: 45px; background-image: -webkit-linear-gradient(bottom, #efede5 0%, white 100%); background-image: linear-gradient(to top, #efede5 0%, white 100%); background-clip: padding-box; background-color: #fff; box-shadow: 0px 2px 3px rgba(0, 0, 1, 0.45); }
-main article { width: 100%; position: relative; height: -moz-calc(100% - 80px); height: -o-calc(100% - 80px); height: -webkit-calc(100% - 80px); height: calc(100% - 80px); top: 80px; background-color: #c6beaa; overflow: auto; }
+main article { width: 100%; position: relative; height: -moz-calc(100% - 80px); height: -o-calc(100% - 80px); height: -webkit-calc(100% - 80px); height: calc(100% - 80px); top: 80px; background-color: #c6beaa; overflow: auto; z-index: 1; }
 main article.lv2 { height: -moz-calc(100% - 153px); height: -o-calc(100% - 153px); height: -webkit-calc(100% - 153px); height: calc(100% - 153px); padding: 5px 10px; color: #5f5947; }
 main article.lv2 h3 { line-height: 1.5; margin: 20px 0; }
 @media screen and (min-width: 720px) { main article.lv2 h3 { font-size: 22px; } }
@@ -719,7 +719,7 @@ p.center { text-align: center; }
 
 .term article.lv2 p { font-size: 18px; }
 
-main.intro { display: block; }
+main.feed { display: block; }
 
 .btn1, .btn6 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); background-color: transparent; font-family: Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; color: #5f5947; padding: 0 10px; }
 
