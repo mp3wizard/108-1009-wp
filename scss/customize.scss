@@ -7,7 +7,6 @@ body { width:$w-container_v; height: 100%;  margin: 0 auto;overflow: hidden;-web
 
 
 button:focus, input:focus, a:hover, a:focus { outline: none; }
-.search.sub { display: none; }
 main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100%); display: none;
 	header { @include size(100% ($h-header + $h-topbar)); position: fixed; top: 0; left: 0; right:0; z-index: 99; line-height: $h-header;  overflow: hidden; font-weight: 400; @include font-smoothing(antialiased); font-size: 12px; color: $c-h1;
 		background-color: $bg-header; text-align: right; border-top: solid $h-topbar #000;
@@ -756,7 +755,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 			// @include media($desktop) { background-size: auto 32px; }
 	}
 }
-.search {
+.search, .search2 {
 	#btnSearch { @include retina-image('../img/base/icon-search-active', auto 24px);
 			@include media($r-mobile) { background-size: auto 32px; }
 			@include media($tablet) { background-size: auto 40px; }
@@ -845,7 +844,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 	}
 }
 
-.menulist, .recent, .map, .menu, .search {
+.menulist, .recent, .map, .menu, .search, .search2 {
 	footer { display: none;
 		@include media($tablet) { display:block; }
 	}
