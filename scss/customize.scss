@@ -838,7 +838,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 }
 .first .tutorial { z-index: 100; opacity: 1; }
 
-#share {
+#share { padding-top: 80px;
 	@include media($tablet) {  text-align: center;
 		a.button { display: inline-block; font-size: 22px; line-height: 26px; margin: 20px 10px 10px; }
 		.close-overlay, br { display:none; }
@@ -860,4 +860,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.feed { display:block; }
+main.intro { display:block; }
