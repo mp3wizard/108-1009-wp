@@ -41,14 +41,14 @@ header {
 
 .btnBack { @include size(50px 45px); @include hide-text; display: block; float: left; position: relative; top: 0; left: 0; background-repeat: no-repeat; @include retina-image('../img/webview/btnBack', 43px 33px); background-position: right center; }
 
-.btnFavBig {  @include hide-text; @include retina-image('../img/webview/icon-fav', 28px 27px); background-repeat: no-repeat; background-position: center center; @include size(80px 75px);
+.btnFavBig {  @include hide-text; @include retina-image('../img/webview/icon-fav', 28px 27px); background-repeat: no-repeat; background-position: center center; @include size(54px 75px);
 	&.active { @include retina-image('../img/webview/icon-fav-active', 28px 27px); }
 
 	@include media($tablet) { height: 96px; width: 110px; background-size: 36px 36px; }
 }
 
-.btnHistory {  @include hide-text; @include retina-image('../img/webview/icon-history', 30px 30px); background-repeat: no-repeat; background-position: center center; @include size(32px 80px); position: absolute; top: 0; right: 120px;
-	@include media($tablet) { height: 96px; width: 64px; background-size: 36px 36px; background-position: center 55%; }
+.btnHistory {  @include hide-text; @include retina-image('../img/webview/icon-history', 28px 28px); background-size: 28px 28px; background-repeat: no-repeat; background-position: center center; @include size(44px 80px); position: absolute; top: 0; right: 55px;
+	@include media($tablet) { height: 96px; width: 64px; background-size: 36px 36px; background-position: center 55%; right: 120px; }
 }
 
 #btnShare { border: solid 2px #c6beaa; display: block; float:left; height: 44px; position: relative; top: 1px; line-height: 36px; margin-left: 5px;  display: inline-block; font-weight: bold; width: 100px;

@@ -525,7 +525,8 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 
 	.webview & { background-color: transparent; display: inline-block; float: left;
 		li { font-size: 18px;
-			i:before { top: 0px; }
+			i:before { top: 0px;  }
+			&:first-child { margin-left: -8px; }
 			&:last-child { margin-left: 15px; color: #5f5947; letter-spacing: 0;
 				label { color: #5f5947; font-size: 18px; }
 			}
@@ -847,4 +848,4 @@ p.center { text-align: center;
 }
 
 // Show Page
-main.feed { display:block; }
+main.intro { display:block; }
