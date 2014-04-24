@@ -485,11 +485,14 @@ body.sliderOpen { overflow-x: hidden; }
 .grid figcaption strong a { display: block; margin-bottom: 10px; color: #666; }
 
 ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 10px; background-color: #fff; white-space: nowrap; border-top: solid 2px #dadad8; }
-ul.stat li { display: inline-block; line-height: 30px; font-weight: bold; margin-right: 5px; }
+ul.stat li { display: inline-block; line-height: 30px; font-weight: bold; margin-right: 5px; white-space: nowrap; }
 ul.stat li label { margin-right: 0px; display: inline-block; }
-ul.stat li:first-child { margin-left: -2px; font-size: 15px; width: 45%; }
-ul.stat li:last-child { margin-right: 0; text-align: left; color: #030303; font-size: 16px; letter-spacing: -1px; width: 55%; }
-ul.stat li:last-child label { color: #030303; font-weight: bold; font-size: 16px; }
+ul.stat li:first-child { margin-left: -2px; font-size: 12px; width: 45%; }
+@media screen and (min-width: 720px) { ul.stat li:first-child { font-size: 14px; } }
+ul.stat li:last-child { margin-right: 0; text-align: left; color: #030303; font-size: 13px; letter-spacing: -1px; width: 55%; }
+ul.stat li:last-child label { color: #030303; font-weight: bold; font-size: 12px; }
+@media screen and (min-width: 720px) { ul.stat li:last-child { font-size: 15px; }
+  ul.stat li:last-child label { font-size: 14px; } }
 ul.stat li a.like { color: #ec1297; }
 .webview ul.stat { background-color: transparent; display: inline-block; float: left; }
 .webview ul.stat li { font-size: 18px; }
@@ -665,18 +668,20 @@ input[type="search"] { background-color: #efede7; width: -moz-calc(100% - 40px);
 .map .tools a { color: #f2f2f2; font-weight: 400; font-size: 17px; display: inline-block; padding: 0 15px 0 0; }
 .map .tools p { margin: 0; }
 
-.view-photo article { height: 100%; top: 0; text-align: center; background-color: #000; }
-.view-photo article img { max-width: 100%; max-height: 100%; }
+.view-photo article { height: 100%; top: 0; text-align: center; background-color: #000; overflow: hidden; }
+.view-photo article img { max-height: 100%; }
 .view-photo figure { height: 100%; }
-.view-photo figcaption { position: fixed; bottom: 0; left: 0; right: 0; text-align: left; background-image: -webkit-linear-gradient(bottom, black 0%, black 60%, transparent 100%); background-image: linear-gradient(to top, black 0%, black 60%, transparent 100%); color: #f2f2f2; padding: 120px 15px 10px; }
-.view-photo figcaption h4 { margin: 0 0 20px; font-size: 22px; line-height: 1.1; }
+.view-photo figcaption { position: fixed; bottom: 0; left: 0; right: 0; text-align: left; background-image: -webkit-linear-gradient(bottom, black 0%, black 60%, transparent 100%); background-image: linear-gradient(to top, black 0%, black 60%, transparent 100%); color: #f2f2f2; padding: 60px 15px 10px; }
+.view-photo figcaption h4 { margin: 0 0 20px; font-size: 15px; line-height: 1.2; font-weight: normal; }
 .view-photo figcaption p { font-size: 20px; line-height: 1.1; font-weight: 600; }
-.view-photo figcaption section { margin-bottom: 10px; line-height: 44px; }
-.view-photo figcaption section strong { font-size: 21px; margin-left: 70px; }
-.view-photo figcaption section a { border: solid 2px #f2f2f2; color: #f2f2f2; font-weight: 700; display: inline-block; padding: 0 38px 0 20px; font-size: 18px; float: right; background: no-repeat 95% center; background-image: url("../img/intro/icon-share_mini.png"); }
+.view-photo figcaption section { margin-bottom: 10px; line-height: 32px; }
+.view-photo figcaption section strong { font-size: 15px; font-weight: normal; }
+@media screen and (min-width: 720px) { .view-photo figcaption section strong { margin-left: 70px; } }
+.view-photo figcaption section a { border: solid 2px #f2f2f2; color: #f2f2f2; font-weight: 700; display: inline-block; padding: 0 38px 0 10px; font-size: 15px; float: right; background: no-repeat 95% center; background-image: url("../img/intro/icon-share_mini.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .view-photo figcaption section a { background-image: url("../img/intro/icon-share_mini_2x.png"); background-size: 19px; } }
-.view-photo .btn-back { display: inline-block; position: absolute; top: auto; bottom: 20px; left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/view-photo/btnBack.png"); width: 42px; height: 42px; }
+.view-photo .btn-back { display: inline-block; position: absolute; top: auto; bottom: 15px; left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/view-photo/btnBack.png"); width: 42px; height: 42px; display: none; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .view-photo .btn-back { background-image: url("../img/view-photo/btnBack_2x.png"); background-size: 42px; } }
+@media screen and (min-width: 720px) { .view-photo .btn-back { display: block; } }
 
 .tutorial { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; z-index: -1; }
 .tutorial:before { background-color: rgba(0, 0, 0, 0.85); position: fixed; top: 0; left: 0; width: 100%; height: 100%; content: ''; }
