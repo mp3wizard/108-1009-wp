@@ -495,11 +495,11 @@ ul.stat li:last-child label { color: #030303; font-weight: bold; font-size: 12px
   ul.stat li:last-child label { font-size: 14px; } }
 ul.stat li a.like { color: #ec1297; }
 .webview ul.stat { background-color: transparent; display: inline-block; float: left; }
-.webview ul.stat li { font-size: 18px; }
+.webview ul.stat li { font-size: 13px; }
 .webview ul.stat li i:before { top: 0px; }
 .webview ul.stat li:first-child { margin-left: -8px; }
 .webview ul.stat li:last-child { margin-left: 15px; color: #5f5947; letter-spacing: 0; }
-.webview ul.stat li:last-child label { color: #5f5947; font-size: 18px; }
+.webview ul.stat li:last-child label { color: #5f5947; font-size: 12px; }
 @media screen and (min-width: 720px) { .webview ul.stat { height: 96px; }
   .webview ul.stat li { font-size: 23px; line-height: 92px; }
   .webview ul.stat li:last-child { margin-left: 30px; }
@@ -548,8 +548,8 @@ ul.full li a { line-height: 40px; font-size: 12px; text-overflow: ellipsis; vert
 .wp-popup { background-color: #7d6949; position: fixed; z-index: 11; width: 100%; height: auto; top: 0; left: 0; right: 0; padding: 9% 3% 4%; color: #fff; display: none; }
 .wp-popup h2, .wp-popup h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%; }
 @media screen and (min-width: 720px) { .wp-popup h2, .wp-popup h3 { margin-bottom: 10px; line-height: 1.3; } }
-.wp-popup h2 { font-size: 32px; }
-.wp-popup h3 { font-size: 21px; }
+.wp-popup h2 { font-size: 24px; }
+.wp-popup h3 { font-size: 16px; }
 @media screen and (min-width: 720px) { .wp-popup h3 { margin-bottom: 20px; } }
 @media screen and (min-width: 720px) { .wp-popup { padding: 20px 5% 35px; }
   .wp-popup input[type="text"], .wp-popup input[type="password"], .wp-popup input[type="email"], .wp-popup input[type="url"], .wp-popup input[type="search"] { width: 65%; margin-bottom: 10px; } }
@@ -597,9 +597,10 @@ footer.show a em { opacity: 1; }
 
 @media screen and (orientation: landscape) and (min-width: 720px) { footer li { padding: 0 25px; } }
 
-.grid-2 button, .grid-2 input[type="submit"], .grid-2 a.button, .grid-2 input[type="reset"] { width: 47%; font-weight: 400; }
+.grid-2 { font-size: 0; margin-top: 10px !important; }
+.grid-2 button, .grid-2 input[type="submit"], .grid-2 a.button, .grid-2 input[type="reset"] { width: -moz-calc(50% - 5px); width: -o-calc(50% - 5px); width: -webkit-calc(50% - 5px); width: calc(50% - 5px); font-weight: 400; }
 @media screen and (min-width: 720px) { .grid-2 button, .grid-2 input[type="submit"], .grid-2 a.button, .grid-2 input[type="reset"] { width: 140px; } }
-.grid-2 *:nth-child(1) { margin-right: 4.5%; }
+.grid-2 *:nth-child(1) { margin-right: 10px !important; }
 .grid-2:last-child { margin-bottom: 0; }
 
 .wp-popup { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; top: -100%; }
@@ -624,7 +625,7 @@ main.feed article { padding-bottom: 108px; }
 main.feed footer { overflow: hidden; }
 
 ul.list { margin: 0; padding: 0; list-style: none; padding-top: 6px; }
-ul.list a { line-height: 32px; height: 38px; font-size: 16px; padding: 0 15px; border-bottom: solid 1px rgba(125, 106, 74, 0.5); color: #7d6a4a; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; width: 100%; }
+ul.list a { line-height: 32px; height: 38px; font-size: 16px; padding: 0 15px; border-bottom: solid 1px #aea28a; color: #7d6a4a; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; width: 100%; }
 ul.list a:active { background-color: #d2980e; }
 .recent ul.list a { font-size: 20px; padding-left: 45px; background-image: url("../img/recent/bullet-recent.png"); background-repeat: no-repeat; background-position: 12px center; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .recent ul.list a { background-image: url("../img/recent/bullet-recent_2x.png"); background-size: 18px 22px; } }
@@ -641,7 +642,7 @@ ul.tile img { height: 72px; position: absolute; left: 50%; top: 50%; -webkit-tra
   ul.tile li { height: 235px; width: 235px; }
   ul.tile a { font-size: 22px; } }
 
-input[type="url"], input[type="search"] { width: 100%; height: 46px; border: none; color: #555; font-size: 21px; padding: 0 10px; font-weight: 400; }
+input[type="url"], input[type="search"] { width: 100%; height: 30px; border: none; color: #555; font-size: 14px; padding: 0 10px; font-weight: 400; }
 
 input[type="search"] { background-color: #efede7; width: -moz-calc(100% - 40px); width: -o-calc(100% - 40px); width: -webkit-calc(100% - 40px); width: calc(100% - 40px); margin: 0 auto; display: block; }
 @media screen and (min-width: 720px) { input[type="search"] { width: -moz-calc(100% - 40px); width: -o-calc(100% - 40px); width: -webkit-calc(100% - 40px); width: calc(100% - 40px); } }
@@ -656,14 +657,15 @@ input[type="search"] { background-color: #efede7; width: -moz-calc(100% - 40px);
 @media screen and (min-width: 360px) { .menu #btnUser { background-size: auto 32px; } }
 @media screen and (min-width: 720px) { .menu #btnUser { background-size: auto 40px; } }
 
+.search p, .search2 p { margin: 10px 0; }
 .search #btnSearch, .search2 #btnSearch { background-image: url("../img/base/icon-search-active.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .search #btnSearch, .search2 #btnSearch { background-image: url("../img/base/icon-search-active_2x.png"); background-size: auto 22px; } }
 @media screen and (min-width: 360px) { .search #btnSearch, .search2 #btnSearch { background-size: auto 32px; } }
 @media screen and (min-width: 720px) { .search #btnSearch, .search2 #btnSearch { background-size: auto 40px; } }
-.search ul.list a, .search2 ul.list a { background-image: url("../img/search/icon-search.png"); background-repeat: no-repeat; background-position: 12px center; padding-left: 45px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .search ul.list a, .search2 ul.list a { background-image: url("../img/search/icon-search_2x.png"); background-size: 18px 18px; } }
-.search ul.list ul a, .search2 ul.list ul a { background-image: url("../img/search/icon-search_sub.png"); background-position: 14px center; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .search ul.list ul a, .search2 ul.list ul a { background-image: url("../img/search/icon-search_sub_2x.png"); background-size: 16px 18px; } }
+.search ul.list a, .search2 ul.list a { background-image: url("../img/search/icon-search.png"); background-size: auto 14px; background-repeat: no-repeat; background-position: 12px center; padding-left: 40px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .search ul.list a, .search2 ul.list a { background-image: url("../img/search/icon-search_2x.png"); background-size: auto 14px; } }
+.search ul.list ul a, .search2 ul.list ul a { background-image: url("../img/search/icon-search_sub.png"); background-size: auto 12px; background-position: 14px center; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .search ul.list ul a, .search2 ul.list ul a { background-image: url("../img/search/icon-search_sub_2x.png"); background-size: auto 12px; } }
 
 .map .tools { background-color: #333; color: #f2f2f2; font-size: 22px; font-weight: 600; position: absolute; padding: 15px 30px 15px 15px; display: none; }
 .map .tools a { color: #f2f2f2; font-weight: 400; font-size: 17px; display: inline-block; padding: 0 15px 0 0; }
@@ -722,7 +724,7 @@ p.center { text-align: center; }
 .term article.lv2 p { font-size: 18px; }
 
 /* Show Page */
-main.intro { display: block; }
+main.login { display: block; }
 
 .btn1, .btn6 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); background-color: transparent; font-family: Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; color: #5f5947; padding: 0 10px; }
 
@@ -760,26 +762,26 @@ header > button:nth-child(3) { right: 15px; }
 .btnBack:before { content: ""; display: block; width: 0; height: 100%; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnBack { background-image: url("../img/webview/btnBack_2x.png"); background-size: 43px 33px; } }
 
-.btnFavBig { overflow: hidden; background-image: url("../img/webview/icon-fav.png"); background-repeat: no-repeat; background-position: center center; width: 54px; height: 75px; }
+.btnFavBig { overflow: hidden; background-image: url("../img/webview/icon-fav.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center 47%; width: 32px; height: 100%; margin-right: 10px; }
 .btnFavBig:before { content: ""; display: block; width: 0; height: 100%; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnFavBig { background-image: url("../img/webview/icon-fav_2x.png"); background-size: 28px 27px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnFavBig { background-image: url("../img/webview/icon-fav_2x.png"); background-size: auto 18px; } }
 .btnFavBig.active { background-image: url("../img/webview/icon-fav-active.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnFavBig.active { background-image: url("../img/webview/icon-fav-active_2x.png"); background-size: 28px 27px; } }
 @media screen and (min-width: 720px) { .btnFavBig { height: 96px; width: 110px; background-size: 36px 36px; } }
 
-.btnHistory { overflow: hidden; background-image: url("../img/webview/icon-history.png"); background-size: 28px 28px; background-repeat: no-repeat; background-position: center center; width: 44px; height: 80px; position: absolute; top: 0; right: 55px; }
+.btnHistory { overflow: hidden; background-image: url("../img/webview/icon-history.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center center; width: 32px; height: 100%; position: absolute; top: 0; right: 44px; }
 .btnHistory:before { content: ""; display: block; width: 0; height: 100%; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnHistory { background-image: url("../img/webview/icon-history_2x.png"); background-size: 28px 28px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnHistory { background-image: url("../img/webview/icon-history_2x.png"); background-size: auto 18px; } }
 @media screen and (min-width: 720px) { .btnHistory { height: 96px; width: 64px; background-size: 36px 36px; background-position: center 55%; right: 120px; } }
 
-#btnShare, #btnGo { border: solid 2px #c6beaa; display: block; float: left; height: 44px; position: relative; top: 1px; line-height: 36px; margin-left: 5px; display: inline-block; font-weight: bold; width: 100px; }
-#btnShare:after, #btnGo:after { content: ''; width: 24px; height: 24px; display: inline-block; background-image: url("../img/webview/icon-share.png"); position: relative; top: 7px; margin-left: 7px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnShare:after, #btnGo:after { background-image: url("../img/webview/icon-share_2x.png"); background-size: 24px 24px; } }
+#btnShare, #btnGo { border: solid 1px #c6beaa; display: block; float: left; height: 32px; position: relative; top: 5px; line-height: 28px; margin-left: 5px; display: inline-block; font-weight: bold; width: 70px; font-size: 12px; }
+#btnShare:after, #btnGo:after { content: ''; width: 18px; height: 18px; display: inline-block; background-image: url("../img/webview/icon-share.png"); background-size: auto 18px; position: relative; top: 4px; margin-left: 7px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnShare:after, #btnGo:after { background-image: url("../img/webview/icon-share_2x.png"); background-size: auto 18px; } }
 @media screen and (min-width: 720px) { #btnShare, #btnGo { font-size: 16px; text-align: left; padding-left: 14px; } }
 
-#btnGo { text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; width: -moz-calc(100% - 120px); width: -o-calc(100% - 120px); width: -webkit-calc(100% - 120px); width: calc(100% - 120px); font-size: 15px; padding-left: 15px; padding-right: 40px; text-align: left; }
-#btnGo:after { position: absolute; right: 7px; top: 9px; background-image: url("../img/webview/icon-goto.png"); background-repeat: no-repeat; width: 19px; height: 19px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnGo:after { background-image: url("../img/webview/icon-goto_2x.png"); background-size: 19px 19px; } }
+#btnGo { text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; width: -moz-calc(100% - 80px); width: -o-calc(100% - 80px); width: -webkit-calc(100% - 80px); width: calc(100% - 80px); font-size: 10px; padding-left: 8px; padding-right: 30px; text-align: left; }
+#btnGo:after { position: absolute; right: 7px; top: 7px; background-image: url("../img/webview/icon-goto.png"); background-size: auto 14px; background-repeat: no-repeat; width: 14px; height: 14px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnGo:after { background-image: url("../img/webview/icon-goto_2x.png"); background-size: auto 14px; } }
 @media screen and (min-width: 720px) { #btnGo { width: 350px; font-size: 16px; } }
 
 /* ========================================================================== Helper classes ========================================================================== */

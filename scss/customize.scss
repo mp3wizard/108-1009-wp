@@ -530,11 +530,11 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 	}
 
 	.webview & { background-color: transparent; display: inline-block; float: left;
-		li { font-size: 18px;
+		li { font-size: 13px;
 			i:before { top: 0px;  }
 			&:first-child { margin-left: -8px; }
 			&:last-child { margin-left: 15px; color: #5f5947; letter-spacing: 0;
-				label { color: #5f5947; font-size: 18px; }
+				label { color: #5f5947; font-size: 12px; }
 			}
 		}
 		@include media($tablet) { height: $h-header-tablet;
@@ -612,8 +612,8 @@ ul.full { margin: 0; padding: 0; list-style: none;
 	h2, h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%;
 		@include media($tablet) { margin-bottom: 10px; line-height: 1.3}
 	}
-	h2 { font-size: 32px; }
-	h3 { font-size: 21px;
+	h2 { font-size: 24px; }
+	h3 { font-size: 16px;
 		@include media($tablet) { margin-bottom: 20px;}
 	}
 
@@ -680,11 +680,11 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 		li { padding: 0 25px; }
 	}
 }
-.grid-2 {
-	button, input[type="submit"], a.button, input[type="reset"] { width: 47%; font-weight: 400;
+.grid-2 { font-size: 0; margin-top: 10px!important;
+	button, input[type="submit"], a.button, input[type="reset"] { @include calc(width, 50% - #{5px}); font-weight: 400;
 		@include media($tablet) { width: 140px; }
 	}
-	*:nth-child(1) { margin-right: 4.5%; }
+	*:nth-child(1) { margin-right: 10px!important; }
 	&:last-child { margin-bottom: 0; }
 }
 .wp-popup { @include transition(all .5s ease-in-out); top: -100%;
@@ -713,7 +713,7 @@ main.feed {
 	footer { overflow: hidden; }
 }
 ul.list { margin: 0; padding: 0; list-style: none; padding-top: 6px;
-	a { line-height: 32px; height: 38px; font-size: 16px; padding: 0 15px; border-bottom: solid 1px rgba(125, 106, 74, .5); color: #7d6a4a; display:block; white-space: nowrap; overflow: hidden; @include text-truncate; width: 100%; }
+	a { line-height: 32px; height: 38px; font-size: 16px; padding: 0 15px; border-bottom: solid 1px #aea28a; color: #7d6a4a; display:block; white-space: nowrap; overflow: hidden; @include text-truncate; width: 100%; }
 	a:active { background-color: #d2980e; }
 	.recent & a { font-size: 20px; padding-left: 45px; @include retina-image('../img/recent/bullet-recent', 18px 22px); background-repeat: no-repeat; background-position: 12px center; }
 	ul { list-style: none; margin: 0; padding: 0; }
@@ -735,7 +735,7 @@ ul.tile { margin: 0; padding: 18px 0 0 12px; list-style: none; width: 100%; heig
 		a { font-size: 22px; }
 	}
 }
-input[type="url"] { width: 100%; height: 46px; border: none; color: #555; font-size: 21px; padding: 0 10px; font-weight: 400; }
+input[type="url"] { width: 100%; height: 30px; border: none; color: #555; font-size: 14px; padding: 0 10px; font-weight: 400; }
 input[type="search"] { @extend input[type="url"]; background-color: #efede7; @include calc(width, 100% - #{40px}); margin: 0 auto; display:block;
 		@include media($tablet) { @include calc(width, 100% - #{40px}); }
 }
@@ -758,14 +758,15 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 	}
 }
 .search, .search2 {
+	p { margin: 10px 0; }
 	#btnSearch { @include retina-image('../img/base/icon-search-active', auto 22px);
 			@include media($r-mobile) { background-size: auto 32px; }
 			@include media($tablet) { background-size: auto 40px; }
 			// @include media($desktop) { background-size: auto 32px; }
 	}
 	ul.list {
-		a { @include retina-image('../img/search/icon-search', 18px 18px); background-repeat: no-repeat; background-position: 12px center; padding-left: 45px; }
-		ul a { @include retina-image('../img/search/icon-search_sub', 16px 18px); background-position: 14px center; }
+		a { @include retina-image('../img/search/icon-search', auto 14px); background-size: auto 14px; background-repeat: no-repeat; background-position: 12px center; padding-left: 40px; }
+		ul a { @include retina-image('../img/search/icon-search_sub', auto 12px); background-size: auto 12px; background-position: 14px center; }
 	}
 }
 .map {
@@ -861,4 +862,4 @@ p.center { text-align: center;
 }
 
 /* Show Page */
-main.intro { display:block; }
+main.login { display:block; }
