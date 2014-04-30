@@ -38,7 +38,7 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 		&.lv2 { height:45px;@include background-image(linear-gradient(bottom, #efede5 0%, #fff 100%)); background-clip: padding-box;background-color: #fff;box-shadow: 0px 2px 3px rgba(0,0,1,.45); }
 	}
 	article {  width: 100%; position: relative; @include calc(height, 100% - #{$h-header}); top: $h-header + $h-topbar; background-color: $bg-article; overflow: auto; z-index: 1;
-		&.lv2 { @include calc(height, 100% - #{$h-header + $h-topbar + $h-footer}); padding: 5px 10px; color: #5f5947;
+		&.lv2 { @include calc(height, 100% - #{$h-header + $h-footer}); padding: 5px 10px; color: #5f5947;
 			h3 { line-height: 1.5; margin: 20px 0;
 				@include media($tablet) { font-size: 22px; }
 			}
@@ -49,7 +49,8 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 			@include media($tablet) { padding: 10px 20px; }
 		}
 		h2 { margin: 0 0 10;   }
-		section { margin-bottom: 60px; }
+		section { margin-bottom: 30px; }
+		section:last-child { margin-bottom: 0; }
 
 		@include media($tablet) { @include calc(height, 100% - #{$h-header-tablet}); top: $h-header-tablet + $h-topbar; }
 	}
@@ -91,8 +92,8 @@ main { position: relative; overflow: hidden;  z-index: 2; @include size(100% 100
 }
 a { text-decoration: none; color: $c-link; @include transition(all .2s $a-ios7); }
 a:hover { color: lighten($c-link, 15%)}
-label { display: block; color: $c-h1; font-size: 14px; font-weight: 400; margin-bottom: 10px; line-height: 16px; }
-input[type="text"], input[type="password"], input[type="email"] { width: 100%; border: none; background-color: #efede7; height: 30px; padding: 0 10px; color: #555; font-size: 22px; font-weight: 300; }
+label { display: block; color: $c-h1; font-size: 14px; font-weight: 400; margin-bottom: 6px; line-height: 16px; }
+input[type="text"], input[type="password"], input[type="email"] { width: 100%; border: none; background-color: #efede7; height: 32px; padding: 0 10px; color: #555; font-size: 22px; font-weight: 300; }
 
 // animation
 .slideLeftOut {
@@ -607,13 +608,13 @@ ul.full { margin: 0; padding: 0; list-style: none;
 #overlay { background-color: rgba(0,0,0,.75); @include size(100%); position: fixed; z-index: 10; top: 0; left: 0; right: 0;
 		@include media($tablet) { background-color: rgba(0, 0, 0, .45); }
 }
-.wp-popup { background-color: $bg-popup; position: fixed; z-index: 11; @include size(100% auto); top: 0; left: 0; right: 0; padding: 9% 3% 4%; color: #fff; display:none;
+.wp-popup { background-color: $bg-popup; position: fixed; z-index: 11; @include size(100% auto); top: 0; left: 0; right: 0; padding: 10px 3% 4%; color: #fff; display:none;
 
 	h2, h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%;
 		@include media($tablet) { margin-bottom: 10px; line-height: 1.3}
 	}
-	h2 { font-size: 24px; }
-	h3 { font-size: 16px;
+	h2 { font-size: 20px; }
+	h3 { font-size: 14px; margin-bottom: 10px;
 		@include media($tablet) { margin-bottom: 20px;}
 	}
 
@@ -622,8 +623,7 @@ ul.full { margin: 0; padding: 0; list-style: none;
 	}
 }
 .wp-popup, footer, .lv2 {
-		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin: 2% 0 4%;  border: solid 1px #fff; background-color: transparent; color: #fff; font-size: 14px; font-weight: 400; padding: 4px 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-
+		button, input[type="submit"], a.button, input[type="reset"] { width: 100%; margin: 2% 0 0;  border: solid 1px #fff; background-color: transparent; color: #fff; font-size: 14px; font-weight: 400; padding: 4px 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; height: 36px;
 		}
 		a.button { display:block; text-align: center; }
  }
@@ -680,8 +680,8 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 		li { padding: 0 25px; }
 	}
 }
-.grid-2 { font-size: 0; margin-top: 10px!important;
-	button, input[type="submit"], a.button, input[type="reset"] { @include calc(width, 50% - #{5px}); font-weight: 400;
+.grid-2 { font-size: 0; margin-top: 28px!important;
+	button, input[type="submit"], a.button, input[type="reset"] { @include calc(width, 50% - #{5px}); font-weight: 400; margin-bottom: 0;
 		@include media($tablet) { width: 140px; }
 	}
 	*:nth-child(1) { margin-right: 10px!important; }
@@ -699,12 +699,13 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 	#overlay { opacity: 1; display:block; }
 }
 .regist {
-	label { line-height: 24px; }
+	label { line-height: 20px; }
 	.submit { visibility: hidden; }
 	@include media($tablet) { width: 500px; margin: 0 auto 100px;
 		.submit { visibility: visible; }
 		footer input[type="submit"] { display: none; }
 	}
+	article.lv2 p { margin: 10px 0 0; }
 }
 
 .galcolumn { padding-bottom: 0!important; }
@@ -715,20 +716,20 @@ main.feed {
 ul.list { margin: 0; padding: 0; list-style: none; padding-top: 6px;
 	a { line-height: 32px; height: 38px; font-size: 16px; padding: 0 15px; border-bottom: solid 1px #aea28a; color: #7d6a4a; display:block; white-space: nowrap; overflow: hidden; @include text-truncate; width: 100%; }
 	a:active { background-color: #d2980e; }
-	.recent & a { font-size: 20px; padding-left: 45px; @include retina-image('../img/recent/bullet-recent', 18px 22px); background-repeat: no-repeat; background-position: 12px center; }
+	.recent & a { font-size: 14px; padding-left: 40px; @include retina-image('../img/recent/bullet-recent', auto 16px); background-size: auto 16px; background-repeat: no-repeat; background-position: 12px center; }
 	ul { list-style: none; margin: 0; padding: 0; }
 
 	@include media($tablet) { padding-top: 12px;
 		a { height: 57px; font-size: 22px; }
 	}
 }
-ul.tile { margin: 0; padding: 18px 0 0 12px; list-style: none; width: 100%; height: 100%;
-	li { width: 50%; display: block; float: left; padding-right: 12px; height: 33.33%; padding-bottom: 12px; }
-	a { color: #fff; width: 100%; height: 100%; display:block; text-align: center; float: left; padding-top: 63%; background-color: $bg-tile-button; margin: 0 18px 18px 0; font-size: 20px; line-height: 1.15; position: relative;
+ul.tile { margin: 0; padding: 12px 0 0 12px; list-style: none; width: 100%; height: 100%;
+	li { width: 50%; display: block; float: left; padding-right: 8px; height: 33.33%; padding-bottom: 8px; }
+	a { color: #fff; width: 100%; height: 100%; display:block; text-align: center; float: left; padding-top: 61%; background-color: $bg-tile-button; margin: 0 15px 15px 0; font-size: 14px; line-height: 1; position: relative;
 
 	}
 	a:active { background-color: #d2980e; }
-	img { height: 72px; position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -95%)); }
+	img { height: 48px; position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -95%)); }
 
 	@include media($tablet) { padding: 35px 30px;
 		li {  height: 235px; width: 235px; }
@@ -840,7 +841,8 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 }
 .first .tutorial { z-index: 100; opacity: 1; }
 
-#share { padding-top: 80px;
+#share { padding-top: 30px;
+	a.button { margin-bottom: 10px; }
 	@include media($tablet) {  text-align: center;
 		a.button { display: inline-block; font-size: 22px; line-height: 26px; margin: 20px 10px 10px; }
 		.close-overlay, br { display:none; }
@@ -857,8 +859,12 @@ p.center { text-align: center;
 }
 .term {
 	article.lv2  {
-		p { font-size: 18px; }
+		p { font-size: 13px; }
+		h3 { font-size: 16px; }
+		ol { padding-left: 20px;}
+		li { margin-bottom: 10px; font-size: 14px; }
 	}
+	footer button { margin-top: 5px; }
 }
 
 /* Show Page */
