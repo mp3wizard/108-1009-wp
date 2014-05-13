@@ -482,9 +482,9 @@ body.sliderOpen { overflow-x: hidden; }
 .grid figure img { width: 100%; }
 .grid figcaption { color: #656565; }
 .grid figcaption > p { margin: 0; padding: 10px; font-size: 0.75em; }
+.grid figcaption > p span { display: block; height: 48px; overflow: hidden; line-height: 16px; }
 .grid figcaption strong { font-weight: normal; font-size: 13px; line-height: 1.2; }
 .grid figcaption strong a { display: block; margin-bottom: 10px; color: #666; }
-.grid figcaption span { display: block; height: 48px; overflow: hidden; line-height: 16px; }
 
 ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 10px; background-color: #fff; white-space: nowrap; border-top: solid 2px #dadad8; }
 ul.stat li { display: inline-block; line-height: 30px; font-weight: bold; margin-right: 5px; white-space: nowrap; }
@@ -733,7 +733,7 @@ p.center { text-align: center; }
 .term footer button { margin-top: 5px; }
 
 /* Show Page */
-main.feed { display: block; }
+main.intro { display: block; }
 
 .btn1, .btn6 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); background-color: transparent; font-family: Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; color: #5f5947; padding: 0 10px; }
 
