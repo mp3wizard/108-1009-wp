@@ -626,6 +626,7 @@ footer.show a em { opacity: 1; }
 .galcolumn { padding-bottom: 0 !important; }
 
 main.feed article { padding-bottom: 108px; }
+main.feed article input[type="search"] { margin-bottom: 10px; width: calc(100% - 36px); }
 main.feed footer { overflow: hidden; }
 
 ul.list { margin: 0; padding: 0; list-style: none; padding-top: 6px; }
