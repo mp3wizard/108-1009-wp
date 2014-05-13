@@ -784,7 +784,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 		}
 	}
 	figure { height: 100%; }
-	figcaption { position: fixed; bottom: 0; left: 0; right: 0; text-align:left; @include background-image(linear-gradient(bottom, #000 0%, #000 60%, rgba(0,0,0,0) 100%)); color: #f2f2f2; padding: 60px 15px 32px;
+	figcaption { position: fixed; bottom: 0; left: 0; right: 0; text-align:left; @include background-image(linear-gradient(bottom, #000 0%, #000 60%, rgba(0,0,0,0) 100%)); color: #f2f2f2; padding: 60px 15px 30px;
 		h4 { margin: 0 0 20px; font-size: 14px; line-height: 1.2;  }
 		p { font-size: 13px; line-height: 1.1; font-weight: 600; }
 		section { margin-bottom: 10px; @extend .clearfix; line-height: 30px;
