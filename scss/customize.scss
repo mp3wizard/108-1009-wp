@@ -764,7 +764,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 	article { overflow: hidden }
 }
 .search, .search2 {
-	p { margin: 10px 0; }
+	p { margin: 10px 0; position: relative; }
 	#btnSearch { @include retina-image('../img/base/icon-search-active', auto 22px);
 			@include media($r-mobile) { background-size: auto 32px; }
 			@include media($tablet) { background-size: auto 40px; }
@@ -871,6 +871,7 @@ p.center { text-align: center;
 	}
 	footer button { margin-top: 5px; }
 }
+input[type="submit"].hide { position: absolute; right: 0;top: 0; z-index: -99; visibility: hidden; }
 
 /* Show Page */
 main.intro { display:block; }
