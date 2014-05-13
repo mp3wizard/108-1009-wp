@@ -510,7 +510,7 @@ body.sliderOpen { overflow-x: hidden; }
 		strong { font-weight: normal; font-size: 13px; line-height: 1.2;
 			a { display: block; margin-bottom:10px; color: #666; }
 		}
-
+		span { display: block; height: 48px; overflow: hidden; line-height: 16px; }
 	}
 }
 
@@ -868,4 +868,4 @@ p.center { text-align: center;
 }
 
 /* Show Page */
-main.intro { display:block; }
+main.feed { display:block; }
