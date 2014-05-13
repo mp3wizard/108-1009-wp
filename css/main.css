@@ -282,10 +282,10 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .mfp-ie7 .mfp-content { padding-top: 44px; }
 .mfp-ie7 .mfp-close { top: 0; right: 0; padding-top: 0; }
 
-html { width: 100%; height: -moz-calc(100% - 22px); height: -o-calc(100% - 22px); height: -webkit-calc(100% - 22px); height: calc(100% - 22px); background-color: #C6BEAA; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-family: 'Segoe UI', Tahoma; }
+html { width: 100%; height: -moz-calc(100%); height: -o-calc(100%); height: -webkit-calc(100%); height: calc(100%); background-color: #C6BEAA; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-family: 'Segoe UI', Tahoma; }
 @media screen and (min-width: 720px) { html { height: -moz-calc(100%); height: -o-calc(100%); height: -webkit-calc(100%); height: calc(100%); } }
 
-body { width: 100%; height: 100%; margin: 0 auto; overflow: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { width: 100%; height: 100%; margin: 0 auto; overflow: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -ms-touch-action: none; }
 
 button:focus, input:focus, a:hover, a:focus { outline: none; }
 
@@ -434,7 +434,7 @@ body.sliderOpen { overflow-x: hidden; }
 #search article ul li.no_more a:after { content: '\e801'; font-size: 16px; top: 0; }
 
 .intro header h1 { text-indent: -1000em; }
-.intro article { background-color: #000; }
+.intro article { background-color: #c6beaa; }
 .intro article div, .intro article > figure { position: absolute; }
 .intro article figure { background-color: rgba(0, 0, 0, 0.5); background-size: cover; background-repeat: no-repaet; background-position: center center; height: 100%; }
 .intro article figure a { display: block; width: 100%; height: 100%; }
@@ -567,7 +567,7 @@ article.lv2 button, article.lv2 input[type="submit"], article.lv2 a.button, arti
 
 #timer { color: #fff; width: 100%; height: 0px; position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
-footer { background-color: rgba(255, 255, 255, 0.94); z-index: 3; position: fixed; left: 0; right: 0; bottom: 32px; padding: 5px 2% 0; height: 50px; text-align: center; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
+footer { background-color: rgba(255, 255, 255, 0.94); z-index: 3; position: fixed; left: 0; right: 0; padding: 5px 2% 0; height: 50px; text-align: center; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
 footer button, footer input[type="submit"] { margin: 0; }
 footer.invert { background-color: #7d6949; }
 @media screen and (min-width: 720px) { footer.invert { background-color: #fff; text-align: right; padding: 12px 15px 0; }
@@ -732,7 +732,7 @@ p.center { text-align: center; }
 .term footer button { margin-top: 5px; }
 
 /* Show Page */
-main.feed { display: block; }
+main.intro { display: block; }
 
 .btn1, .btn6 { height: 26px; border: 1px solid #bcbab1; border-radius: 5px; background-clip: padding-box; box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8); background-color: transparent; font-family: Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; color: #5f5947; padding: 0 10px; }
 
