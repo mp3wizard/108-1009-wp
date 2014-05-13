@@ -537,6 +537,7 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 			&:last-child { margin-left: 15px; color: #5f5947; letter-spacing: 0;
 				label { color: #5f5947; font-size: 12px; }
 			}
+			a { height: auto; }
 		}
 		@include media($tablet) { height: $h-header-tablet;
 			li { font-size: 23px; line-height: $h-header-tablet - 4px;
@@ -868,4 +869,4 @@ p.center { text-align: center;
 }
 
 /* Show Page */
-main.intro { display:block; }
+main.webview { display:block; }

@@ -42,7 +42,7 @@ header {
 .btnBack { @include size(50px 45px); @include hide-text; display: block; float: left; position: relative; top: 0; left: 0; background-repeat: no-repeat; @include retina-image('../img/webview/btnBack', 43px 33px); background-position: right center; }
 
 .btnFavBig {  @include hide-text; @include retina-image('../img/webview/icon-fav', auto 18px); background-size: auto 18px; background-repeat: no-repeat; background-position: center 47%; @include size(32px 100%); margin-right: 10px;
-	&.active { @include retina-image('../img/webview/icon-fav-active', 28px 27px); }
+	&.active { @include retina-image('../img/webview/icon-fav-active', auto 18px); background-size: auto 18px; }
 
 	@include media($tablet) { height: 96px; width: 110px; background-size: 36px 36px; }
 }
