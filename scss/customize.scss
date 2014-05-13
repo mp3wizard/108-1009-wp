@@ -708,6 +708,7 @@ footer { background-color: rgba(255, 255, 255, .94); z-index: 3; position: fixed
 		footer input[type="submit"] { display: none; }
 	}
 	article.lv2 p { margin: 10px 0 0; }
+	article.lv2 { height: calc(100% - 53px); }
 }
 
 .galcolumn { padding-bottom: 0!important; }
