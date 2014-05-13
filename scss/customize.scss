@@ -1,4 +1,4 @@
-html { width: 100%;@include calc(height, 100% - #{2px}); background-color: #C6BEAA; @include font-smoothing(antialiased); font-family: 'Segoe UI', Tahoma;
+html { width: 100%; height: calc(100%); background-color: #C6BEAA; @include font-smoothing(antialiased); font-family: 'Segoe UI', Tahoma;
 	@include media($tablet) { @include calc(height, 100%); }
 }
 body { width:$w-container_v; height: 100%;  margin: 0 auto;overflow: hidden;-webkit-font-smoothing: antialiased;
@@ -527,7 +527,7 @@ ul.stat { list-style: none; margin: 0; height: 35px; padding: 0 $p-figure; backg
 				label { font-size: 14px; }
 			}
 		}
-		a.like { color: $c-like; }
+		.like { color: $c-like; }
 	}
 
 	.webview & { background-color: transparent; display: inline-block; float: left;
@@ -778,7 +778,7 @@ input[type="search"] { @extend input[type="url"]; background-color: #efede7; @in
 	}
 }
 .view-photo {
-	article { height: 100%; top: 0; text-align: center; background-color: #000; overflow: hidden;
+	article { height: calc(100% - #{5px}); top: 0; text-align: center; background-color: #000; overflow: hidden;
 		img { max-height: 100%;
 			// position:absolute; top: 0; left: 50%; @include transform(translateX(-50%));
 		}
@@ -869,4 +869,4 @@ p.center { text-align: center;
 }
 
 /* Show Page */
-main.intro { display:block; }
+main.feed { display:block; }
