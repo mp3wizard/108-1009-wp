@@ -291,12 +291,12 @@ button:focus, input:focus, a:hover, a:focus { outline: none; }
 
 main.search.sub { display: none; }
 
-main { position: relative; overflow: hidden; z-index: 2; width: 100%; height: 100%; display: none; }
-main header { width: 100%; height: 53px; position: fixed; top: 0; left: 0; right: 0; z-index: 99; line-height: 53px; overflow: hidden; font-weight: 400; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-size: 12px; color: #7d6949; background-color: #ebe9e1; text-align: right; border-top: solid 0 black; }
-@media screen and (min-width: 720px) { main header { width: 100%; height: 96px; line-height: 96px; } }
-main header h1 { position: relative; z-index: 1; text-align: center; font-weight: 300; margin: 0; float: left; width: 140px; height: 45px; top: 3px; max-width: 221px; margin-left: 8px; background-image: url("../img/base/logo.png"); background-size: 100% auto; background-position: left center; background-repeat: no-repeat; }
+main { position: relative; overflow: hidden; z-index: 2; height: 100%; width: 100%; display: none; }
+main header { height: 53px; width: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 99; line-height: 53px; overflow: hidden; font-weight: 400; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-size: 12px; color: #7d6949; background-color: #ebe9e1; text-align: right; border-top: solid 0 black; }
+@media screen and (min-width: 720px) { main header { height: 96px; width: 100%; line-height: 96px; } }
+main header h1 { position: relative; z-index: 1; text-align: center; font-weight: 300; margin: 0; float: left; height: 45px; width: 140px; top: 3px; max-width: 221px; margin-left: 8px; background-image: url("../img/base/logo.png"); background-size: 100% auto; background-position: left center; background-repeat: no-repeat; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { main header h1 { background-image: url("../img/base/logo_2x.png"); background-size: 100% auto; } }
-@media screen and (min-width: 720px) { main header h1 { width: 250px; height: 80px; max-width: 280px; top: 7px; } }
+@media screen and (min-width: 720px) { main header h1 { height: 80px; width: 250px; max-width: 280px; top: 7px; } }
 main header h1.bold { font-weight: 400; }
 main header h1.text { background-image: none; text-align: left; width: auto; font-size: 21px; padding: 0 10px; line-height: 40px; max-width: 100%; white-space: nowrap; font-weight: 500; }
 @media screen and (min-width: 720px) { main header h1.text { font-size: 40px; padding: 0 20px; } }
@@ -318,7 +318,7 @@ main article h2 { margin: 0 0 10; }
 main article section { margin-bottom: 30px; }
 main article section:last-child { margin-bottom: 0; }
 @media screen and (min-width: 720px) { main article { height: -moz-calc(100% - 96px); height: -o-calc(100% - 96px); height: -webkit-calc(100% - 96px); height: calc(100% - 96px); top: 96px; } }
-main:after { content: ''; width: 100%; height: 100%; z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; -webkit-transition: background-color 0.35s ease-out; -moz-transition: background-color 0.35s ease-out; transition: background-color 0.35s ease-out; }
+main:after { content: ''; height: 100%; width: 100%; z-index: -1; background-color: transparent; position: absolute; top: 0; left: 0; -webkit-transition: background-color 0.35s ease-out; -moz-transition: background-color 0.35s ease-out; transition: background-color 0.35s ease-out; }
 main.slideLeftOut:after, main.slideRightOut:after { z-index: 999; }
 main .wrap-button { width: 50%; float: right; }
 main #btnHome, main #btnUser, main #btnSearch { background-image: url("../img/base/icon-home.png"); background-size: auto 22px; background-position: center center; background-repeat: no-repeat; text-indent: -1000em; text-align: left; width: 33.33%; max-width: 72px; }
@@ -362,7 +362,7 @@ aside#nav.show, aside#search.show { z-index: 2; }
 body.sliderOpen { overflow-x: hidden; }
 
 #nav { position: fixed; width: 280px; z-index: 1; height: 100%; }
-#nav header { background-image: url("../img/menu/bg-nav_header.png"); background-clip: padding-box; width: 100%; height: 44px; border-bottom: solid 1px #062a3d; box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1); }
+#nav header { background-image: url("../img/menu/bg-nav_header.png"); background-clip: padding-box; height: 44px; width: 100%; border-bottom: solid 1px #062a3d; box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1); }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #nav header { background-image: url("../img/menu/bg-nav_header_2x.png"); background-size: 280px 44px; } }
 #nav ul { margin: 0; padding: 0; list-style: none; }
 #nav nav { height: -moz-calc(100% - 44px); height: -o-calc(100% - 44px); height: -webkit-calc(100% - 44px); height: calc(100% - 44px); width: 272px; }
@@ -387,7 +387,7 @@ body.sliderOpen { overflow-x: hidden; }
 #nav #btnProfile a { padding-left: 5px; height: 46px; line-height: 50px; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25); text-indent: 5px; }
 #nav #btnProfile span { font-family: Helvetica, Arial, sans-serif; font-weight: 700; font-size: 14px; }
 #nav #btnProfile:before { content: '▼'; position: absolute; top: 0px; left: 13px; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); color: #fff; line-height: 7px; -webkit-transform: scaleX(2); -moz-transform: scaleX(2); -ms-transform: scaleX(2); -o-transform: scaleX(2); transform: scaleX(2); font-size: 11px; z-index: 2; }
-#nav nav i[class^="icon-"] { display: block; width: 38px; height: 36px; position: absolute; left: 0; top: 0; background-position: center center; background-repeat: no-repeat; }
+#nav nav i[class^="icon-"] { display: block; height: 36px; width: 38px; position: absolute; left: 0; top: 0; background-position: center center; background-repeat: no-repeat; }
 #nav .icon-home { background-image: url("../img/menu/icon-nav-01.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #nav .icon-home { background-image: url("../img/menu/icon-nav-01_2x.png"); background-size: 14px 11px; } }
 #nav .icon-location { background-image: url("../img/menu/icon-location.png"); }
@@ -402,7 +402,7 @@ body.sliderOpen { overflow-x: hidden; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #nav nav i.icon-login, #nav nav i.icon-setting { background-image: url("../img/menu/icon-nav-08_2x.png"); background-size: 14px 19px; } }
 #nav nav i.icon-setting { background-image: url("../img/menu/icon-nav-06.png"); background-position: center 17px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #nav nav i.icon-setting { background-image: url("../img/menu/icon-nav-06_2x.png"); background-size: 20px 20px; } }
-#nav nav i.icon-plus { left: auto; right: 8px; background-image: url("../img/menu/icon-add.png"); border: 1px solid #bcbab1; border-radius: 5px; width: 28px; height: 28px; top: 4px; }
+#nav nav i.icon-plus { left: auto; right: 8px; background-image: url("../img/menu/icon-add.png"); border: 1px solid #bcbab1; border-radius: 5px; height: 28px; width: 28px; top: 4px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #nav nav i.icon-plus { background-image: url("../img/menu/icon-add_2x.png"); background-size: 12px 12px; } }
 #nav .disable a { opacity: .4; cursor: default; }
 #nav .disable a:hover { color: #4f3f27; }
@@ -532,23 +532,23 @@ ul.full li { border-bottom: solid 1px #e1decf; border-top: solid 1px #fffcf9; }
 ul.full li a { line-height: 40px; font-size: 12px; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; display: block; padding: 0 20px 0 50px; background-image: url("../img/history/icon-paper.png"); background-position: 15px center; background-repeat: no-repeat; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { ul.full li a { background-image: url("../img/history/icon-paper_2x.png"); background-size: 19px 22px; } }
 
-#guide { position: fixed; top: 0; left: 0; right: 0; width: 100%; height: 100%; z-index: 999; background-color: rgba(0, 0, 0, 0.6); display: none; }
+#guide { position: fixed; top: 0; left: 0; right: 0; height: 100%; width: 100%; z-index: 999; background-color: rgba(0, 0, 0, 0.6); display: none; }
 
 .txt-guide { display: block; position: absolute; }
 
-#guide-1 { width: 109px; height: 116px; background-image: url("../img/guide/guide-01.png"); left: 5px; top: 15px; }
+#guide-1 { height: 116px; width: 109px; background-image: url("../img/guide/guide-01.png"); left: 5px; top: 15px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #guide-1 { background-image: url("../img/guide/guide-01_2x.png"); background-size: 109px 116px; } }
 
-#guide-2 { width: 271px; height: 148px; background-image: url("../img/guide/guide-02.png"); right: 3px; top: 40px; }
+#guide-2 { height: 148px; width: 271px; background-image: url("../img/guide/guide-02.png"); right: 3px; top: 40px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #guide-2 { background-image: url("../img/guide/guide-02_2x.png"); background-size: 271px 148px; } }
 
-#guide-3 { width: 248px; height: 133px; background-image: url("../img/guide/guide-03.png"); bottom: 15px; left: 30px; }
+#guide-3 { height: 133px; width: 248px; background-image: url("../img/guide/guide-03.png"); bottom: 15px; left: 30px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #guide-3 { background-image: url("../img/guide/guide-03_2x.png"); background-size: 248px 133px; } }
 
-#overlay { background-color: rgba(0, 0, 0, 0.75); width: 100%; height: 100%; position: fixed; z-index: 10; top: 0; left: 0; right: 0; }
+#overlay { background-color: rgba(0, 0, 0, 0.45); height: 100%; width: 100%; position: fixed; z-index: 10; top: 0; left: 0; right: 0; }
 @media screen and (min-width: 720px) { #overlay { background-color: rgba(0, 0, 0, 0.45); } }
 
-.wp-popup { background-color: #7d6949; position: fixed; z-index: 11; width: 100%; height: auto; top: 0; left: 0; right: 0; padding: 10px 3% 4%; color: #fff; display: none; }
+.wp-popup { background-color: #7d6949; position: fixed; z-index: 11; height: auto; top: 0; left: 0; right: 0; padding: 10px 3% 4%; color: #fff; display: none; }
 .wp-popup h2, .wp-popup h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%; }
 @media screen and (min-width: 720px) { .wp-popup h2, .wp-popup h3 { margin-bottom: 10px; line-height: 1.3; } }
 .wp-popup h2 { font-size: 20px; }
@@ -566,7 +566,7 @@ article.lv2 button, article.lv2 input[type="submit"], article.lv2 a.button, arti
 @media screen and (min-width: 720px) { .wp-popup p:last-child { text-align: right; } }
 @media screen and (min-width: 720px) { .wp-popup button, .wp-popup input[type="submit"], .wp-popup a.button, .wp-popup input[type="reset"] { margin-top: 20px; width: auto; padding: 8px 0; width: 140px; } }
 
-#timer { color: #fff; width: 100%; height: 0px; position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
+#timer { color: #fff; width: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 100; line-height: 1.5; padding: 0 10px; text-align: right; font-size: 19px; }
 
 footer { background-color: rgba(255, 255, 255, 0.94); z-index: 3; position: fixed; left: 0; right: 0; padding: 5px 2% 0; height: 50px; text-align: center; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
 footer button, footer input[type="submit"] { margin: 0; }
@@ -575,7 +575,7 @@ footer.invert { background-color: #7d6949; }
   footer.invert button { border: solid 3px #7e6a48; color: #7e6a48; width: 150px; } }
 footer ul { list-style: none; margin: 0; padding: 0; }
 footer li { display: inline-block; padding: 0 14px; }
-footer li a, footer #btn-forget_password { font-weight: 700; font-size: 28px; line-height: 36px; width: 42px; height: 42px; border: solid 2px #c6beaa; display: inline-block; border-radius: 50%; text-align: center; position: relative; top: -1px; position: relative; background-repeat: no-repeat; background-position: center center; color: #7d6949; }
+footer li a, footer #btn-forget_password { font-weight: 700; font-size: 28px; line-height: 36px; height: 42px; width: 42px; border: solid 2px #c6beaa; display: inline-block; border-radius: 50%; text-align: center; position: relative; top: -1px; position: relative; background-repeat: no-repeat; background-position: center center; color: #7d6949; }
 footer li a em, footer #btn-forget_password em { position: absolute; font-style: normal; font-size: 9px; font-weight: normal; width: 90px; text-align: center; left: -25px; line-height: 1.1; top: 42px; -webkit-transition: all 0.35s ease-in; -moz-transition: all 0.35s ease-in; transition: all 0.35s ease-in; opacity: 0; }
 footer #btn-expand { position: absolute; right: 5px; top: 0; font-size: 16px; letter-spacing: 1px; color: #7d6a4a; line-height: 1; }
 footer #btn-top10 { background-image: url("../img/base/icon-top10.png"); background-size: auto 25px; }
@@ -590,12 +590,12 @@ footer.show a em { opacity: 1; }
 @media screen and (min-width: 720px) { footer { text-align: right; bottom: 0; }
   footer ul { padding-right: 30px; }
   footer li { padding: 0 20px; }
-  footer li a, footer #btn-forget_password { width: 44px; height: 44px; border: solid 4px #c6beaa; top: 0; font-size: 30px; line-height: 38px; }
+  footer li a, footer #btn-forget_password { height: 44px; width: 44px; border: solid 4px #c6beaa; top: 0; font-size: 30px; line-height: 38px; }
   footer li a em, footer #btn-forget_password em { top: 47px; font-size: 10px; }
   footer #btn-top10 { background-size: auto 24px; }
   footer #btn-location { background-size: auto 25px; }
   footer #btn-story { background-size: auto 23px; }
-  footer .btn-back { display: inline-block; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/base/btnBack.png"); width: 42px; height: 42px; } }
+  footer .btn-back { display: inline-block; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/base/btnBack.png"); height: 42px; width: 42px; } }
 @media only screen and (min-width: 720px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 720px) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 720px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-width: 720px) and (min-resolution: 125dpi), only screen and (min-width: 720px) and (min-resolution: 1.3dppx) { footer .btn-back { background-image: url("../img/base/btnBack_2x.png"); background-size: 42px; } }
 
 @media screen and (orientation: landscape) and (min-width: 720px) { footer li { padding: 0 25px; } }
@@ -689,22 +689,22 @@ input[type="search"] { background-color: #efede7; width: -moz-calc(100% - 40px);
 @media screen and (min-width: 720px) { .view-photo figcaption section strong { margin-left: 70px; } }
 .view-photo figcaption section a { border: solid 1px #f2f2f2; color: #f2f2f2; font-weight: 700; display: inline-block; padding: 0 34px 0 10px; font-size: 13px; float: right; background: no-repeat 95% center; background-image: url("../img/intro/icon-share_mini.png"); background-size: 14px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .view-photo figcaption section a { background-image: url("../img/intro/icon-share_mini_2x.png"); background-size: 14px; } }
-.view-photo .btn-back { display: inline-block; position: absolute; top: auto; bottom: 15px; left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/view-photo/btnBack.png"); width: 42px; height: 42px; display: none; }
+.view-photo .btn-back { display: inline-block; position: absolute; top: auto; bottom: 15px; left: 20px; text-indent: -1000em; text-align: left; background-image: url("../img/view-photo/btnBack.png"); height: 42px; width: 42px; display: none; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .view-photo .btn-back { background-image: url("../img/view-photo/btnBack_2x.png"); background-size: 42px; } }
 @media screen and (min-width: 720px) { .view-photo .btn-back { display: block; } }
 
 .tutorial { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; opacity: 0; -webkit-transition: opacity 0.35s ease-in-out; -moz-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; z-index: -1; }
-.tutorial:before { background-color: rgba(0, 0, 0, 0.85); position: fixed; top: 0; left: 0; width: 100%; height: 100%; content: ''; }
+.tutorial:before { background-color: rgba(0, 0, 0, 0.6); position: fixed; top: 0; left: 0; width: 100%; height: 100%; content: ''; }
 .tutorial img { position: absolute; z-index: 101; }
-.intro .tutorial img:nth-child(1) { top: 25px; right: 180px; }
-.intro .tutorial img:nth-child(2) { top: 65px; right: 100px; }
-.intro .tutorial img:nth-child(3) { top: 65px; right: 30px; }
-.intro .tutorial img:nth-child(4) { top: auto; bottom: 9%; margin-left: -20%; left: 50%; }
-.view-photo .tutorial img:nth-child(1) { top: auto; bottom: 60px; left: 85px; }
-.view-photo .tutorial img:nth-child(2) { top: auto; bottom: 90px; left: auto; right: 50px; }
+.intro .tutorial img:nth-child(1) { top: 15px; right: 137px; }
+.intro .tutorial img:nth-child(2) { top: 43px; right: 75px; }
+.intro .tutorial img:nth-child(3) { top: 44px; right: 20px; }
+.intro .tutorial img:nth-child(4) { top: auto; bottom: 9%; margin-left: -17%; left: 50%; }
+.view-photo .tutorial img:nth-child(1) { top: auto; bottom: 55px; left: 65px; }
+.view-photo .tutorial img:nth-child(2) { top: auto; bottom: 72px; left: auto; right: 40px; }
 .search .tutorial:before { background-color: rgba(0, 0, 0, 0.6); }
-.search .tutorial img:nth-child(1) { top: 120px; right: 20%; }
-.search .tutorial img:nth-child(2) { top: 300px; right: 25%; }
+.search .tutorial img:nth-child(1) { top: 80px; right: 20%; }
+.search .tutorial img:nth-child(2) { top: 200px; right: 25%; }
 @media screen and (min-width: 720px) { .tutorial img { transform: scale(1.5); }
   .intro .tutorial img:nth-child(1) { top: 30px; right: 300px; }
   .intro .tutorial img:nth-child(2) { top: 100px; right: 190px; }
@@ -761,9 +761,9 @@ header button { position: absolute; top: 10px; z-index: 2; }
 header > button:nth-child(2) { left: 15px; }
 header > button:nth-child(3) { right: 15px; }
 
-.btn-fav { position: absolute; display: block; width: 27px; height: 44px; text-indent: -1000em; background-image: url("../img/favorite/favorite-active.png"); top: -2px; left: 5px; background-position: 0 -44px; background-repeat: no-repeat; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
+.btn-fav { position: absolute; display: block; height: 44px; width: 27px; text-indent: -1000em; background-image: url("../img/favorite/favorite-active.png"); top: -2px; left: 5px; background-position: 0 -44px; background-repeat: no-repeat; -webkit-transition: all 0.35s ease-out; -moz-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btn-fav { background-image: url("../img/favorite/favorite-active_2x.png"); background-size: 27px 44px; } }
-.btn-fav:after { content: ''; width: 20px; height: 19px; display: block; background-image: url("../img/favorite/favorite.png"); z-index: 2; top: 12px; left: 4px; position: absolute; }
+.btn-fav:after { content: ''; height: 19px; width: 20px; display: block; background-image: url("../img/favorite/favorite.png"); z-index: 2; top: 12px; left: 4px; position: absolute; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btn-fav:after { background-image: url("../img/favorite/favorite_2x.png"); background-size: 20px 19px; } }
 .btn-fav.active { background-position: 0 0; }
 
@@ -772,29 +772,29 @@ header > button:nth-child(3) { right: 15px; }
 .header-list:active { background-color: rgba(198, 190, 170, 0.4); }
 .header-list.active:after { -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); top: -2px; }
 
-.btnBack { width: 50px; height: 45px; overflow: hidden; display: block; float: left; position: relative; top: 0; left: 0; background-repeat: no-repeat; background-image: url("../img/webview/btnBack.png"); background-position: right center; }
+.btnBack { height: 45px; width: 50px; overflow: hidden; display: block; float: left; position: relative; top: 0; left: 0; background-repeat: no-repeat; background-image: url("../img/webview/btnBack.png"); background-position: right center; }
 .btnBack:before { content: ""; display: block; width: 0; height: 100%; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnBack { background-image: url("../img/webview/btnBack_2x.png"); background-size: 43px 33px; } }
 
-.btnFavBig { overflow: hidden; background-image: url("../img/webview/icon-fav.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center 47%; width: 32px; height: 100%; margin-right: 10px; }
+.btnFavBig { overflow: hidden; background-image: url("../img/webview/icon-fav.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center 47%; height: 100%; width: 32px; margin-right: 10px; }
 .btnFavBig:before { content: ""; display: block; width: 0; height: 100%; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnFavBig { background-image: url("../img/webview/icon-fav_2x.png"); background-size: auto 18px; } }
 .btnFavBig.active { background-image: url("../img/webview/icon-fav-active.png"); background-size: auto 18px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnFavBig.active { background-image: url("../img/webview/icon-fav-active_2x.png"); background-size: auto 18px; } }
 @media screen and (min-width: 720px) { .btnFavBig { height: 96px; width: 110px; background-size: 36px 36px; } }
 
-.btnHistory { overflow: hidden; background-image: url("../img/webview/icon-history.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center center; width: 32px; height: 100%; position: absolute; top: 0; right: 44px; }
+.btnHistory { overflow: hidden; background-image: url("../img/webview/icon-history.png"); background-size: auto 18px; background-repeat: no-repeat; background-position: center center; height: 100%; width: 32px; position: absolute; top: 0; right: 44px; }
 .btnHistory:before { content: ""; display: block; width: 0; height: 100%; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { .btnHistory { background-image: url("../img/webview/icon-history_2x.png"); background-size: auto 18px; } }
 @media screen and (min-width: 720px) { .btnHistory { height: 96px; width: 64px; background-size: 36px 36px; background-position: center 55%; right: 120px; } }
 
 #btnShare, #btnGo { border: solid 1px #c6beaa; display: block; float: left; height: 32px; position: relative; top: 5px; line-height: 28px; margin-left: 5px; display: inline-block; font-weight: bold; width: 70px; font-size: 12px; }
-#btnShare:after, #btnGo:after { content: ''; width: 18px; height: 18px; display: inline-block; background-image: url("../img/webview/icon-share.png"); background-size: auto 18px; position: relative; top: 4px; margin-left: 7px; }
+#btnShare:after, #btnGo:after { content: ''; height: 18px; width: 18px; display: inline-block; background-image: url("../img/webview/icon-share.png"); background-size: auto 18px; position: relative; top: 4px; margin-left: 7px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnShare:after, #btnGo:after { background-image: url("../img/webview/icon-share_2x.png"); background-size: auto 18px; } }
 @media screen and (min-width: 720px) { #btnShare, #btnGo { font-size: 16px; text-align: left; padding-left: 14px; } }
 
 #btnGo { text-overflow: ellipsis; vertical-align: top; white-space: nowrap; overflow: hidden; display: inline-block; width: -moz-calc(100% - 80px); width: -o-calc(100% - 80px); width: -webkit-calc(100% - 80px); width: calc(100% - 80px); font-size: 10px; padding-left: 8px; padding-right: 30px; text-align: left; }
-#btnGo:after { position: absolute; right: 7px; top: 7px; background-image: url("../img/webview/icon-goto.png"); background-size: auto 14px; background-repeat: no-repeat; width: 14px; height: 14px; }
+#btnGo:after { position: absolute; right: 7px; top: 7px; background-image: url("../img/webview/icon-goto.png"); background-size: auto 14px; background-repeat: no-repeat; height: 14px; width: 14px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) { #btnGo:after { background-image: url("../img/webview/icon-goto_2x.png"); background-size: auto 14px; } }
 @media screen and (min-width: 720px) { #btnGo { width: 350px; font-size: 16px; } }
 
