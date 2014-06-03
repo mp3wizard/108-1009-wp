@@ -1,5 +1,5 @@
 <!-- @import "_head" -->
-    <body  onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+    <body  onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);" ontouchstart="">
 
         <main class="intro">
             <div class="tutorial">
@@ -757,24 +757,22 @@
                             username
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/menu/tile-fav_2x.png" alt="icon favorite">
-                            สถานที่โปรด
-                        </a>
-                    </li>
-                    <li><a href="#"><img src="img/menu/tile-article_2x.png" alt="icon my story">
-                    เรื่องราวท่องเที่ยว<br>ของฉัน</a></li>
-                    <li><a href="#"><img src="img/menu/tile-setting_2x.png" alt="icon Setting">
-                    Setting</a></li>
+                    <li><a href="#"><img src="img/menu/tile-fav_2x.png" alt="icon favorite">สถานที่โปรด</a></li>
+                    <li><a href="#"><img src="img/menu/tile-article_2x.png" alt="icon my story">เรื่องราวท่องเที่ยว<br>ของฉัน</a></li>
+                    <li><a href="#"><img src="img/menu/tile-setting_2x.png" alt="icon Setting">Setting</a></li>
 
-                    <li><a href="#"><img src="img/menu/tile-add_2x.png" alt="add article">
-                    เพิ่มเรื่องราวท่องเที่ยว</a></li>
+                    <li><a href="#"><img src="img/menu/tile-add_2x.png" alt="add article">เพิ่มเรื่องราวท่องเที่ยว</a></li>
                 </ul>
             </article>
             <footer>
                 <a href="javascript:void(0);" class="btn-back">Back</a>
             </footer>
+            <script>
+                jQuery(document).ready(function($){
+                    // Tile Effect
+                    $('.tile li').tiltEffect();
+                });
+            </script>
         </main> <!-- .menu -->
 
         <main class="setting">

@@ -1,0 +1,44 @@
+/*
+ * tiltEffect: Metro Tiles Tilt Effect
+ * URL: http://github.com/SalGnt/tiltEffect
+ * LICENSE: The MIT License (MIT)
+ */
+
+.tile {
+	transition:         all .1s linear;
+	-o-transition:      all .1s linear;
+	-moz-transition:    all .1s linear;
+	-webkit-transition: all .1s linear;
+}
+
+.center:active {
+	transform:          perspective(1200px) translateZ(-24px);
+	-o-transform:       perspective(1200px) translateZ(-24px);
+	-moz-transform:     perspective(1200px) translateZ(-24px);
+	-webkit-transform:  perspective(1200px) translateZ(-24px);
+}
+
+.top:active {
+	transform:          perspective(1200px) rotateX(30deg);
+	-o-transform:       perspective(1200px) rotateX(30deg);
+	-moz-transform:     perspective(1200px) rotateX(30deg);
+	-webkit-transform:  perspective(1200px) rotateX(30deg);
+}
+.right:active {
+	transform:          perspective(1200px) rotateY(30deg);
+	-o-transform:       perspective(1200px) rotateY(30deg);
+	-moz-transform:     perspective(1200px) rotateY(30deg);
+	-webkit-transform:  perspective(1200px) rotateY(30deg);
+}
+.bottom:active {
+	transform:          perspective(1200px) rotateX(-30deg);
+	-o-transform:       perspective(1200px) rotateX(-30deg);
+	-moz-transform:     perspective(1200px) rotateX(-30deg);
+	-webkit-transform:  perspective(1200px) rotateX(-30deg);
+}
+.left:active {
+	transform:          perspective(1200px) rotateY(-30deg);
+	-o-transform:       perspective(1200px) rotateY(-30deg);
+	-moz-transform:     perspective(1200px) rotateY(-30deg);
+	-webkit-transform:  perspective(1200px) rotateY(-30deg);
+}

@@ -1,8 +1,6 @@
 jQuery(document).ready(function($){
 
 	// Slide Menu Left & Right
-
-
 	$('main').on('click', function(){
 		if($('main').hasClass('slideRightOut')) {
 			$('main').removeClass('slideRightOut').addClass('slideIn');
@@ -156,5 +154,4 @@ $(window).bind('enterBreakpoint1024',function() {
 				$(this).removeClass('first');
 		}
 	})
-
 });

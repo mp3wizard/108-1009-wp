@@ -282,6 +282,19 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .mfp-ie7 .mfp-content { padding-top: 44px; }
 .mfp-ie7 .mfp-close { top: 0; right: 0; padding-top: 0; }
 
+/* tiltEffect: Metro Tiles Tilt Effect URL: http://github.com/SalGnt/tiltEffect LICENSE: The MIT License (MIT) */
+.tile { transition: all .1s linear; -o-transition: all .1s linear; -moz-transition: all .1s linear; -webkit-transition: all .1s linear; }
+
+.center:active { transform: perspective(1200px) translateZ(-24px); -o-transform: perspective(1200px) translateZ(-24px); -moz-transform: perspective(1200px) translateZ(-24px); -webkit-transform: perspective(1200px) translateZ(-24px); }
+
+.top:active { transform: perspective(1200px) rotateX(30deg); -o-transform: perspective(1200px) rotateX(30deg); -moz-transform: perspective(1200px) rotateX(30deg); -webkit-transform: perspective(1200px) rotateX(30deg); }
+
+.right:active { transform: perspective(1200px) rotateY(30deg); -o-transform: perspective(1200px) rotateY(30deg); -moz-transform: perspective(1200px) rotateY(30deg); -webkit-transform: perspective(1200px) rotateY(30deg); }
+
+.bottom:active { transform: perspective(1200px) rotateX(-30deg); -o-transform: perspective(1200px) rotateX(-30deg); -moz-transform: perspective(1200px) rotateX(-30deg); -webkit-transform: perspective(1200px) rotateX(-30deg); }
+
+.left:active { transform: perspective(1200px) rotateY(-30deg); -o-transform: perspective(1200px) rotateY(-30deg); -moz-transform: perspective(1200px) rotateY(-30deg); -webkit-transform: perspective(1200px) rotateY(-30deg); }
+
 html { width: 100%; height: calc(100%); background-color: #C6BEAA; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-smoothing: antialiased; font-family: 'Segoe UI', Tahoma; }
 @media screen and (min-width: 720px) { html { height: -moz-calc(100%); height: -o-calc(100%); height: -webkit-calc(100%); height: calc(100%); } }
 
@@ -548,7 +561,7 @@ ul.full li a { line-height: 40px; font-size: 12px; text-overflow: ellipsis; vert
 #overlay { background-color: rgba(0, 0, 0, 0.45); height: 100%; width: 100%; position: fixed; z-index: 10; top: 0; left: 0; right: 0; }
 @media screen and (min-width: 720px) { #overlay { background-color: rgba(0, 0, 0, 0.45); } }
 
-.wp-popup { background-color: #7d6949; position: fixed; z-index: 11; height: auto; top: 0; left: 0; right: 0; padding: 10px 3% 4%; color: #fff; display: none; }
+.wp-popup { background-color: #7d6949; position: fixed; z-index: 11; height: auto; width: 100%; top: 0; left: 0; right: 0; padding: 10px 3% 4%; color: #fff; display: none; }
 .wp-popup h2, .wp-popup h3 { font-weight: 400; margin: 0; line-height: 1.6; margin-bottom: 5.6%; }
 @media screen and (min-width: 720px) { .wp-popup h2, .wp-popup h3 { margin-bottom: 10px; line-height: 1.3; } }
 .wp-popup h2 { font-size: 20px; }

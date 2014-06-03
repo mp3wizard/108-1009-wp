@@ -13,7 +13,10 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>    <body  onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/jquery.mobile.custom.js"></script>
+    </head>
+    <body  onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);" ontouchstart="">
 
         <main class="intro">
             <div class="tutorial">
@@ -28,7 +31,8 @@
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
-</header>            <article>
+</header>
+            <article>
                 <div id="banner-top10" style="background-image: url('img/intro/banner-intro.png')"></div>
                 <figure style="background-image: url('img/intro/full/img-full-03.jpg');">
                     <a href="img/intro/full/img-full-03@2x.jpg" class="popup" data-effect="mfp-zoom-in" data-view="132" data-share="123"
@@ -96,12 +100,14 @@
         </main> <!-- .view-photo -->
 
         <main class="feed grid">
-                        <header>
+            
+            <header>
     <h1></h1>
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
 </header>
+
             <article class="grid">
                 <figure>
                     <a href="webview.html"><img src="img/favorite/img-fav-01@2x.jpg" alt=""></a>
@@ -604,7 +610,8 @@
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
-</header>            <article>
+</header>
+            <article>
                 <p><input type="search" name="searchbox" id="searchbox" placeholder="ค้นหาเรื่องราวท่องเที่ยว"></p>
                 <ul class="list">
                     <li><a href="#">เรื่องราวท่องเที่ยวทั้งหมด</a>
@@ -637,7 +644,8 @@
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
-</header>            <article>
+</header>
+            <article>
                 <p><input type="search" name="searchbox" id="searchbox" placeholder="ค้นหาเรื่องราวท่องเที่ยว" value="ท่องเที่ยวเชิงวัฒนธรรม"></p>
                 <ul class="list">
                     <li><a href="#">ทั้งหมด</a></li>
@@ -651,9 +659,11 @@
         </main> <!-- .search2 -->
 
         <main class="menulist">
-                        <header>
+            
+            <header>
     <h1 class="text">เรื่องราวท่องเที่ยว</h1>
-</header>            <article>
+</header>
+            <article>
                 <ul class="list">
                     <li>
                         <a href="#">โพสต์ล่าสุด</a>
@@ -710,7 +720,8 @@
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
-</header>            <article>
+</header>
+            <article>
                 <!-- <iframe src="http://pantip.com/topic/31258110" frameborder="0" id="webviewFrame"></iframe> -->
                 <div class="tools">
                     <p>
@@ -725,9 +736,11 @@
         </main> <!-- .webview -->
 
         <main class="login">
-                        <header>
+            
+            <header>
     <h1 class="text">เข้าสู่ระบบ</h1>
-</header>            <article class="lv2 ">
+</header>
+            <article class="lv2 ">
                 <section>
                     <div>
                         <p><label for="login-username">ชื่อผู้ใช้</label><input type="text" name="login-username" id="login-username"></p>
@@ -751,9 +764,11 @@
         </main> <!-- .login -->
 
         <main class="regist">
-                        <header>
+            
+            <header>
     <h1 class="text">ลงทะเบียน</h1>
-</header>            <article class="lv2">
+</header>
+            <article class="lv2">
                 <section>
                     <div>
                         <p><label for="regist-name">ชื่อ</label><input type="text" name="regist-name" id="regist-name"></p>
@@ -784,7 +799,8 @@
     <div class="wrap-button">
       <a href="#" id="btnHome">Home</a><a href="#" id="btnUser">User</a><a href="#" id="btnSearch">Search</a>
     </div>
-</header>            <article>
+</header>
+            <article>
                 <ul class="tile">
                     <li>
                         <a href="#">
@@ -794,30 +810,30 @@
                             username
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/menu/tile-fav_2x.png" alt="icon favorite">
-                            สถานที่โปรด
-                        </a>
-                    </li>
-                    <li><a href="#"><img src="img/menu/tile-article_2x.png" alt="icon my story">
-                    เรื่องราวท่องเที่ยว<br>ของฉัน</a></li>
-                    <li><a href="#"><img src="img/menu/tile-setting_2x.png" alt="icon Setting">
-                    Setting</a></li>
+                    <li><a href="#"><img src="img/menu/tile-fav_2x.png" alt="icon favorite">สถานที่โปรด</a></li>
+                    <li><a href="#"><img src="img/menu/tile-article_2x.png" alt="icon my story">เรื่องราวท่องเที่ยว<br>ของฉัน</a></li>
+                    <li><a href="#"><img src="img/menu/tile-setting_2x.png" alt="icon Setting">Setting</a></li>
 
-                    <li><a href="#"><img src="img/menu/tile-add_2x.png" alt="add article">
-                    เพิ่มเรื่องราวท่องเที่ยว</a></li>
+                    <li><a href="#"><img src="img/menu/tile-add_2x.png" alt="add article">เพิ่มเรื่องราวท่องเที่ยว</a></li>
                 </ul>
             </article>
             <footer>
                 <a href="javascript:void(0);" class="btn-back">Back</a>
             </footer>
+            <script>
+                jQuery(document).ready(function($){
+                    // Tile Effect
+                    $('.tile li').tiltEffect();
+                });
+            </script>
         </main> <!-- .menu -->
 
         <main class="setting">
-                        <header>
+            
+            <header>
     <h1 class="text">Setting</h1>
-</header>            <article>
+</header>
+            <article>
                 <ul class="list">
                     <li>
                         <a href="#">Setting</a>
@@ -833,9 +849,11 @@
         </main> <!-- .setting -->
 
         <main class="term">
-                        <header>
+            
+            <header>
     <h1 class="text">เงื่อนไขการให้บริการ</h1>
-</header>            <article class="lv2">
+</header>
+            <article class="lv2">
                 <section>
 
                     <p>หากคุณมีความประสงค์จะเป็นสมาชิกเว็บไซต์ กรุณาอ่านเงื่อนไขและยอมรับเงื่อนไขการใช้งานดังต่อไปนี้ :</p>
@@ -860,9 +878,11 @@
         </main> <!-- .term -->
 
         <main class="recent">
-                        <header>
+            
+            <header>
     <h1 class="text">เปิดดูล่าสุด</h1>
-</header>            <article>
+</header>
+            <article>
                 <ul class="list">
                     <li><a href="#">สองคุณนายพาแอ่วเหนือ ถึงหนาวกาย แต่อบอุ่นใจมากมาย สองคุณนายพาแอ่วเหนือ ถึงหนาวกาย แต่อบอุ่นใจมากมาย</a></li>
                     <li><a href="#">สองคุณนายพาแอ่วเหนือ ถึงหนาวกาย แต่อบอุ่นใจมากมาย</a></li>
@@ -959,12 +979,12 @@
             </p>
         </div>
 
-        <script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/jquery.mobile.custom.js"></script>
-<script src="js/vendor/jquery.grid-a-licious.js"></script>
+        <script src="js/vendor/jquery.grid-a-licious.js"></script>
 <script src="js/vendor/jquery.magnific-popup.js"></script>
 <script src="js/vendor/breakpoints.js"></script>
+<script src="js/vendor/tiltEffect.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/main.js"></script>
+
     </body>
 </html>
